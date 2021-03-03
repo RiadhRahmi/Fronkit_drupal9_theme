@@ -1,0 +1,8 @@
+uuid: d9e165b4-47da-426d-bb05-d85dc9fd3567
+langcode: en
+status: true
+dependencies: {  }
+id: footer-about-us
+label: 'Footer About Us'
+description: ''
+locked: false
