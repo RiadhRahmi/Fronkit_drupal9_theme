@@ -1,0 +1,8 @@
+# Schema for the configuration files of the fronkit theme.
+fronkit.settings:
+  type: theme_settings
+  label: 'fronkit settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="fronkit" default="clear" basedir="." description="Build fronkit project">
+
+<!--  drupal site:mode dev -->
+
+  <!--  Global properties -->
+  <property name="URI.base" value="./"/>
+  <resolvepath propertyName="URI.base" file="${URI.base}"/>
+  <property name="URI.backup" value="${URI.base}/private/backup"/>
+  <property name="commit" value="puch configuration" override="true"/>
+
+  <!--  vendor\bin\phing clear -->
+  <target name="clear" description="Rebuild the cache">
+    <echo msg='Rebuild the cache'/>
+    <exec command="vendor\bin\drush cr" description="Rebuild the cache." logoutput="true"/>
+  </target>
+
+  <!--  vendor\bin\phing clone -->
+  <target name="clone" depends="clear">
+    <phingcall target="restore"/>
+    <exec command="vendor\bin\drush -y config-import" description="Import drupal configuration." logoutput="true"/>
+    <exec command="vendor\bin\drush -y updb" description="Run drupal update database hooks." logoutput="true"/>
+    <exec command="vendor\bin\drush updatedb --entity-updates" description="Run drupal entity update hooks." logoutput="true"/>
+    <phingcall target="clear"/>
+  </target>
+
+  <!-- vendor\bin\phing pull -D commit="put your commit comment" -->
+  <target name="pull" depends="clear">
+    <exec command="vendor\bin\drush -y config-export" description="Export drupal configuration." logoutput="true"/>
+    <exec command="git add ." description="git add --all" logoutput="true"/>
+    <exec command='git commit -m "${commit}"' description='git commit -m "${commit}"' logoutput="true"/>
+    <exec command="git pull" description="Fetch data from cvs repository." logoutput="true"/>
+    <exec command="composer install --no-interaction" description="Install missing composer packages." logoutput="true"/>
+    <propertyprompt propertyName="restore-database" defaultValue="yes" promptText="Do you want to restore database (yes/no):yes"/>
+    <if>
+      <equals arg1="${restore-database}" arg2="yes"/>
+      <then>
+        <echo message="Restore database ..."/>
+        <phingcall target="restore"/>
+      </then>
+    </if>
+    <exec command="vendor\bin\drush -y config-import" description="Import drupal configuration." logoutput="true"/>
+    <exec command="vendor\bin\drush -y updb" description="Run drupal update database hooks." logoutput="true"/>
+    <exec command="vendor\bin\drush updatedb --entity-updates" description="Run drupal entity update hooks." logoutput="true"/>
+    <!--    TODO: add mode dev-->
+    <phingcall target="clear"/>
+  </target>
+
+  <!-- vendor\bin\phing push -D commit="put your comment" -->
+  <target name="push" depends="clear">
+    <exec command="vendor\bin\drush -y config-export" description="Export drupal configuration." logoutput="true"/>
+    <exec command="git add ." description="git add --all" logoutput="true"/>
+    <exec command='git commit -m "${commit}"' description='git commit -m "${commit}"' logoutput="true"/>
+    <exec command="git push" description="git push" logoutput="true"/>
+  </target>
+
+  <!-- vendor\bin\phing prod:pull -D commit="put your commit comment" -->
+  <target name="prod:pull" depends="clear">
+    <exec command="vendor\bin\drush -y config-export" description="Export drupal configuration." logoutput="true"/>
+    <exec command="git add ." description="git add --all" logoutput="true"/>
+    <exec command='git commit -m "${commit}"' description='git commit -m "${commit}"' logoutput="true"/>
+    <exec command="git pull" description="Fetch data from cvs repository." logoutput="true"/>
+    <exec command="composer install --no-interaction" description="Install missing composer packages." logoutput="true"/>
+    <exec command="vendor\bin\drush -y config-import" description="Import drupal configuration." logoutput="true"/>
+    <exec command="vendor\bin\drush -y updb" description="Run drupal update database hooks." logoutput="true"/>
+    <exec command="vendor\bin\drush updatedb --entity-updates" description="Run drupal entity update hooks." logoutput="true"/>
+    <phingcall target="clear"/>
+  </target>
+
+  <!-- vendor\bin\phing prod:push -D commit="put your commit comment" -->
+  <target name="prod:push" depends="clear">
+    <propertyprompt propertyName="backup-database" defaultValue="yes" promptText="Do you want to backup your database (yes/no):yes"/>
+    <if>
+      <equals arg1="${backup-database}" arg2="yes"/>
+      <then>
+        <echo message="Backup database ..."/>
+        <phingcall target="backup"/>
+      </then>
+    </if>
+    <exec command="vendor\bin\drush -y config-export" description="Export drupal configuration." logoutput="true"/>
+    <exec command="git add ." description="git add --all" logoutput="true"/>
+    <exec command='git commit -m "${commit}"' description='git commit -m "${commit}"' logoutput="true"/>
+    <exec command="git push" description="git push" logoutput="true"/>
+  </target>
+
+  <!--  vendor\bin\phing backup -->
+  <target name="backup" depends="clear">
+    <tstamp>
+      <format property="DATE" pattern="%Y-%m-%d--%H-%M-%S"/>
+    </tstamp>
+    <mkdir dir="private/backup"/>
+    <echo msg="Export backup ..."/>
+    <exec command="vendor\bin\drush --gzip sql-dump --result-file=${URI.backup}/${phing.project.name}-${DATE}.sql"
+          description="backup database" logoutput="true"/>
+  </target>
+
+  <!--  vendor\bin\phing restore  -->
+  <target name="restore" depends="clear">
+    <echo msg="Fetching backup files ..."/>
+    <exec command="ls private/backup -t1 | head -n1" outputProperty="backup.file"/>
+    <echo msg="Remove old database ..."/>
+    <exec command="vendor\bin\drush sql-drop --yes " logoutput="true"/>
+    <echo msg="Import database from file: ${backup.file}"/>
+    <exec command="gzip -dc ${URI.backup}/${backup.file} | vendor\bin\drush sql-cli" logoutput="true"/>
+  </target>
+
+</project>

@@ -1,0 +1,8 @@
+uuid: b0345d33-af3e-47b0-8ccc-2909dcfb0d93
+langcode: en
+status: true
+dependencies: {  }
+id: footer-account
+label: 'Footer Account'
+description: ''
+locked: false

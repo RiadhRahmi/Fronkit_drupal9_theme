@@ -1,0 +1,28 @@
+uuid: f469f759-cf36-40da-a09e-8e42bef6c0eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partner.field_image
+    - node.type.partner
+  module:
+    - user
+id: node.partner.default
+targetEntityType: node
+bundle: partner
+mode: default
+content:
+  field_image:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
