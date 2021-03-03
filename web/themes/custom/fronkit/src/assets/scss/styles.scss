@@ -1,0 +1,16 @@
+$theme-colors: (
+  "primary": blue
+);
+
+$btn-border-radius: 0.125rem;
+$btn-border-radius-lg: 1rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+  padding: 20px;
+}
+
+Button{
+  margin: 10px;
+}
