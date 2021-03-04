@@ -1,9 +1,9 @@
-uuid: ce3cb410-7c4e-412e-8478-aa38e2edab55
+uuid: 8db1f232-52b5-41b2-a621-6064456afad2
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-account
+    - system.menu.footer-our-services
   module:
     - block_class
     - system
@@ -12,15 +12,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: 'col-6 col-md-4 col-lg-2'
-id: fronkit_footeraccount
+id: footerourservices
 theme: fronkit
 region: footer
-weight: -9
+weight: -6
 provider: null
-plugin: 'system_menu_block:footer-account'
+plugin: 'system_menu_block:footer-our-services'
 settings:
-  id: 'system_menu_block:footer-account'
-  label: Account
+  id: 'system_menu_block:footer-our-services'
+  label: 'Our Services'
   provider: system
   label_display: visible
   level: 1

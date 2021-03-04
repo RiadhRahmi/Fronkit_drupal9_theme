@@ -1,0 +1,8 @@
+uuid: 9b5bf50d-dcdc-461b-a59c-5f79b3780852
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_block
+label: 'About Us Block'
+revision: 0
+description: ''

@@ -25,3 +25,13 @@ function fronkit_preprocess_page(&$variables) {
 function fronkit_preprocess_node(&$variables) {
 
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for field.html.twig.
+ */
+function fronkit_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  if ($element['#field_name'] == 'field_link') {
+    $variables['items'][0]['content']['#options']['attributes']['class'][] = 'btn btn-primary';
+  }
+}

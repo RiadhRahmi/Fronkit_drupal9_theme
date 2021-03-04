@@ -1,22 +1,19 @@
 {
   "name": "fronkit",
-  "private": true,
+  "version": "1.0.0",
+  "description": "gulp workflow for Drupal 8 theming",
+  "main": "gulpfile.js",
   "scripts": {
-    "sass-watch": "node-sass -w --output-style expanded scss -o css",
-    "sass-compile": "node-sass --output-style expanded scss -o css",
-    "livereload": "livereload css",
-    "start": "run-p sass-watch livereload"
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
+  "author": "fronkit",
+  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "livereload": "^0.7.0",
-    "node-sass": "^4.9.3",
-    "npm-run-all": "^4.1.3"
+    "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta2",
-    "sass": "^1.32.8"
+    "bootstrap": "^5.0.0-beta2"
   }
 }

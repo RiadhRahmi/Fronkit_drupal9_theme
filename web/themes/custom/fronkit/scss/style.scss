@@ -1,16 +1,24 @@
-$theme-colors: (
-  "primary": blue
-);
 
-$btn-border-radius: 0.125rem;
-$btn-border-radius-lg: 1rem;
-
+@import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
+//@import "components/footer";
 
-body{
-  padding: 20px;
+
+.bg-gray-900{
+  background-color: $gray-900;
 }
 
-Button{
-  margin: 10px;
+.bg-gray-100{
+  background-color: $gray-100;
+}
+
+
+footer{
+
+  .footer-bottom{
+    border-top: 0.2px solid $gray-600;
+    p{
+      color: $gray-200;
+    }
+  }
 }

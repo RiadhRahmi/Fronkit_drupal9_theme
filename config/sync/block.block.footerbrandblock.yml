@@ -1,0 +1,29 @@
+uuid: dff21242-f146-4780-ae44-27aea68aefd4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_brand_block:cd131acf-6432-4d2d-a2a7-17eb541f4304'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-4 col-lg-3'
+id: footerbrandblock
+theme: fronkit
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:cd131acf-6432-4d2d-a2a7-17eb541f4304'
+settings:
+  id: 'block_content:cd131acf-6432-4d2d-a2a7-17eb541f4304'
+  label: 'Footer Brand Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

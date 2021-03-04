@@ -1,0 +1,21 @@
+uuid: 1eb376ca-d58a-4914-8c4e-f8740011578c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_brand_block
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.footer_brand_block.field_description
+field_name: field_description
+entity_type: block_content
+bundle: footer_brand_block
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
