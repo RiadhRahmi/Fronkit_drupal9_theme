@@ -1,0 +1,20 @@
+uuid: ea08cc0e-5ac1-4505-8271-5bd9893de380
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fronkit
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: fronkit_local_actions
+theme: fronkit
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

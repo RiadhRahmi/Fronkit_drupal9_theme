@@ -1,0 +1,22 @@
+uuid: 9f674057-6b00-4e68-8c16-60da9f7e78a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fronkit
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: fronkit_breadcrumbs
+theme: fronkit
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

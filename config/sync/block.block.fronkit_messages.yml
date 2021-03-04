@@ -1,0 +1,22 @@
+uuid: 1861a57a-1502-4014-96a0-4470e7e0c82d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fronkit
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fronkit_messages
+theme: fronkit
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
