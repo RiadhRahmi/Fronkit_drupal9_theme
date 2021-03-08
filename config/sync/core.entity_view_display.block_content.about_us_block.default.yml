@@ -9,7 +9,7 @@ dependencies:
     - field.field.block_content.about_us_block.field_image
     - field.field.block_content.about_us_block.field_link
   module:
-    - link
+    - element_class_formatter
     - text
 id: block_content.about_us_block.default
 targetEntityType: block_content
@@ -46,10 +46,11 @@ content:
     settings:
       trim_length: 800
       target: _blank
+      class: 'btn btn-primary'
       url_only: false
       url_plain: false
       rel: '0'
     third_party_settings: {  }
-    type: link
+    type: link_class
     region: content
 hidden: {  }

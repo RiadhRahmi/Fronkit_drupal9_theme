@@ -15,7 +15,7 @@ third_party_settings:
 id: aboutusblock
 theme: fronkit
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:bce2cff0-2717-4848-987d-c686bbbff2f6'
 settings:

@@ -1,0 +1,43 @@
+uuid: 82971bfb-c7d8-4b76-a71b-7e72bab578c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - field.storage.block_content.field_services_items
+    - paragraphs.paragraphs_type.service_item
+  module:
+    - entity_reference_revisions
+id: block_content.services_block.field_services_items
+field_name: field_services_items
+entity_type: block_content
+bundle: services_block
+label: 'Services Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      service_item: service_item
+    target_bundles_drag_drop:
+      carrousel_item:
+        weight: 6
+        enabled: false
+      feature_item:
+        weight: 7
+        enabled: false
+      pricing_plan:
+        weight: 8
+        enabled: false
+      service_item:
+        enabled: true
+        weight: 9
+      social_media_link:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

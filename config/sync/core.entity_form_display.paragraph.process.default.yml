@@ -1,0 +1,43 @@
+uuid: 8e31785d-24ca-4818-a149-1d9db9eb563b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.process.field_description
+    - field.field.paragraph.process.field_image
+    - field.field.paragraph.process.field_title
+    - paragraphs.paragraphs_type.process
+  module:
+    - media_library
+    - text
+id: paragraph.process.default
+targetEntityType: paragraph
+bundle: process
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

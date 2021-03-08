@@ -1,0 +1,29 @@
+uuid: 8193e42c-375e-4aa7-9e1f-7d49e85a699f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:pricing_block:fe51a634-ad06-452c-8544-eab8a54fbe26'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: 'block-pricing py-14'
+id: pricing
+theme: fronkit
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:fe51a634-ad06-452c-8544-eab8a54fbe26'
+settings:
+  id: 'block_content:fe51a634-ad06-452c-8544-eab8a54fbe26'
+  label: Pricing
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

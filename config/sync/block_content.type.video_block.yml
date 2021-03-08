@@ -1,0 +1,8 @@
+uuid: 31b4f1a5-7d89-402e-936f-c99be9363e21
+langcode: en
+status: true
+dependencies: {  }
+id: video_block
+label: 'Video Block'
+revision: 0
+description: ''

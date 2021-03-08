@@ -1,0 +1,33 @@
+uuid: 68910680-afb4-4cba-bc41-83242ad20515
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_block
+    - field.field.block_content.pricing_block.field_description
+    - field.field.block_content.pricing_block.field_pricing_plans
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.pricing_block.default
+targetEntityType: block_content
+bundle: pricing_block
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pricing_plans:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

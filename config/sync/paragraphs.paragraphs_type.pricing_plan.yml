@@ -1,0 +1,10 @@
+uuid: 1b7c0aa4-4efa-4a0d-950a-24dde671b0b5
+langcode: en
+status: true
+dependencies: {  }
+id: pricing_plan
+label: 'Pricing Plan'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

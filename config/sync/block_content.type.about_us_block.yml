@@ -5,4 +5,4 @@ dependencies: {  }
 id: about_us_block
 label: 'About Us Block'
 revision: 0
-description: ''
+description: 'About Us Block used in home Page'

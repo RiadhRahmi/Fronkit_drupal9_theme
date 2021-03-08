@@ -1,0 +1,23 @@
+uuid: 021bcbcd-2ead-49d1-a6b8-7fc99a12b1e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_link
+    - paragraphs.paragraphs_type.carrousel_item
+  module:
+    - link
+id: paragraph.carrousel_item.field_video_link
+field_name: field_video_link
+entity_type: paragraph
+bundle: carrousel_item
+label: 'Video Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

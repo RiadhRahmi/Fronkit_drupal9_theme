@@ -4,7 +4,7 @@
   "description": "gulp workflow for Drupal 8 theming",
   "main": "gulpfile.js",
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "postinstall": "find node_modules/ -name '*.info.yml' -type f -delete"
   },
   "author": "fronkit",
   "license": "ISC",

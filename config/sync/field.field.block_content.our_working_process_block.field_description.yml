@@ -1,0 +1,21 @@
+uuid: 4a4286df-f191-42d4-a45f-8b4d8e73710c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_working_process_block
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.our_working_process_block.field_description
+field_name: field_description
+entity_type: block_content
+bundle: our_working_process_block
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

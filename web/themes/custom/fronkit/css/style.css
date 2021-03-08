@@ -9970,13 +9970,5 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.bg-gray-900 {
-  background-color: #2B354F; }
-
 .bg-gray-100 {
   background-color: #F9FBFD; }
-
-footer .footer-bottom {
-  border-top: 0.2px solid #869AB8; }
-  footer .footer-bottom p {
-    color: #F1F4F8; }

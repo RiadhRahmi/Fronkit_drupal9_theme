@@ -1,0 +1,21 @@
+uuid: 5205a4cd-e526-41b9-9227-8908996ad957
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_block
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.video_block.field_description
+field_name: field_description
+entity_type: block_content
+bundle: video_block
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

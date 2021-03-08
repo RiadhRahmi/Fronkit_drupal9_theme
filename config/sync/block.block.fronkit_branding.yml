@@ -3,15 +3,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - fronkit
+third_party_settings:
+  block_class:
+    classes: col-2
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: fronkit_branding
 theme: fronkit
 region: header
-weight: 0
+weight: -12
 provider: null
 plugin: system_branding_block
 settings:

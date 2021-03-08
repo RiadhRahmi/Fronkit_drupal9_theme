@@ -13,10 +13,14 @@ targetEntityType: node
 bundle: partner
 mode: teaser
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      link: false
+      view_mode: default
+    third_party_settings: {  }
 hidden:
-  field_image: true
+  links: true

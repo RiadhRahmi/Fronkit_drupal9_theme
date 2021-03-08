@@ -1,0 +1,55 @@
+uuid: 4ffac524-18db-461c-a40a-c27d58342b03
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - field.field.block_content.services_block.field_description
+    - field.field.block_content.services_block.field_link
+    - field.field.block_content.services_block.field_services_items
+  module:
+    - link
+    - paragraphs
+    - text
+id: block_content.services_block.default
+targetEntityType: block_content
+bundle: services_block
+mode: default
+content:
+  field_description:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_services_items:
+    type: entity_reference_paragraphs
+    weight: 28
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

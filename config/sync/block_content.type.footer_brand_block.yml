@@ -5,4 +5,4 @@ dependencies: {  }
 id: footer_brand_block
 label: 'Footer Brand Block'
 revision: 0
-description: ''
+description: 'Footer Brand Block used in Footer Section'

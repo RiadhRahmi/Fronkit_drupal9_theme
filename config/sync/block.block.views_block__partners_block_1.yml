@@ -1,0 +1,28 @@
+uuid: 5c5362ec-8ce9-4637-8bbf-031a275adf0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partners
+  module:
+    - block_class
+    - views
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: 'block-partners py-14'
+id: views_block__partners_block_1
+theme: fronkit
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:partners-block_1'
+settings:
+  id: 'views_block:partners-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

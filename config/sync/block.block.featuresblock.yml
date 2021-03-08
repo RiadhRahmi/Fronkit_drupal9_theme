@@ -1,0 +1,29 @@
+uuid: 04105d73-90af-42ce-8b01-153186fad2c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:features_block:e43bc407-64d0-4674-9817-6db8fd43a0da'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: block-features
+id: featuresblock
+theme: fronkit
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:e43bc407-64d0-4674-9817-6db8fd43a0da'
+settings:
+  id: 'block_content:e43bc407-64d0-4674-9817-6db8fd43a0da'
+  label: Features
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: db63b455-dde8-4204-b231-e8245d901a4f
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+label: 'Call to action'
+revision: 0
+description: 'Call to action Block'

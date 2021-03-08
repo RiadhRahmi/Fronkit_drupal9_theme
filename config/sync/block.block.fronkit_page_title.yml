@@ -2,14 +2,16 @@ uuid: 6aa99b21-3c28-4794-a5e1-8d1c2f417beb
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - fronkit
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: fronkit_page_title
 theme: fronkit
-region: content
-weight: -50
+region: breadcrumb
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

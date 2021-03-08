@@ -1,0 +1,23 @@
+uuid: 087d19d6-85c1-47fa-8841-eb51d2bbc184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.carrousel_item
+  module:
+    - link
+id: paragraph.carrousel_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: carrousel_item
+label: 'Read More Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

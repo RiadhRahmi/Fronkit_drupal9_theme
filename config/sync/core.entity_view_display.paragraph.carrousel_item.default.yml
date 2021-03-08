@@ -1,0 +1,70 @@
+uuid: 822fe60e-dfb8-4933-8229-7b6a0dac900a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carrousel_item.field_description
+    - field.field.paragraph.carrousel_item.field_image
+    - field.field.paragraph.carrousel_item.field_link
+    - field.field.paragraph.carrousel_item.field_title
+    - field.field.paragraph.carrousel_item.field_video_link
+    - paragraphs.paragraphs_type.carrousel_item
+  module:
+    - element_class_formatter
+    - text
+id: paragraph.carrousel_item.default
+targetEntityType: paragraph
+bundle: carrousel_item
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      class: 'btn btn-primary'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link_class
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video_link:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      class: 'btn btn-light'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link_class
+    region: content
+hidden: {  }

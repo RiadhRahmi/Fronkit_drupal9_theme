@@ -1,19 +1,19 @@
-uuid: b25b1e3d-1f66-42e6-97f7-b9961b960295
+uuid: 5925da9b-7950-44f1-8dfa-d7054459b2f8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_icon
+    - field.storage.paragraph.field_image
     - media.type.image
-    - paragraphs.paragraphs_type.social_media_link
-id: paragraph.social_media_link.field_icon
-field_name: field_icon
+    - paragraphs.paragraphs_type.feature_item
+id: paragraph.feature_item.field_image
+field_name: field_image
 entity_type: paragraph
-bundle: social_media_link
+bundle: feature_item
 label: Icon
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

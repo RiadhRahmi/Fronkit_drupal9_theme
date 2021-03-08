@@ -1,0 +1,19 @@
+uuid: ee7f9fc6-67c4-4426-8d83-a9fa5dcb586c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_class
+    - paragraphs.paragraphs_type.social_media_link
+id: paragraph.social_media_link.field_icon_class
+field_name: field_icon_class
+entity_type: paragraph
+bundle: social_media_link
+label: 'Icon Class'
+description: 'We use https://remixicon.com/ in this website'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

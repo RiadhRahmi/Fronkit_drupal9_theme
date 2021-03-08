@@ -1,0 +1,21 @@
+uuid: db282c84-d6ba-451f-9fad-7a69dfe0e16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.services_block.field_description
+field_name: field_description
+entity_type: block_content
+bundle: services_block
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

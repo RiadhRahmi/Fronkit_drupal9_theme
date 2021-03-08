@@ -1,0 +1,61 @@
+uuid: 2c08b2e5-6046-4bf8-baef-5b6a79f6d661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing_plan.field_link
+    - field.field.paragraph.pricing_plan.field_options
+    - field.field.paragraph.pricing_plan.field_period
+    - field.field.paragraph.pricing_plan.field_price
+    - field.field.paragraph.pricing_plan.field_title
+    - paragraphs.paragraphs_type.pricing_plan
+  module:
+    - link
+id: paragraph.pricing_plan.default
+targetEntityType: paragraph
+bundle: pricing_plan
+mode: default
+content:
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_options:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_period:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_price:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

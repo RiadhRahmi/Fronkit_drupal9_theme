@@ -1,12 +1,9 @@
-<header class="main-header" role="banner">
+{% if  page.header %}
+<header class="main-header">
   <div class="container">
-
-    <header role="banner">
+    <div class="row">
       {{ page.header }}
-    </header>
-
-    {{ page.primary_menu }}
-    {{ page.secondary_menu }}
-
+    </div>
   </div>
 </header>
+{% endif %}

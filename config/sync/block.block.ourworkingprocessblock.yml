@@ -1,0 +1,29 @@
+uuid: fbd7a0dc-cd3e-49e4-afe4-cb405897f01f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:our_working_process_block:fcabca41-113e-446b-b409-bbb63ad62aeb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: process-block
+id: ourworkingprocessblock
+theme: fronkit
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:fcabca41-113e-446b-b409-bbb63ad62aeb'
+settings:
+  id: 'block_content:fcabca41-113e-446b-b409-bbb63ad62aeb'
+  label: Process
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
