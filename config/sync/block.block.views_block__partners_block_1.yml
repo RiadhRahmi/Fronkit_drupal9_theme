@@ -1,6 +1,6 @@
 uuid: 5c5362ec-8ce9-4637-8bbf-031a275adf0c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.partners

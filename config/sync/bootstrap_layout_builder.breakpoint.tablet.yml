@@ -1,0 +1,10 @@
+uuid: 36c53130-2330-4dfc-99fe-89fc59097bc5
+langcode: en
+status: 1
+dependencies: {  }
+_core:
+  default_config_hash: jVrx1qNXYIw_HePGMVOLbkFcPXZqO3wuEk01co_HNO8
+id: tablet
+label: Medium
+base_class: col-md
+weight: '-8'

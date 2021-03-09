@@ -1,0 +1,8 @@
+uuid: eed3deec-4cb2-4942-bfc9-05365b80e32f
+langcode: en
+status: 1
+dependencies: {  }
+id: small
+label: Small
+base_class: col-sm
+weight: '-7'

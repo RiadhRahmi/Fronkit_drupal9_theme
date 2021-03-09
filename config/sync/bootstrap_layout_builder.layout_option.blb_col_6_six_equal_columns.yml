@@ -1,0 +1,15 @@
+uuid: d9b12d41-b929-4236-8974-5f2062ad52fd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: abTny1lyNxMwOlYpJ0hYhXehciFbPraDFbyyvp0_xQg
+id: blb_col_6_six_equal_columns
+layout_id: blb_col_6
+label: 'Six equal columns'
+structure: '2 2 2 2 2 2'
+breakpoints:
+  desktop: desktop
+  tablet: tablet
+  mobile: mobile
+weight: 0

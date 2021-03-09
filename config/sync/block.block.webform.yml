@@ -1,6 +1,6 @@
 uuid: 8adc2f68-eaaf-44a9-a172-7f07fc8e8a97
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - webform.webform.newsletter

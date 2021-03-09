@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - block_content.type.about_us_block
-    - field.field.block_content.about_us_block.field_badge
     - field.field.block_content.about_us_block.field_description
     - field.field.block_content.about_us_block.field_image
     - field.field.block_content.about_us_block.field_link
@@ -17,14 +16,6 @@ targetEntityType: block_content
 bundle: about_us_block
 mode: default
 content:
-  field_badge:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_description:
     weight: 3
     settings:

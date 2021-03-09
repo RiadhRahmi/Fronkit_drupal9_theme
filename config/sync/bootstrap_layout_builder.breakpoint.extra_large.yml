@@ -1,0 +1,8 @@
+uuid: 021d1034-5ab6-4980-ac57-cc88fd08460e
+langcode: en
+status: 1
+dependencies: {  }
+id: extra_large
+label: 'Extra large'
+base_class: col-xl
+weight: '-10'
