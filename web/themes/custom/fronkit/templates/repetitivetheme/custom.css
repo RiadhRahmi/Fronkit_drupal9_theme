@@ -1,0 +1,288 @@
+/**
+   user-logged-in
+ */
+
+
+.user-logged-in header {
+    margin-top: 0;
+    /*z-index: -1;*/
+    position: relative;
+}
+
+.user-logged-in .main-navbar {
+    /*position: relative;*/
+    z-index: 2;
+    top: 79px;
+
+}
+
+.user-logged-in .main-navbar #mainnav .menu .has-sub .sub-menu {
+/ / z-index: 2;
+}
+
+.user-logged-in .header {
+    margin-top: 4px;
+    z-index: 1;
+    position: relative;
+}
+
+.user-logged-in.intern .main-navbar {
+    margin-top: 81px;
+    position: fixed;
+}
+
+.user-logged-in.intern .header {
+    margin-top: 4px;
+    z-index: 1;
+    position: relative;
+}
+
+/*.user-logged-in div.banner {*/
+/*padding-top: 135px;*/
+/*}*/
+
+/*.user-logged-in div.banner h1 {*/
+/*position: relative;*/
+/*top: unset;*/
+/*transform: unset;*/
+/*}*/
+
+/**
+    nav tabs
+ */
+nav.local-tasks ul.nav-fill {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+nav.local-tasks ul.nav-fill .nav-item {
+    flex: 1 1 auto !important;
+    text-align: center !important;
+}
+
+nav.local-tasks ul.nav-tabs li.nav-item a.nav-link {
+    background-color: #f4f4f4;
+    color: #a3a1a1;
+    border-radius: 0;
+    border-color: #fff
+}
+
+nav.local-tasks ul.nav-tabs li.nav-item a.nav-link:hover {
+    background-color: #a3a1a1;
+    color: #fff
+}
+
+nav.local-tasks ul.nav-tabs li.nav-item a.active {
+    background-color: #0474b6 !important;
+    color: #fff !important
+}
+
+div.region-local-tasks .alert {
+    margin-top: 1rem;
+}
+
+div.block-local-tasks-block {
+    padding-top: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/**
+   User Login and reset password
+ */
+
+section.user {
+    margin-top: 1rem;
+    text-align: left;
+    padding: 30px 0px 100px !important;
+}
+
+section.user form input.btn {
+    margin-top: 1rem !important;
+    background: #0474b6 !important;
+    width: inherit !important;
+}
+
+section.user form div.form-item {
+    margin-bottom: 1rem;
+}
+
+section.user form div.form-item label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section.user form div.form-item div.description,
+section.user form.user-pass div.form-item + p {
+    color: grey;
+}
+
+section.user form div.form-item input.form-control {
+    margin-bottom: 5px;
+}
+
+section.user form div.form-item--error div.form-item--error-message {
+    font-size: 12px;
+    color: red;
+}
+
+section.user form div.form-item--error div.form-item--error-message strong {
+    font-weight: 400;
+}
+
+section.user form .form-item label.form-required::after {
+    color: red;
+}
+
+@media (max-width: 767px) {
+    section.user {
+        margin-top: 2rem;
+        text-align: left;
+    }
+}
+
+/**
+ profile page
+ */
+
+section.profile {
+    padding: 30px 0px 30px;
+    margin: 30px 0px;
+}
+
+section.profile h4.label {
+    display: inherit;
+    color: inherit;
+    text-align: inherit;
+}
+
+/**
+    search page
+ */
+
+section.search div.search-result {
+    margin-top: 40px;
+}
+
+/**
+ block-error-404
+ */
+.block-error-404,
+.block-error-403 {
+    margin-bottom: 150px !important;
+}
+
+.jumbotron-block-error {
+    background-color: transparent;
+}
+
+.page-maintenance {
+    margin-top: 50px !important;
+    text-align: center !important;
+}
+
+.page-maintenance main,
+.page-maintenance header {
+    padding: 50px !important;
+}
+
+
+/**
+  page mention legale
+*/
+.mention_legale {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0;
+    margin: 0px 0;
+    padding: 25px 50px;
+    margin-bottom: 30px;
+}
+
+.mention_legale h2 {
+    font-size: 26px;
+}
+/*#carouselHome .carousel-indicators{*/
+    /*display: block !important;*/
+/*}*/
+
+.form-text {
+    margin-top: 0;
+}
+.user-login-form .btn{
+    padding: 10px 15px;
+}
+
+.list-entreprise #edit-submit {
+    display: none;
+}
+
+
+.pager__item.disabled a{
+  pointer-events: none!important;
+  cursor: default!important;
+}
+/*.block-candidature iframe {*/
+    /*height: 100% !important;*/
+/*}*/
+
+.captcha label.js-form-required.form-required ,
+.captcha #edit-captcha-response--description {
+    display: none;
+}
+
+
+
+/* style popup sfax investia */
+/*
+.spb_center {
+    background-image: url(/themes/custom/investia/assets/images/background/mk13112019-Investia-poste-sfax.jpg) !important;
+  background-size: 100% 100% !important;
+}
+
+
+.spb_center .link {
+    font-size: 13px;
+    letter-spacing: 0.04rem;
+}
+.spb_center h3 {
+    line-height: 1;
+}
+
+.logo_connet {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+}
+
+.logo_connet img {
+    width: 100px;
+}
+
+@media (max-width:575px){
+    .spb_center {  background-size: 518px 576px !important;}
+    .spb_center .logo
+    { width: 160px;
+        margin-top: 20px;
+    }
+    .spb_center .link { 
+        margin-top: 55px;}
+    .logo_connet {
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 32px;
+    }
+   .spb_center .link {
+    margin-top: 50px;
+}
+}*/

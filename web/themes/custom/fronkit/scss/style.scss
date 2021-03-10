@@ -1,24 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 //@import "components/footer";
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
 
-//.bg-gray-900{
-//  background-color: $gray-900;
-//}
+img{
+  width: 100%;
+}
 
-.bg-gray-100{
+.bg-gray-900 {
+  background-color: $gray-900;
+}
+
+.bg-gray-100 {
   background-color: $gray-100;
 }
 
-//
-//footer{
-//
-//  .footer-bottom{
-//    border-top: 0.2px solid $gray-600;
-//    p{
-//      color: $gray-200;
-//    }
-//  }
-//}
+.badge {
+  margin-bottom: $spacer * 0.75;
+  line-height: 1.3;
+}
+
+.badge-primary-soft {
+  background-color: #E9EEFD;
+  color: $blue-lighter;
+}
+
+footer {
+
+  .footer-bottom {
+    border-top: 0.2px solid $gray-600;
+
+    p {
+      color: $gray-200;
+    }
+  }
+}

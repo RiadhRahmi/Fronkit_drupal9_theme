@@ -47,6 +47,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  repetitivetheme: 0
   search: 0
   shortcut: 0
   svg_image: 0

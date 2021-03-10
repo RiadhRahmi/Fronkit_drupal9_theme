@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a block.
+ * Theme override to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -17,48 +17,33 @@
  *   - id: A valid HTML ID and guaranteed unique.
  * - title_attributes: Same as attributes, except applied to the main title
  *   tag that appears in the template.
- * - content_attributes: Same as attributes, except applied to the main content
- *   tag that appears in the template.
  * - title_prefix: Additional output populated by modules, intended to be
  *   displayed in front of the main title tag that appears in the template.
  * - title_suffix: Additional output populated by modules, intended to be
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
- *
- * @ingroup themeable
  */
 #}
 {% set classes = [
-  'block',
-  'block-' ~ configuration.provider|clean_class,
-  'block-' ~ plugin_id|clean_class,
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'container',
+    'block-error-403'
 ] %}
-
-
-<div{{ attributes.addClass(classes) }}>
-  <div class="row align-items-center justify-content-between">
-    <div class="col-6 pe-0">
-      {{ content.field_image }}
+<div class="jumbotron jumbotron-fluid jumbotron-block-error text-center">
+    <div{{ attributes.addClass(classes) }}>
+        {{ title_prefix }}
+        {% if label %}
+            <h1{{ title_attributes.addClass('display-4') }}>{{ label }}</h1>
+        {% endif %}
+        {{ title_suffix }}
+        {% block content %}
+            <p class="lead"> {{ content }} </p>
+            <a class="btn btn-default"  href="{{ path('<front>') }}" role="button">
+                <span>{{ "Retour à la page d'accueil"|t }}</span>
+            </a>
+        {% endblock %}
     </div>
-    <div class="col-6 col-lg-5 ps-0">
-      {{ title_prefix }}
-      {% if label %}
-        <span{{ title_attributes.addClass('badge rounded-pill badge-primary-soft text-uppercase') }}>
-             {{ label }}
-        </span>
-      {% endif %}
-      {{ title_suffix }}
-
-      {% block content %}
-        <div{{ content_attributes.addClass('content') }}>
-          {{ content|without('field_image') }}
-        </div>
-      {% endblock %}
-    </div>
-  </div>
 </div>
-
-
-
-

@@ -22,4 +22,5 @@ global:
 #      css/layouts/layout.css: {}
     theme:
       css/style.css: {}
+      templates/repetitivetheme/custom.css:  {}
 #      css/theme/print.css: { media: print }
