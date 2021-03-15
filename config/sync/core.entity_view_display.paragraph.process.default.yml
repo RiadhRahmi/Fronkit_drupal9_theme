@@ -8,6 +8,8 @@ dependencies:
     - field.field.paragraph.process.field_title
     - paragraphs.paragraphs_type.process
   module:
+    - element_class_formatter
+    - field_formatter_class
     - text
 id: paragraph.process.default
 targetEntityType: paragraph
@@ -18,24 +20,35 @@ content:
     weight: 2
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'process-description px-3'
     type: text_default
     region: content
   field_image:
     weight: 0
     label: hidden
     settings:
-      link: true
       view_mode: default
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'process-icon mb-6'
     type: entity_reference_entity_view
     region: content
   field_title:
     weight: 1
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      link_class: ''
+      tag: h5
+      class: process-title
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: wrapper_class
     region: content
 hidden: {  }

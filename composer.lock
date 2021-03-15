@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82a20a6b5e6b09fe46ff933312681b12",
+    "content-hash": "3f1ccb4a018f9cbbe8fa3457f83ca58b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2676,6 +2676,175 @@
             }
         },
         {
+            "name": "drupal/field_formatter_class",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_formatter_class.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_formatter_class-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "a51e0078615791a285250693a4e88775fac87b70"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1610334141",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Macpherson",
+                    "homepage": "https://www.drupal.org/u/andrewmacpherson",
+                    "role": "maintainer"
+                },
+                {
+                    "name": "Oleksandr Dekhteruk",
+                    "homepage": "https://www.drupal.org/u/pifagor",
+                    "role": "maintainer"
+                },
+                {
+                    "name": "mfer",
+                    "homepage": "https://www.drupal.org/user/25701"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Provides custom HTML class settings for field formatters.",
+            "homepage": "https://www.drupal.org/project/field_formatter_class",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_formatter_class",
+                "issues": "https://www.drupal.org/project/issues/field_formatter_class"
+            }
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "8a719eaea594f0ba874172831cb28da93c66b77a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1591772567",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
+            "name": "drupal/layout_builder_component_attributes",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_component_attributes.git",
+                "reference": "1.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_component_attributes-1.1.2.zip",
+                "reference": "1.1.2",
+                "shasum": "5fbacca6a51116abbbc09ddabc8ff6a8e1839b3f"
+            },
+            "require": {
+                "drupal/core": "^8.8|^9.0",
+                "neilime/php-css-lint": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.2",
+                    "datestamp": "1614628137",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/user/1826152"
+                }
+            ],
+            "description": "Allows editors to add HTML attributes to Layout Builder components (blocks)",
+            "homepage": "https://drupal.org/project/layout_builder_component_attributes",
+            "support": {
+                "source": "https://cgit.drupalcode.org/layout_builder_component_attributes",
+                "issues": "https://drupal.org/project/issues/layout_builder_component_attributes"
+            }
+        },
+        {
             "name": "drupal/media_library_form_element",
             "version": "2.0.3",
             "source": {
@@ -4203,6 +4372,75 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.4"
             },
             "time": "2020-10-01T13:52:52+00:00"
+        },
+        {
+            "name": "neilime/php-css-lint",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neilime/php-css-lint.git",
+                "reference": "11b2961a1b522d790f64c0a28af5715cae6ebb39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neilime/php-css-lint/zipball/11b2961a1b522d790f64c0a28af5715cae6ebb39",
+                "reference": "11b2961a1b522d790f64c0a28af5715cae6ebb39",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "pcov/clobber": "^2.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^9.2.5",
+                "slam/phpstan-laminas-framework": "^0.12",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "bin": [
+                "scripts/php-css-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CssLint\\": "src/CssLint"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Neilime",
+                    "homepage": "https://github.com/neilime",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Powerful & memory efficient CSS linter for PHP",
+            "homepage": "https://neilime.github.io/php-css-lint/",
+            "keywords": [
+                "css",
+                "lint",
+                "linter",
+                "syntax",
+                "validation"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/neilime",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-09T09:27:31+00:00"
         },
         {
             "name": "nikic/php-parser",

@@ -5,11 +5,9 @@ dependencies:
   config:
     - block_content.type.call_to_action
     - field.field.block_content.call_to_action.field_description
-    - field.field.block_content.call_to_action.field_image
     - field.field.block_content.call_to_action.field_link
   module:
     - link
-    - media_library
     - text
 id: block_content.call_to_action.default
 targetEntityType: block_content
@@ -23,13 +21,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_image:
-    weight: 26
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
     region: content
   field_link:
     weight: 28

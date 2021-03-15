@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.services_block.field_description
     - field.field.block_content.services_block.field_link
     - field.field.block_content.services_block.field_services_items
+    - field.field.block_content.services_block.field_subtitle
+    - field.field.block_content.services_block.field_title
   module:
     - link
     - paragraphs
@@ -17,7 +19,7 @@ bundle: services_block
 mode: default
 content:
   field_description:
-    weight: 26
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -25,7 +27,7 @@ content:
     type: text_textarea
     region: content
   field_link:
-    weight: 27
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -34,7 +36,7 @@ content:
     region: content
   field_services_items:
     type: entity_reference_paragraphs
-    weight: 28
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -44,9 +46,25 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   info:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60

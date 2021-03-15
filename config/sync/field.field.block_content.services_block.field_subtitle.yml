@@ -1,0 +1,19 @@
+uuid: 9cb08a60-d82b-4d5c-b1dc-d7117fb12409
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - field.storage.block_content.field_subtitle
+id: block_content.services_block.field_subtitle
+field_name: field_subtitle
+entity_type: block_content
+bundle: services_block
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

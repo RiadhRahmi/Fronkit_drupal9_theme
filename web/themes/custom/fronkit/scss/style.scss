@@ -5,11 +5,32 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 //@import "components/footer";
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
-img{
+
+.feature-icon {
+  width: 130px;
+  height: 130px;
+  background: $gray-200;
+  border-radius: 50%;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+.btn {
+  .btn-link {
+    font-weight: 500;
+  }
+}
+
+
+img {
   width: 100%;
 }
 
@@ -29,6 +50,20 @@ img{
 .badge-primary-soft {
   background-color: #E9EEFD;
   color: $blue-lighter;
+}
+
+.service-image {
+  img {
+    width: 64px;
+    height: 64px
+  }
+}
+
+.process-icon {
+  img {
+    width: 110px;
+    height: 130px;
+  }
 }
 
 footer {

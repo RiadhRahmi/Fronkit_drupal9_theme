@@ -22,8 +22,11 @@ module:
   dynamic_page_cache: 0
   editor: 0
   element_class_formatter: 0
+  element_class_formatter_responsive_image: 0
   entity_reference_revisions: 0
   field: 0
+  field_formatter_class: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -31,6 +34,7 @@ module:
   history: 0
   image: 0
   layout_builder: 0
+  layout_builder_component_attributes: 0
   layout_discovery: 0
   link: 0
   media: 0
@@ -48,9 +52,11 @@ module:
   quickedit: 0
   rdf: 0
   repetitivetheme: 0
+  responsive_image: 0
   search: 0
   shortcut: 0
   svg_image: 0
+  svg_image_responsive: 0
   system: 0
   taxonomy: 0
   text: 0

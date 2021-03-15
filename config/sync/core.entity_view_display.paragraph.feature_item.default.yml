@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.feature_item
   module:
     - element_class_formatter
+    - field_formatter_class
     - text
 id: paragraph.feature_item.default
 targetEntityType: paragraph
@@ -20,16 +21,20 @@ content:
     weight: 2
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: px-3
     type: text_default
     region: content
   field_image:
     weight: 0
     label: hidden
     settings:
-      link: true
       view_mode: default
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'feature-icon  mb-4  mx-auto'
     type: entity_reference_entity_view
     region: content
   field_link:
@@ -37,20 +42,29 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-link'
+      class: 'btn btn-link mt-5'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: link_class
     region: content
   field_title:
     weight: 1
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      link_class: ''
+      tag: h3
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: wrapper_class
     region: content
 hidden: {  }
