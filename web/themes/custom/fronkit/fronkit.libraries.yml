@@ -1,6 +1,7 @@
 # Main theme library.
 global:
   js:
+    node_modules/swiper/swiper-bundle.min.js: {}
     js/fronkit.js: {}
   css:
 #    base:
@@ -21,6 +22,7 @@ global:
 #    layout:
 #      css/layouts/layout.css: {}
     theme:
+      node_modules/swiper/swiper-bundle.min.css: {}
       css/style.css: {}
       templates/repetitivetheme/custom.css:  {}
 #      css/theme/print.css: { media: print }

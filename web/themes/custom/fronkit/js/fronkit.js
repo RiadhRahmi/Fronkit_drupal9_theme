@@ -13,7 +13,13 @@
   Drupal.behaviors.fronkit = {
     attach: function (context, settings) {
 
-      console.log('It works!');
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 6,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
 
     }
   };

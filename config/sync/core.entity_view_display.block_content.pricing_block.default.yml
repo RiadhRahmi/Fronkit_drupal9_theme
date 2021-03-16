@@ -6,39 +6,84 @@ dependencies:
     - block_content.type.pricing_block
     - field.field.block_content.pricing_block.field_description
     - field.field.block_content.pricing_block.field_pricing_plans
+    - field.field.block_content.pricing_block.field_subtitle
+    - field.field.block_content.pricing_block.field_title
   module:
     - element_class_formatter
     - entity_reference_revisions
     - field_formatter_class
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_subtitle
+        - field_title
+        - field_description
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-6 offset-3 text-center'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
 id: block_content.pricing_block.default
 targetEntityType: block_content
 bundle: pricing_block
 mode: default
 content:
   field_description:
-    weight: 0
+    weight: 3
     label: hidden
-    settings:
-      link_class: ''
-      tag: div
-      class: teste10
-      link: false
-      summary: false
-      trim: 200
+    settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: riadh-teste
-    type: wrapper_class
+        class: block-description
+    type: text_default
     region: content
   field_pricing_plans:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: test-pricing
+        class: 'row py-9'
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'badge rounded-pill badge-primary-soft text-uppercase'
+    type: string
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h2
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: 'block-title h2'
+    type: wrapper_class
     region: content
 hidden: {  }

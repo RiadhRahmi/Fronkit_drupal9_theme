@@ -10,7 +10,8 @@ dependencies:
     - field.field.paragraph.pricing_plan.field_title
     - paragraphs.paragraphs_type.pricing_plan
   module:
-    - link
+    - element_class_formatter
+    - field_formatter_class
 id: paragraph.pricing_plan.default
 targetEntityType: paragraph
 bundle: pricing_plan
@@ -18,46 +19,63 @@ mode: default
 content:
   field_link:
     weight: 4
-    label: above
+    label: hidden
     settings:
       trim_length: 80
+      class: 'btn btn-outline-primary'
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link_class
     region: content
   field_options:
     weight: 3
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      list_type: ul
+      class: list-unstyled
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: string_list_class
     region: content
   field_period:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: string
     region: content
   field_price:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: display-4
     type: string
     region: content
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      link_class: ''
+      tag: h4
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: 'pricing-title h4'
+    type: wrapper_class
     region: content
 hidden: {  }
