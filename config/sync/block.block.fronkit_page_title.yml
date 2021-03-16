@@ -11,7 +11,7 @@ _core:
 id: fronkit_page_title
 theme: fronkit
 region: breadcrumb
-weight: -11
+weight: -14
 provider: null
 plugin: page_title_block
 settings:

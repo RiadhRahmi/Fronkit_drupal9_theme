@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation for a local task link.
+ * Theme override for a local task link.
  *
  * Available variables:
  * - attributes: HTML attributes for the wrapper element.
@@ -12,11 +12,10 @@
  * menu-local-tasks.html.twig.
  *
  * @see template_preprocess_menu_local_task()
- *
- * @ingroup themeable
  */
 #}
-{% set link = link|merge({ '#attributes': { 'class': [ 'nav-link', 'py-2', is_active ? 'active' ] } }) %}
-<li{{ attributes.addClass('nav-item') }}>
-    {{ link }}
-</li>
+
+
+{% set link = link|merge({ '#attributes': { 'class': [ 'nav-link px-5 py-3'] } }) %}
+<li{{ attributes.addClass('nav-item',is_active ? 'is-active') }}>{{ link }}</li>
+

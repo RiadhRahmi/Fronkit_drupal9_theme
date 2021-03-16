@@ -62,8 +62,11 @@
   {% endif %}
 
   {% if rows %}
-    <div class="view-content row py-9">
-      {{ rows }}
+    <div class="row team-swiper-container py-9">
+      <div class="view-content swiper-wrapper ">
+        {{ rows }}
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   {% elseif empty %}
     <div class="view-empty">
@@ -80,7 +83,7 @@
     </div>
   {% endif %}
   {% if more %}
-      {{ more }}
+    {{ more }}
   {% endif %}
   {% if footer %}
     <div class="view-footer">

@@ -9,8 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.partner-image{
-  img{
+
+
+
+.partner-image {
+  img {
     width: 144px;
     height: 48px;
   }
@@ -65,6 +68,12 @@ img {
   }
 }
 
+.webform-submission-newsletter-form {
+  .webform-element-description {
+    padding-bottom: 12px;
+  }
+}
+
 .process-icon {
   img {
     width: 110px;
@@ -82,3 +91,4 @@ footer {
     }
   }
 }
+

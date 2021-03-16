@@ -1,0 +1,8 @@
+uuid: 0a23ee68-d4a7-48ec-99d6-a298e23758c1
+langcode: en
+status: true
+dependencies: {  }
+id: job_offers_cta
+label: 'job offers CTA'
+revision: 0
+description: ''

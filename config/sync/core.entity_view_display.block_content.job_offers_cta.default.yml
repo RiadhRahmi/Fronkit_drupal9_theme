@@ -1,0 +1,42 @@
+uuid: 9f1e07b0-e3d1-40df-adc6-8bcee58cfa3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job_offers_cta
+    - field.field.block_content.job_offers_cta.field_description
+    - field.field.block_content.job_offers_cta.field_link
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - text
+id: block_content.job_offers_cta.default
+targetEntityType: block_content
+bundle: job_offers_cta
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      class: 'btn btn-link p-0'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link_class
+    region: content
+hidden: {  }

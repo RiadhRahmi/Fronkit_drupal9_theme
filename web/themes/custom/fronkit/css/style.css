@@ -2438,7 +2438,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.7;
   color: #384C74;
   text-align: center;
@@ -10004,6 +10004,9 @@ img {
 .service-image img {
   width: 64px;
   height: 64px; }
+
+.webform-submission-newsletter-form .webform-element-description {
+  padding-bottom: 12px; }
 
 .process-icon img {
   width: 110px;
