@@ -1,0 +1,12 @@
+{% if page.footer or page.footer_bottom %}
+  <footer class="bg-gray-900">
+    {% if page.footer_bottom %}
+      {{ page.footer }}
+    {% endif %}
+
+    {% if page.footer_bottom %}
+      {{ page.footer_bottom }}
+    {% endif %}
+  </footer>
+{% endif %}
+
