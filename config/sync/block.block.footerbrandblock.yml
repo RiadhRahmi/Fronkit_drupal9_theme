@@ -5,17 +5,13 @@ dependencies:
   content:
     - 'block_content:footer_brand_block:cd131acf-6432-4d2d-a2a7-17eb541f4304'
   module:
-    - block_class
     - block_content
   theme:
     - fronkit
-third_party_settings:
-  block_class:
-    classes: 'col-12 col-md-4 col-lg-3'
 id: footerbrandblock
 theme: fronkit
-region: footer
-weight: -10
+region: footer_brand
+weight: -15
 provider: null
 plugin: 'block_content:cd131acf-6432-4d2d-a2a7-17eb541f4304'
 settings:

@@ -10,8 +10,6 @@ body {
 }
 
 
-
-
 .partner-image {
   img {
     width: 144px;
@@ -81,10 +79,55 @@ img {
   }
 }
 
+
+.region-footer-brand {
+  img {
+    width: 140px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: $gray-200;
+  }
+}
+
+.region-footer {
+  img {
+    width: 140px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: $gray-200;
+  }
+
+  .nav {
+    flex-direction: column !important;
+    padding-top: 8px;
+
+    .nav-link {
+      padding-left: 0;
+    }
+
+    a {
+      color: $gray-200;
+
+      &.is-active {
+        color: $gray-600;
+      }
+    }
+  }
+}
+
 footer {
+  .block__title {
+    color: $white;
+  }
 
   .footer-bottom {
-    border-top: 0.2px solid $gray-600;
+    border-top: 1px solid $gray-800;
 
     p {
       color: $gray-200;
@@ -92,3 +135,16 @@ footer {
   }
 }
 
+.region-footer-bottom {
+  p {
+    color: $gray-200;
+  }
+
+  a {
+    color: $gray-200;
+
+    &.is-active {
+      color: $gray-600;
+    }
+  }
+}

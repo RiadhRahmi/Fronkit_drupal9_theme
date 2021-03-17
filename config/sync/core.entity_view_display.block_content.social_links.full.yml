@@ -1,0 +1,72 @@
+uuid: f7ec6e6c-cbbf-4b43-bcd5-96407cc480e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.social_links.field_facebook_link
+    - field.field.block_content.social_links.field_linkedin_link
+    - field.field.block_content.social_links.field_twitter_link
+    - field.field.block_content.social_links.field_youtube_link
+  module:
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.social_links.full
+targetEntityType: block_content
+bundle: social_links
+mode: full
+content:
+  field_facebook_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_linkedin_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_twitter_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_youtube_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

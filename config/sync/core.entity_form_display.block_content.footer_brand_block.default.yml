@@ -6,10 +6,8 @@ dependencies:
     - block_content.type.footer_brand_block
     - field.field.block_content.footer_brand_block.field_description
     - field.field.block_content.footer_brand_block.field_logo
-    - field.field.block_content.footer_brand_block.field_social_media_links
   module:
     - media_library
-    - paragraphs
     - text
 id: block_content.footer_brand_block.default
 targetEntityType: block_content
@@ -29,18 +27,6 @@ content:
     weight: 26
     settings:
       media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_social_media_links:
-    type: entity_reference_paragraphs
-    weight: 28
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
     third_party_settings: {  }
     region: content
   info:
