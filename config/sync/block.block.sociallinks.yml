@@ -1,0 +1,29 @@
+uuid: 757f048f-9b47-496c-9b1a-8bb4ac1e3688
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_links:c5409c29-37ba-4340-9b48-55a8b93a7615'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fronkit
+third_party_settings:
+  block_class:
+    classes: col-12
+id: sociallinks
+theme: fronkit
+region: footer_brand
+weight: -14
+provider: null
+plugin: 'block_content:c5409c29-37ba-4340-9b48-55a8b93a7615'
+settings:
+  id: 'block_content:c5409c29-37ba-4340-9b48-55a8b93a7615'
+  label: 'Social Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility: {  }

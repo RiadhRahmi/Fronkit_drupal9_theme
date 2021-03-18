@@ -11,11 +11,11 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: 'col-6 col-md-4 col-lg-2'
+    classes: 'col-6 col-md-4 col-lg-3'
 id: footerquicklinks
 theme: fronkit
 region: footer
-weight: -7
+weight: -13
 provider: null
 plugin: 'system_menu_block:footer-quick-links'
 settings:

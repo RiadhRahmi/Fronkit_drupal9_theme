@@ -1,0 +1,75 @@
+uuid: 5a5841f6-1b49-4c2b-b55a-81934adae265
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links
+    - field.field.block_content.social_links.field_facebook_link
+    - field.field.block_content.social_links.field_linkedin_link
+    - field.field.block_content.social_links.field_twitter_link
+    - field.field.block_content.social_links.field_youtube_link
+  module:
+    - field_formatter_class
+    - link
+id: block_content.social_links.default
+targetEntityType: block_content
+bundle: social_links
+mode: default
+content:
+  field_facebook_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link
+    region: content
+  field_linkedin_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link
+    region: content
+  field_twitter_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link
+    region: content
+  field_youtube_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link
+    region: content
+hidden: {  }

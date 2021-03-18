@@ -55,7 +55,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-2 swiper-slide'
+          row_class: 'col-2 text-center swiper-slide'
           default_row_class: false
           uses_fields: false
       row:
@@ -189,7 +189,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'row swiper-container pt-9 pb-14 border-top '
+      css_class: 'row pt-9 pb-14 border-top  overflow-hidden'
     cache_metadata:
       max-age: -1
       contexts:

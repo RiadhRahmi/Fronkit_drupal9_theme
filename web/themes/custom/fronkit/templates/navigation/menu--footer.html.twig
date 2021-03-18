@@ -30,19 +30,19 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu nav') }}>
-    {% else %}
-      <ul class="menu nav">
+<ul{{ attributes.addClass('menu nav justify-content-end') }}>
+  {% else %}
+  <ul class="menu nav justify-content-end">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
-          'menu-item',
-          'nav-item',
-          item.is_expanded ? 'menu-item--expanded',
-          item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'menu-item--active-trail',
-        ]
+        'menu-item',
+        'nav-item',
+        item.is_expanded ? 'menu-item--expanded',
+        item.is_collapsed ? 'menu-item--collapsed',
+        item.in_active_trail ? 'menu-item--active-trail',
+      ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url, { 'class':['nav-link']}) }}
@@ -51,6 +51,6 @@
         {% endif %}
       </li>
     {% endfor %}
-    </ul>
+  </ul>
   {% endif %}
-{% endmacro %}
+  {% endmacro %}

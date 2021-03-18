@@ -1,0 +1,23 @@
+uuid: 70418208-0076-439b-ab56-efe054378ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links
+    - field.storage.block_content.field_facebook_link
+  module:
+    - link
+id: block_content.social_links.field_facebook_link
+field_name: field_facebook_link
+entity_type: block_content
+bundle: social_links
+label: 'Facebook Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

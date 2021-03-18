@@ -10012,7 +10012,44 @@ img {
   width: 110px;
   height: 130px; }
 
+.region-footer-brand img {
+  width: 140px;
+  height: 48px;
+  margin-bottom: 24px; }
+
+.region-footer-brand p {
+  color: #F1F4F8; }
+
+.region-footer img {
+  width: 140px;
+  height: 48px;
+  margin-bottom: 24px; }
+
+.region-footer p {
+  color: #F1F4F8; }
+
+.region-footer .nav {
+  flex-direction: column !important;
+  padding-top: 8px; }
+  .region-footer .nav .nav-link {
+    padding-left: 0; }
+  .region-footer .nav a {
+    color: #F1F4F8; }
+    .region-footer .nav a.is-active {
+      color: #869AB8; }
+
+footer .block__title {
+  color: #fff; }
+
 footer .footer-bottom {
-  border-top: 0.2px solid #869AB8; }
+  border-top: 1px solid #384C74; }
   footer .footer-bottom p {
     color: #F1F4F8; }
+
+.region-footer-bottom p {
+  color: #F1F4F8; }
+
+.region-footer-bottom a {
+  color: #F1F4F8; }
+  .region-footer-bottom a.is-active {
+    color: #869AB8; }

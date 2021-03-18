@@ -1,8 +1,20 @@
-{% if page.footer or page.footer_bottom %}
+{% if page.footer or page.footer_brand or page.footer_bottom %}
   <footer class="bg-gray-900">
-    {% if page.footer_bottom %}
-      {{ page.footer }}
-    {% endif %}
+    <div class="container">
+      <div class="row py-14">
+        <div class="col-4">
+          {% if page.footer_brand %}
+            {{ page.footer_brand }}
+          {% endif %}
+        </div>
+
+        <div class="col-8">
+          {% if page.footer_bottom %}
+            {{ page.footer }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
 
     {% if page.footer_bottom %}
       {{ page.footer_bottom }}

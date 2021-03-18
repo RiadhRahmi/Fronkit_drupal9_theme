@@ -19,6 +19,7 @@ global:
     #    layout:
     #      css/layouts/layout.css: {}
     theme:
+      remixicon/fonts/remixicon.css: {}
       node_modules/swiper/swiper-bundle.min.css: {}
       css/style.css: {}
       templates/repetitivetheme/custom.css:  {}
