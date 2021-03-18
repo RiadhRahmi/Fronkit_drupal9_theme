@@ -62,7 +62,9 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content|raw }} <i class="ri-facebook-fill ri-xl"></i> </div>
+      <div{{ attributes.addClass(classes, 'field__item') }}>
+         <a href="{{  item.content['#url'] }}" target="_blank"> {{ item.content['#title']|raw }} </a>
+      </div>
     {% endfor %}
   {% endif %}
 {% else %}

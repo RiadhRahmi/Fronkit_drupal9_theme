@@ -68,7 +68,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #161C2D; }
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw); }
@@ -4725,6 +4726,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
+  color: #161C2D;
   background-color: #f0f0f0;
   border-bottom: 1px solid #d8d8d8;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -9981,8 +9983,8 @@ body {
     width: 48px;
     height: 48px; }
 
-.btn .btn-link {
-  font-weight: 500; }
+.btn.btn-link {
+  font-weight: 500 !important; }
 
 img {
   width: 100%; }
@@ -10005,12 +10007,52 @@ img {
   width: 64px;
   height: 64px; }
 
+.block-icon img {
+  width: 48px;
+  height: 48px; }
+
+.block-content {
+  padding-left: 32px; }
+
 .webform-submission-newsletter-form .webform-element-description {
   padding-bottom: 12px; }
 
 .process-icon img {
   width: 110px;
   height: 130px; }
+
+.pricing-title h4, .pricing-title .h4 {
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #161C2D; }
+
+.field--name-field-options {
+  margin-top: 24px; }
+  .field--name-field-options ul li {
+    padding-bottom: 8px; }
+
+.field--name-field-price.display-4 {
+  font-weight: 900;
+  display: inline-block;
+  color: #161C2D; }
+
+.field--name-field-period {
+  display: inline-block; }
+  .field--name-field-period::before {
+    content: '/'; }
+
+.field--name-field-pricing-plans .field__item {
+  border-radius: 8px; }
+  .field--name-field-pricing-plans .field__item:hover {
+    background: #003CC5;
+    color: #F1F4F8; }
+    .field--name-field-pricing-plans .field__item:hover h4, .field--name-field-pricing-plans .field__item:hover .h4 {
+      color: #F1F4F8; }
+    .field--name-field-pricing-plans .field__item:hover .display-4 {
+      color: #F1F4F8; }
+    .field--name-field-pricing-plans .field__item:hover .btn {
+      color: #fff;
+      border-color: #fff; }
 
 .region-footer-brand img {
   width: 140px;
@@ -10020,11 +10062,14 @@ img {
 .region-footer-brand p {
   color: #F1F4F8; }
 
-.region-footer-brand .block-type-social-links .field--type-link i {
-  color: #F1F4F8;
-  padding: 8px;
-  border: 1px solid #F1F4F8;
-  border-radius: 50px; }
+.region-footer-brand .block-type-social-links .field--type-link {
+  display: inline-block;
+  margin-right: 12px; }
+  .region-footer-brand .block-type-social-links .field--type-link i {
+    color: #F1F4F8;
+    padding: 8px;
+    border: 1px solid #F1F4F8;
+    border-radius: 50px; }
 
 .region-footer img {
   width: 140px;

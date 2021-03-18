@@ -29,7 +29,7 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-link p-0'
+      class: 'btn btn-link p-0 mt-2'
       url_only: false
       url_plain: false
       rel: '0'

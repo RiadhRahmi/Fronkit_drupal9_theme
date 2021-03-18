@@ -30,10 +30,8 @@ body {
 }
 
 
-.btn {
-  .btn-link {
-    font-weight: 500;
-  }
+.btn.btn-link {
+    font-weight: 500!important;
 }
 
 
@@ -66,6 +64,18 @@ img {
   }
 }
 
+
+.block-icon img{
+    // display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.block-content{
+    padding-left: 32px;
+}
+
+
 .webform-submission-newsletter-form {
   .webform-element-description {
     padding-bottom: 12px;
@@ -80,6 +90,55 @@ img {
 }
 
 
+.pricing-title h4{
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: $black;
+}
+
+.field--name-field-options{
+    margin-top: 24px;
+    ul{
+        li{
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.field--name-field-price.display-4{
+    font-weight: 900;
+    display: inline-block;
+    color: $black;
+}
+
+.field--name-field-period{
+   display: inline-block;
+   &::before{
+       content:'/'
+   }
+}
+
+.field--name-field-pricing-plans{
+    .field__item{
+        border-radius: 8px;
+        &:hover{
+            background: $primary;
+            color: $gray-200;
+            h4{
+color: $gray-200;
+            }
+            .display-4{
+color: $gray-200;
+            }
+            .btn{
+                color: $white;
+                border-color: $white;
+            }
+        }
+    }
+
+}
+
 .region-footer-brand {
   img {
     width: 140px;
@@ -92,7 +151,12 @@ img {
   }
 
   .block-type-social-links {
+
     .field--type-link {
+
+        display: inline-block;
+        margin-right: 12px;
+
       i {
         color: $gray-200;
         padding: 8px;
