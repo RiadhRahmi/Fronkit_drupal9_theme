@@ -19,6 +19,8 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   element_class_formatter: 0
@@ -68,6 +70,7 @@ module:
   webform: 0
   webform_access: 0
   webform_attachment: 0
+  webform_devel: 0
   webform_image_select: 0
   webform_node: 0
   webform_options_custom: 0

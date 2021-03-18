@@ -46,6 +46,7 @@
 
   {% include '@fronkit/layout/partials/header.html.twig' %}
 
+  <div id="slider"></div>
 
   {% if page.breadcrumb %}
     <div class="container">
@@ -91,5 +92,9 @@
   </main>
 
   {% include '@fronkit/layout/partials/footer.html.twig' %}
+
+  <a id="to-top" href="#slider" data-scroll="scrollTo"  class="cd-top rounded-circle">
+    <i class="ri-arrow-up-line"></i>
+  </a>
 
 </div>{# /.layout-container #}

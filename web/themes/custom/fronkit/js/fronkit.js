@@ -42,6 +42,17 @@
         },
       });
 
+
+      window.onscroll = function () {
+        if (document.getElementById('to-top') != null) {
+          if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            document.getElementById("to-top").style.display = "block";
+          } else {
+            document.getElementById("to-top").style.display = "none";
+          }
+        }
+      };
+
     }
   };
 

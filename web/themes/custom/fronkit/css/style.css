@@ -10020,6 +10020,12 @@ img {
 .region-footer-brand p {
   color: #F1F4F8; }
 
+.region-footer-brand .block-type-social-links .field--type-link i {
+  color: #F1F4F8;
+  padding: 8px;
+  border: 1px solid #F1F4F8;
+  border-radius: 50px; }
+
 .region-footer img {
   width: 140px;
   height: 48px;
@@ -10053,3 +10059,23 @@ footer .footer-bottom {
   color: #F1F4F8; }
   .region-footer-bottom a.is-active {
     color: #869AB8; }
+
+/*------------------------------------*\
+20. Button To Top style
+\*------------------------------------*/
+a#to-top {
+  width: 40px;
+  height: 40px;
+  background-color: #869AB8;
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 99;
+  color: #F1F4F8;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center; }
+
+#to-top:hover {
+  opacity: 0.9; }

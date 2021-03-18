@@ -19,10 +19,10 @@ global:
     #    layout:
     #      css/layouts/layout.css: {}
     theme:
-      remixicon/fonts/remixicon.css: {}
       node_modules/swiper/swiper-bundle.min.css: {}
       css/style.css: {}
       templates/repetitivetheme/custom.css:  {}
+      node_modules/remixicon/fonts/remixicon.css: {}
   #      css/theme/print.css: { media: print }
   js:
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}

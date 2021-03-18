@@ -90,6 +90,17 @@ img {
   p {
     color: $gray-200;
   }
+
+  .block-type-social-links {
+    .field--type-link {
+      i {
+        color: $gray-200;
+        padding: 8px;
+        border: 1px solid $gray-200;
+        border-radius: 50px;
+      }
+    }
+  }
 }
 
 .region-footer {
@@ -147,4 +158,28 @@ footer {
       color: $gray-600;
     }
   }
+}
+
+
+/*------------------------------------*\
+20. Button To Top style
+\*------------------------------------*/
+
+a#to-top {
+  width: 40px;
+  height: 40px;
+  background-color: $gray-600;
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 99;
+  color: $gray-200;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#to-top:hover {
+  opacity: 0.9;
 }
