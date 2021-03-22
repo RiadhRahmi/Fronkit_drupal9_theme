@@ -48,7 +48,38 @@ header.navbar {
 
 
 .block-our-process{
-  background: linear-gradient(0.07deg, $gray-200 23.31%, $white 99.14%);
+  background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
+
+  .item-index{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: $white;
+    display: inline-block;
+    background: $primary;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  .small{
+    padding-bottom: 16px;
+  }
+
+  .field--type-link {
+
+    display: inline-block;
+    margin-right: 12px;
+
+    i {
+      color: $gray-700;
+      padding: 8px;
+      border: 1px solid $gray-700;
+      border-radius: 50px;
+    }
+  }
+
 }
 
 .partner-image {

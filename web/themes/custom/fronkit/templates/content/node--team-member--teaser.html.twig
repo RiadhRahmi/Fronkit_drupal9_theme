@@ -81,6 +81,14 @@
 
 <article{{ attributes.addClass(classes) }}>
 
+  {{ title_prefix }}
+  {% if label and  page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
@@ -92,20 +100,10 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content card card-hover shadow mx-auto') }}>
-
     {{ content.field_image }}
-
-    <div class="card-body text-center py-4">
-      {{ title_prefix }}
-      {% if label and not page %}
-        <h4{{ title_attributes.addClass('m-0 p-0') }}>
-          <a href="{{ url }}" rel="bookmark" class="">{{ label }}</a>
-        </h4>
-      {% endif %}
-      {{ title_suffix }}
+    <div class="card-body text-center p-5">
+      <h4>{{ label }}</h4>
+      {{ content|without('field_image') }}
     </div>
-
-    {{ content|without('field_image') }}
   </div>
-
 </article>

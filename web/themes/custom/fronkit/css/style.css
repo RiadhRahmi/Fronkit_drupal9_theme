@@ -9999,7 +9999,28 @@ header.navbar {
   padding: 0.5rem 0.5rem; }
 
 .block-our-process {
-  background: linear-gradient(0.07deg, #F1F4F8 23.31%, #fff 99.14%); }
+  background: linear-gradient(0.07deg, #F9FBFD 23.31%, #fff 99.14%); }
+  .block-our-process .item-index {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    display: inline-block;
+    background: #003CC5;
+    border-radius: 50%;
+    margin-right: 12px; }
+  .block-our-process .small {
+    padding-bottom: 16px; }
+  .block-our-process .field--type-link {
+    display: inline-block;
+    margin-right: 12px; }
+    .block-our-process .field--type-link i {
+      color: #506690;
+      padding: 8px;
+      border: 1px solid #506690;
+      border-radius: 50px; }
 
 .partner-image img {
   width: 144px;

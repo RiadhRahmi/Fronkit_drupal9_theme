@@ -37,6 +37,12 @@ function fronkit_preprocess_field(&$variables, $hook)
       $variables['attributes']['class'] = 'label-items';
     }
   }
+
+  if($variables['field_name'] == 'field_process_items'){
+    foreach($variables['items'] as $idx => $item) {
+      $variables['items'][$idx]['content']['#paragraph']->index = $idx+1;
+    }
+  }
 }
 
 /**

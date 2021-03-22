@@ -22,7 +22,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: 'process-description px-3'
+        class: process-description
     type: text_default
     region: content
   field_image:

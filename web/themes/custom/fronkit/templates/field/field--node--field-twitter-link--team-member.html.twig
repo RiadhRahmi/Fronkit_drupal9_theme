@@ -63,7 +63,8 @@
   {% else %}
     {% for item in items %}
       <div{{ attributes.addClass(classes, 'field__item') }}>
-         <a href="{{  item.content['#url'] }}" target="_blank"> {{ item.content['#title']|raw }} </a>
+        <a href="{{  item.content['#url'] }}" target="_blank"> <i class="ri-twitter-fill ri-xl"></i> </a>
+        {#        {{ item.content }}#}
       </div>
     {% endfor %}
   {% endif %}
