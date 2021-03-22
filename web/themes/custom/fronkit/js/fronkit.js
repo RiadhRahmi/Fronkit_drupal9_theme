@@ -40,6 +40,8 @@
           delay: 2500,
           disableOnInteraction: false,
         },
+        wrapperClass: 'partners-swiper-wrapper',
+        slideClass: 'partner-swiper-slide',
       });
 
 

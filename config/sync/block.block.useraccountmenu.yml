@@ -5,17 +5,13 @@ dependencies:
   config:
     - system.menu.account
   module:
-    - block_class
     - system
   theme:
     - fronkit
-third_party_settings:
-  block_class:
-    classes: col-2
 id: useraccountmenu
 theme: fronkit
-region: header
-weight: -10
+region: primary_menu
+weight: -14
 provider: null
 plugin: 'system_menu_block:account'
 settings:

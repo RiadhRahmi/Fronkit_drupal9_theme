@@ -56,17 +56,15 @@
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
-      <div class="row">
-        {% for item in items %}
-          <div class="col-6 mb-grid-gutter">
-            <div{{ item.attributes.addClass('field__item py-7 px-4 shadow') }}>{{ item.content }}</div>
-          </div>
-        {% endfor %}
-      </div>
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
+      <div{{ attributes.addClass(classes, 'field__item') }}>
+        <a href="{{ item.content }}" class="btn btn-lg btn-white rounded-circle" data-fancybox> <i class="ri-play-fill"></i>  </a>
+      </div>
     {% endfor %}
   {% endif %}
 {% else %}

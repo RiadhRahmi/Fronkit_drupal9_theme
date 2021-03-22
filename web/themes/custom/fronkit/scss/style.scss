@@ -10,6 +10,47 @@ body {
 }
 
 
+header.navbar {
+  line-height: 37px;
+}
+
+.region-primary-menu {
+  display: inherit;
+  flex-grow: inherit;
+}
+
+.block-menu.menu--main,
+.block-menu.menu--account {
+  margin-left: auto !important;
+}
+
+.menu--main ul li a.nav-link,
+.menu--account ul li a.nav-link {
+  color: $gray-800 !important;
+}
+
+.menu--main ul li.dropdown{
+  margin-right: 8px;
+}
+
+.menu--main ul li.dropdown a:after {
+  content: "\EA4E";
+  margin-left: 2px;
+  color: #384C74;
+  font-family: 'remixicon';
+  vertical-align: middle;
+}
+
+.menu--account .nav-link {
+  padding: 0.5rem 0.5rem;
+}
+
+
+
+.block-our-process{
+  background: linear-gradient(0.07deg, $gray-200 23.31%, $white 99.14%);
+}
+
 .partner-image {
   img {
     width: 144px;
@@ -23,6 +64,10 @@ body {
   background: $gray-200;
   border-radius: 50%;
 
+  .field__item {
+    line-height: 130px;
+  }
+
   img {
     width: 48px;
     height: 48px;
@@ -31,7 +76,7 @@ body {
 
 
 .btn.btn-link {
-    font-weight: 500!important;
+  font-weight: 500 !important;
 }
 
 
@@ -52,6 +97,18 @@ img {
   line-height: 1.3;
 }
 
+
+.paragraph--type--feature-item a:after {
+  content: "\EA6C";
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  color: $primary;
+  font-family: 'remixicon';
+  vertical-align: middle;
+  font-weight: 600;
+}
+
 .badge-primary-soft {
   background-color: #E9EEFD;
   color: $blue-lighter;
@@ -59,20 +116,109 @@ img {
 
 .service-image {
   img {
-    width: 64px;
-    height: 64px
+    width: 48px;
+    height: 48px
+  }
+}
+
+.field--name-field-services-items {
+  margin-bottom: 60px;
+}
+
+.btn-white {
+  color: $black;
+  background-color: $white;
+  border-color: $white;
+}
+
+.block-type-video-block {
+  padding-bottom: 170px;
+  padding-top: 170px;
+
+  h2 {
+    color: $white;
+  }
+
+  .mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease;
+    background: $primary;
+    opacity: 0.5;
+  }
+
+  a {
+    i {
+      color: $primary;
+    }
+  }
+}
+
+.mask + .container {
+  position: relative;
+}
+
+.field--name-field-services-items .row .col-6:nth-child(odd) {
+  top: 90px;
+  position: relative;
+}
+
+.field--name-field-services-items h5 {
+  color: $gray-800;
+}
+
+.field--name-field-services-items p {
+  margin-bottom: 0;
+}
+
+.block-type-about-us-block {
+
+  img {
+    border-radius: 8px;
   }
 }
 
 
-.block-icon img{
-    // display: inline-block;
-    width: 48px;
-    height: 48px;
+.field--name-field-services-items {
+  .field__item {
+    border-radius: 8px;
+  }
 }
 
-.block-content{
-    padding-left: 32px;
+.node--type-project .card {
+  border-radius: 16px;
+
+  h5 {
+    a {
+      color: $black;
+    }
+  }
+}
+
+.view-portfolio .view-content {
+  padding-bottom: 34px;
+}
+
+.mb-grid-gutter {
+  margin-bottom: 30px;
+}
+
+.block-icon img {
+  // display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+.block-content {
+  padding-left: 32px;
+}
+
+.block-type-job-offers-cta,
+.block-webform-block {
+  min-height: 260px;
+  border-radius: 8px;
 }
 
 
@@ -83,6 +229,7 @@ img {
 }
 
 .process-icon {
+  display: inline-block;
   img {
     width: 110px;
     height: 130px;
@@ -90,52 +237,58 @@ img {
 }
 
 
-.pricing-title h4{
-    font-weight: 500;
-    margin-bottom: 24px;
-    color: $black;
+.pricing-title h4 {
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: $black;
 }
 
-.field--name-field-options{
-    margin-top: 24px;
-    ul{
-        li{
-            padding-bottom: 8px;
-        }
+.field--name-field-options {
+  margin-top: 24px;
+
+  ul {
+    li {
+      padding-bottom: 8px;
     }
+  }
 }
 
-.field--name-field-price.display-4{
-    font-weight: 900;
-    display: inline-block;
-    color: $black;
+.field--name-field-price.display-4 {
+  font-weight: 900;
+  display: inline-block;
+  color: $black;
 }
 
-.field--name-field-period{
-   display: inline-block;
-   &::before{
-       content:'/'
-   }
+.field--name-field-period {
+  display: inline-block;
+
+  &::before {
+    content: '/'
+  }
 }
 
-.field--name-field-pricing-plans{
-    .field__item{
-        border-radius: 8px;
-        &:hover{
-            background: $primary;
-            color: $gray-200;
-            h4{
-color: $gray-200;
-            }
-            .display-4{
-color: $gray-200;
-            }
-            .btn{
-                color: $white;
-                border-color: $white;
-            }
-        }
+.field--name-field-pricing-plans {
+  .field__item {
+    border-radius: 8px;
+
+    &:hover {
+      background: $primary;
+      color: $gray-200;
+
+      h4 {
+        color: $gray-200;
+      }
+
+      .display-4 {
+        color: $gray-200;
+      }
+
+      .btn {
+        color: $white;
+        border-color: $white;
+      }
     }
+  }
 
 }
 
@@ -154,8 +307,8 @@ color: $gray-200;
 
     .field--type-link {
 
-        display: inline-block;
-        margin-right: 12px;
+      display: inline-block;
+      margin-right: 12px;
 
       i {
         color: $gray-200;

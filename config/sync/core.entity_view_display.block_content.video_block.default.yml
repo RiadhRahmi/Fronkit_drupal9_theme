@@ -23,8 +23,6 @@ third_party_settings:
       format_type: html_element
       region: content
       format_settings:
-        id: ''
-        classes: 'container text-center'
         element: div
         show_label: false
         label_element: h3
@@ -32,6 +30,8 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: 'col-10 offset-1 text-center'
       label: Content
 id: block_content.video_block.default
 targetEntityType: block_content
@@ -42,7 +42,9 @@ content:
     weight: 2
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: text-white
     type: text_default
     region: content
   field_image:
@@ -65,7 +67,7 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mt-5
     type: link
     region: content
 hidden: {  }

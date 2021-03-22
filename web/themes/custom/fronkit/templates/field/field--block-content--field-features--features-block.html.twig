@@ -46,9 +46,9 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass('row py-7') }}>
+    <div{{ attributes.addClass('row pt-7') }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('col-4 p-7 mx-auto text-center shadow') }}>{{ item.content }}</div>
+        <div{{ item.attributes.addClass('col-4') }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
