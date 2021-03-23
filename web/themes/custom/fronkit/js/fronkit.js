@@ -34,15 +34,15 @@
       //   },
       // });
 
-      new Swiper('.partners-swiper-container', {
-        slidesPerView: 6,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        wrapperClass: 'partners-swiper-wrapper',
-        slideClass: 'partner-swiper-slide',
-      });
+      // new Swiper('.partners-swiper-container', {
+      //   slidesPerView: 6,
+      //   autoplay: {
+      //     delay: 2500,
+      //     disableOnInteraction: false,
+      //   },
+      //   wrapperClass: 'partners-swiper-wrapper',
+      //   slideClass: 'partner-swiper-slide',
+      // });
 
 
       window.onscroll = function () {

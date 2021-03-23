@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.team_member.field_twitter_link
     - node.type.team_member
   module:
+    - field_formatter_class
     - link
     - text
     - user
@@ -26,7 +27,9 @@ content:
     weight: 2
     settings:
       trim_length: 600
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: mb-5
     region: content
   field_facebook_link:
     type: link

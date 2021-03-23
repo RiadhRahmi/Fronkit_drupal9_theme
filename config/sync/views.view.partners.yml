@@ -189,7 +189,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'row pt-9 pb-14 border-top  overflow-hidden'
+      css_class: 'pt-9 pb-14 border-top  overflow-hidden'
     cache_metadata:
       max-age: -1
       contexts:

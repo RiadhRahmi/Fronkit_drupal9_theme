@@ -9998,6 +9998,18 @@ header.navbar {
 .menu--account .nav-link {
   padding: 0.5rem 0.5rem; }
 
+.partner-swiper-slide {
+  display: inline; }
+
+.view-team .card {
+  border: none; }
+
+.view-team .swiper-wrapper {
+  padding: 0; }
+
+.view-team .swiper-slide {
+  padding: 0; }
+
 .block-our-process {
   background: linear-gradient(0.07deg, #F9FBFD 23.31%, #fff 99.14%); }
   .block-our-process .item-index {

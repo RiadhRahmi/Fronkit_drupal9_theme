@@ -197,3 +197,17 @@ function fronkit_preprocess_views_view(&$variables)
       }
   }
 }
+
+
+/**
+ * @param $vars
+ */
+function fronkit_preprocess_node__view__team(&$vars) {
+  $view = $vars['view'];
+  $node = $vars['node'];
+  foreach($view->result as $key => $row){
+    if($row->nid == $node->id()){
+      $vars['row_index'] = $row->index;
+    }
+  }
+}

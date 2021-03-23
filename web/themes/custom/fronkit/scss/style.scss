@@ -45,6 +45,23 @@ header.navbar {
   padding: 0.5rem 0.5rem;
 }
 
+.partner-swiper-slide{
+  display: inline;
+}
+.view-team{
+  .card{
+    border: none;
+  }
+
+  .swiper-wrapper{
+    padding: 0;
+  }
+
+  .swiper-slide{
+    padding: 0;
+  }
+
+}
 
 
 .block-our-process{

@@ -99,11 +99,20 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node__content card card-hover shadow mx-auto') }}>
-    {{ content.field_image }}
-    <div class="card-body text-center p-5">
-      <h4>{{ label }}</h4>
-      {{ content|without('field_image') }}
-    </div>
+
+  <div{{ content_attributes.addClass('node__content card card-hover mx-auto') }}>
+    {% if row_index % 2 == 0 %}
+      {{ content.field_image }}
+      <div class="card-body text-center p-5">
+        <h4>{{ label }}</h4>
+        {{ content|without('field_image') }}
+      </div>
+    {% else %}
+      <div class="card-body text-center p-5">
+        <h4>{{ label }}</h4>
+        {{ content|without('field_image') }}
+      </div>
+      {{ content.field_image }}
+    {% endif %}
   </div>
 </article>
