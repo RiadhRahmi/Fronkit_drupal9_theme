@@ -60,11 +60,9 @@
   {% endif %}
 
   {% if rows %}
-    <div class="partners-swiper-container">
-      <div class="view-content partners-swiper-wrapper row ">
-        {{ rows }}
+      <div class="view-content swiper-wrapper ">
+          {{ rows }}
       </div>
-    </div>
   {% elseif empty %}
     <div class="view-empty">
       {{ empty }}

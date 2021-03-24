@@ -10137,6 +10137,20 @@ img {
 .mb-grid-gutter {
   margin-bottom: 30px; }
 
+.swiper-pagination-bullets {
+  position: relative;
+  bottom: 0 !important; }
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    background: #384C74; }
+    .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: #003CC5; }
+
+.image-team img {
+  height: 290px; }
+
 .block-icon img {
   width: 48px;
   height: 48px; }

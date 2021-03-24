@@ -25,24 +25,23 @@
       // });
       //
       //
-      // new Swiper('.team-swiper-container', {
-      //   slidesPerView: 3,
-      //   spaceBetween: 30,
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //     clickable: true,
-      //   },
-      // });
 
-      // new Swiper('.partners-swiper-container', {
-      //   slidesPerView: 6,
-      //   autoplay: {
-      //     delay: 2500,
-      //     disableOnInteraction: false,
-      //   },
-      //   wrapperClass: 'partners-swiper-wrapper',
-      //   slideClass: 'partner-swiper-slide',
-      // });
+      new Swiper('.team-swiper-container', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+      new Swiper('.partners-swiper-container', {
+        slidesPerView: 6,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
 
 
       window.onscroll = function () {
