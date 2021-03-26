@@ -16,3 +16,8 @@ permissions:
   - 'subscribe to newsletters'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view paragraph content carrousel_item'
+  - 'view paragraph content feature_item'
+  - 'view paragraph content pricing_plan'
+  - 'view paragraph content process'
+  - 'view paragraph content service_item'

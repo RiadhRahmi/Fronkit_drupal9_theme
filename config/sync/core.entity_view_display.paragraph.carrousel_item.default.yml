@@ -11,17 +11,44 @@ dependencies:
     - paragraphs.paragraphs_type.carrousel_item
   module:
     - element_class_formatter
+    - field_formatter_class
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_title
+        - field_description
+        - field_link
+        - field_video_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'position-absolute slide-item-description'
+      label: Content
 id: paragraph.carrousel_item.default
 targetEntityType: paragraph
 bundle: carrousel_item
 mode: default
 content:
   field_description:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'text-gray-100 mb-7'
     type: text_default
     region: content
   field_image:
@@ -31,31 +58,37 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: img-carrousel
     region: content
   field_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-primary'
+      class: 'btn btn-primary me-3'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: d-inline-block
     type: link_class
     region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'display-3 text-white mb-4'
     type: string
     region: content
   field_video_link:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       trim_length: 80
@@ -64,7 +97,9 @@ content:
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: d-inline-block
     type: link_class
     region: content
 hidden: {  }

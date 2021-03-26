@@ -10148,6 +10148,34 @@ img {
     .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background: #003CC5; }
 
+.block-type-carrousel .display-4 {
+  margin-bottom: 24px;
+  font-weight: 500; }
+
+.block-type-carrousel .btn {
+  padding: 16px 24px; }
+
+.img-carrousel img {
+  height: 800px; }
+
+.field--name-field-video-link a:after {
+  content: "\F00A";
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  font-family: 'remixicon';
+  vertical-align: middle; }
+
+.slide-item-description {
+  position: absolute !important;
+  top: 50%;
+  text-align: center;
+  width: 50%;
+  left: 25%; }
+
+.text-gray-100 {
+  color: #F9FBFD; }
+
 .image-team img {
   height: 290px; }
 
