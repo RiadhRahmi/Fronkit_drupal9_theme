@@ -35,7 +35,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'position-absolute slide-item-description'
+        classes: 'slide-item-description swiper-no-swiping'
       label: Content
 id: paragraph.carrousel_item.default
 targetEntityType: paragraph

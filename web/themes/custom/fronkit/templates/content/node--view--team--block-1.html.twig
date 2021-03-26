@@ -103,12 +103,12 @@
   <div{{ content_attributes.addClass('node__content card card-hover mx-auto') }}>
     {% if row_index % 2 == 0 %}
       {{ content.field_image }}
-      <div class="card-body text-center p-5">
+      <div class="card-body card-odd text-center p-5">
         <h4>{{ label }}</h4>
         {{ content|without('field_image') }}
       </div>
     {% else %}
-      <div class="card-body text-center p-5">
+      <div class="card-body card-even text-center p-5">
         <h4>{{ label }}</h4>
         {{ content|without('field_image') }}
       </div>
