@@ -139,6 +139,30 @@ header.navbar {
   }
 }
 
+
+
+
+.paragraph--type--feature-item {
+    &:hover {
+      background: $primary;
+      color: $white;
+
+      h3 {
+        color: $gray-200;
+      }
+
+      .btn {
+        color: $gray-100;
+      }
+
+      a:after{
+        color: $gray-100;
+      }
+
+    }
+}
+
+
 .feature-icon {
   width: 130px;
   height: 130px;
@@ -191,7 +215,7 @@ img {
 }
 
 .badge-primary-soft {
-  background-color: #E9EEFD;
+  background: $gray-200;
   color: $blue-lighter;
 }
 

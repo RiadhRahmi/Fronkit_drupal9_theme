@@ -3871,7 +3871,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 10rem; }
+  border-radius: 0.25rem; }
   .badge:empty {
     display: none; }
 
@@ -10068,6 +10068,16 @@ header.navbar {
   width: 144px;
   height: 48px; }
 
+.paragraph--type--feature-item:hover {
+  background: #003CC5;
+  color: #fff; }
+  .paragraph--type--feature-item:hover h3, .paragraph--type--feature-item:hover .h3 {
+    color: #F1F4F8; }
+  .paragraph--type--feature-item:hover .btn {
+    color: #F9FBFD; }
+  .paragraph--type--feature-item:hover a:after {
+    color: #F9FBFD; }
+
 .feature-icon {
   width: 130px;
   height: 130px;
@@ -10106,7 +10116,7 @@ img {
   font-weight: 600; }
 
 .badge-primary-soft {
-  background-color: #E9EEFD;
+  background: #F1F4F8;
   color: #335EEA; }
 
 .service-image img {
