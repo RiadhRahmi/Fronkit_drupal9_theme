@@ -38,10 +38,10 @@
 
 <div{{ attributes.addClass(classes) }}>
   <div class="row align-items-center justify-content-between">
-    <div data-aos="fade-right" class="col-6 pe-0 me-0">
+    <div class="col-6 pe-0 me-0 wow fadeInLeft">
       {{ content.field_image }}
     </div>
-    <div data-aos="fade-left" class="col-6 col-lg-5 ps-0 ms-0">
+    <div class="col-6 col-lg-5 ps-0 ms-0 wow fadeInRight">
       {{ title_prefix }}
       {% if label %}
         <span{{ title_attributes.addClass('badge rounded-pill badge-primary-soft text-uppercase') }}>

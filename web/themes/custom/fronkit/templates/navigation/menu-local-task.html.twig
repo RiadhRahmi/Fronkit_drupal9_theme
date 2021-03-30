@@ -16,6 +16,6 @@
 #}
 
 
-{% set link = link|merge({ '#attributes': { 'class': [ 'nav-link px-5 py-3'] } }) %}
+{% set link = link|merge({ '#attributes': { 'class': [ 'nav-link'] } }) %}
 <li{{ attributes.addClass('nav-item',is_active ? 'is-active') }}>{{ link }}</li>
 

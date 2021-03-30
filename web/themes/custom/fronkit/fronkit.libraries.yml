@@ -24,13 +24,13 @@ global:
       css/style.css: {}
       templates/repetitivetheme/custom.css:  {}
       node_modules/remixicon/fonts/remixicon.css: {}
-      node_modules/aos/dist/aos.css: {}
+      node_modules/animate.css/animate.min.css: {}
   #      css/theme/print.css: { media: print }
   js:
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}
     node_modules/swiper/swiper-bundle.min.js: {}
     node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js: {}
-    node_modules/aos/dist/aos.js: {}
+    node_modules/wow.js/dist/wow.js: {}
     js/fronkit.js: {}
   dependencies:
     - core/drupal

@@ -2,8 +2,13 @@ uuid: 983c60e8-4cb8-4964-a677-1ecfea2121cb
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - fronkit
+third_party_settings:
+  block_class:
+    classes: mb-3
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: fronkit_local_tasks
