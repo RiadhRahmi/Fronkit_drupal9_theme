@@ -142,7 +142,31 @@ header.navbar {
 
 
 
+.paragraph--type--feature-item.item-2{
+  background: $primary;
+  color: $white;
+
+  h3 {
+    color: $gray-200;
+  }
+
+  .btn {
+    color: $gray-100;
+  }
+
+  a:after{
+    color: $gray-100;
+  }
+}
+
 .paragraph--type--feature-item {
+
+    .field--name-field-description{
+      p{
+        margin-bottom: 1.5rem;
+      }
+    }
+
     &:hover {
       background: $primary;
       color: $white;

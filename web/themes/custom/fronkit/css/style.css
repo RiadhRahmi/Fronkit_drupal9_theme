@@ -10068,6 +10068,19 @@ header.navbar {
   width: 144px;
   height: 48px; }
 
+.paragraph--type--feature-item.item-2 {
+  background: #003CC5;
+  color: #fff; }
+  .paragraph--type--feature-item.item-2 h3, .paragraph--type--feature-item.item-2 .h3 {
+    color: #F1F4F8; }
+  .paragraph--type--feature-item.item-2 .btn {
+    color: #F9FBFD; }
+  .paragraph--type--feature-item.item-2 a:after {
+    color: #F9FBFD; }
+
+.paragraph--type--feature-item .field--name-field-description p {
+  margin-bottom: 1.5rem; }
+
 .paragraph--type--feature-item:hover {
   background: #003CC5;
   color: #fff; }

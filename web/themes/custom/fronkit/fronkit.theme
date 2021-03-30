@@ -38,7 +38,7 @@ function fronkit_preprocess_field(&$variables, $hook)
     }
   }
 
-  if($variables['field_name'] == 'field_process_items'){
+  if($variables['field_name'] == 'field_process_items' || $variables['field_name'] == 'field_features'){
     foreach($variables['items'] as $idx => $item) {
       $variables['items'][$idx]['content']['#paragraph']->index = $idx+1;
     }
