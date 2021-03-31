@@ -33,11 +33,11 @@
 #}
 {%
   set classes = [
-    'block',
-    'block-menu',
-    'navigation',
-    'menu--' ~ derivative_plugin_id|clean_class,
-  ]
+  'block',
+  'block-menu',
+  'navigation',
+  'menu--' ~ derivative_plugin_id|clean_class,
+]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
@@ -46,7 +46,7 @@
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
   {% endif %}
   {{ title_prefix }}
-  <h4{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h4>
+  <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
   {{ title_suffix }}
 
   {# Menu. #}

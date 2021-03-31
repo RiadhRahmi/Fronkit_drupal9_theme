@@ -22,6 +22,10 @@
           el: '.swiper-pagination',
           clickable: true,
         },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
       });
 
 

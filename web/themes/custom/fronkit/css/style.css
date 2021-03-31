@@ -9994,10 +9994,13 @@ header.navbar {
 
 .menu--main ul li a.is-active {
   color: #003CC5 !important;
-  font-weight: 600; }
+  font-weight: 900; }
 
 .menu--main ul li a.is-active:after {
   color: #003CC5 !important; }
+
+.btn {
+  font-weight: 500; }
 
 .menu--main ul li.dropdown a:after {
   content: "\EA4E";
@@ -10250,11 +10253,10 @@ img {
 .swiper-button-prev:after {
   content: "\EA64";
   font-family: remixicon;
-  background: rgba(134, 154, 184, 0.5);
+  background: #2B354F;
   color: #fff;
-  font-size: 48px;
-  padding: 8px;
-  font-weight: 100; }
+  font-size: 24px;
+  padding: 12px; }
 
 .swiper-button-next {
   right: 64px; }
@@ -10262,11 +10264,10 @@ img {
 .swiper-button-next:after {
   content: "\EA6E";
   font-family: remixicon;
-  background: rgba(134, 154, 184, 0.5);
+  background: #2B354F;
   color: #fff;
-  font-size: 48px;
-  padding: 8px;
-  font-weight: 100; }
+  font-size: 24px;
+  padding: 12px; }
 
 .img-carrousel img {
   height: 850px; }

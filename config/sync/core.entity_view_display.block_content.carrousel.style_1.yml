@@ -1,0 +1,33 @@
+uuid: 82440b03-cc40-4a78-a3d3-007cbbf4e2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carrousel
+    - core.entity_view_mode.block_content.style_1
+    - field.field.block_content.carrousel.field_carrousel_items
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.carrousel.style_1
+targetEntityType: block_content
+bundle: carrousel
+mode: style_1
+content:
+  field_carrousel_items:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: style_1
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: carrousel-items
+    region: content
+hidden: {  }

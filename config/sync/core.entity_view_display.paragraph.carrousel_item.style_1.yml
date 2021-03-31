@@ -1,8 +1,9 @@
-uuid: 822fe60e-dfb8-4933-8229-7b6a0dac900a
+uuid: 80ca5064-1fc7-471d-ab02-3d58f59ebcb0
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.style_1
     - field.field.paragraph.carrousel_item.field_description
     - field.field.paragraph.carrousel_item.field_image
     - field.field.paragraph.carrousel_item.field_link
@@ -12,19 +13,47 @@ dependencies:
   module:
     - element_class_formatter
     - field_formatter_class
+    - field_group
+    - layout_builder
     - text
-id: paragraph.carrousel_item.default
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_title
+        - field_description
+        - field_link
+        - field_video_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'slide-item-description swiper-no-swiping'
+      label: Content
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.carrousel_item.style_1
 targetEntityType: paragraph
 bundle: carrousel_item
-mode: default
+mode: style_1
 content:
   field_description:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'text-gray-100 mb-7'
     type: text_default
     region: content
   field_image:
@@ -36,46 +65,46 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: img-carrousel
     region: content
   field_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
-      class: ''
+      class: 'btn btn-primary me-3'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: d-inline-block
     type: link_class
     region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'display-3 text-white mb-4'
     type: string
     region: content
   field_video_link:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       trim_length: 80
-      class: ''
+      class: 'btn btn-light'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: d-inline-block
     type: link_class
     region: content
 hidden: {  }
