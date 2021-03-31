@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: carrousel
-label: Carrousel
+label: 'Carrousel Block'
 revision: 0
 description: ''

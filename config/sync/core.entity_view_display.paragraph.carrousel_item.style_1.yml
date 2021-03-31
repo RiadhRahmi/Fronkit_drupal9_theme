@@ -37,7 +37,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'slide-item-description swiper-no-swiping'
+        classes: 'slide-item-content swiper-no-swiping'
       label: Content
   layout_builder:
     allow_custom: false
@@ -97,7 +97,7 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-light'
+      class: 'btn btn-light fancybox'
       url_only: false
       url_plain: false
       rel: '0'
