@@ -39,6 +39,12 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+
+    {% if label %}
+    {{ content|without('field_title')|without('field_subtitle') }}
+    {% else %}
+      {{ content }}
+    {% endif %}
+
   {% endblock %}
 </div>

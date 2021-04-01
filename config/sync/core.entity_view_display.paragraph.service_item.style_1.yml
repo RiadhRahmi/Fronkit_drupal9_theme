@@ -1,8 +1,9 @@
-uuid: a865b96d-af99-4437-bea5-59715f1e92a5
+uuid: 0cc8f8ab-3328-4cbc-80ac-75bbb28b79bd
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.style_1
     - field.field.paragraph.service_item.field_description
     - field.field.paragraph.service_item.field_image
     - field.field.paragraph.service_item.field_title
@@ -10,11 +11,16 @@ dependencies:
   module:
     - element_class_formatter
     - field_formatter_class
+    - layout_builder
     - text
-id: paragraph.service_item.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.service_item.style_1
 targetEntityType: paragraph
 bundle: service_item
-mode: default
+mode: style_1
 content:
   field_description:
     weight: 2
@@ -22,7 +28,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: service-description
     type: text_default
     region: content
   field_image:
@@ -33,7 +39,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'service-image pb-4'
     type: entity_reference_entity_view
     region: content
   field_title:
@@ -41,7 +47,7 @@ content:
     label: hidden
     settings:
       link_class: ''
-      tag: div
+      tag: h5
       class: ''
       link: false
       summary: false

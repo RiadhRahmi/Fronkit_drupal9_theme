@@ -1,28 +1,55 @@
-uuid: c5e071d3-e4e7-4203-9831-dec6d0eba7f9
+uuid: 2d881cc3-f9c0-4b17-aa4d-39370378d3b5
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.video_block
+    - core.entity_view_mode.block_content.style_1
     - field.field.block_content.video_block.field_description
     - field.field.block_content.video_block.field_image
     - field.field.block_content.video_block.field_link
   module:
+    - element_class_formatter
     - field_formatter_class
-    - link
+    - field_group
+    - layout_builder
     - text
-id: block_content.video_block.default
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_description
+        - field_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-10 offset-1 text-center'
+      label: Content
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.video_block.style_1
 targetEntityType: block_content
 bundle: video_block
-mode: default
+mode: style_1
 content:
   field_description:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: text-white
     type: text_default
     region: content
   field_image:
@@ -33,21 +60,22 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: image-cta-video
     type: entity_reference_entity_view
     region: content
   field_link:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
-      url_plain: true
+      class: 'btn btn-lg btn-white rounded-circle mt-7 fancybox'
       url_only: false
+      url_plain: true
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: link
+    type: link_class
     region: content
 hidden: {  }

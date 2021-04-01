@@ -155,6 +155,11 @@ header.navbar {
   }
 }
 
+.block-type-features-block{
+  .block__title{
+    text-align: center;
+  }
+}
 
 .paragraph--type--feature-item.item-2 {
   background: $primary;
@@ -175,6 +180,9 @@ header.navbar {
 
 .paragraph--type--feature-item {
 
+  transition: .5s;
+  border-radius: 8px;
+
   .field--name-field-description {
     p {
       margin-bottom: 1.5rem;
@@ -184,6 +192,7 @@ header.navbar {
   &:hover {
     background: $primary;
     color: $white;
+    transform: translateY(-10px);
 
     h3 {
       color: $gray-200;
@@ -199,6 +208,8 @@ header.navbar {
 
   }
 }
+
+
 
 
 .feature-icon {
@@ -294,10 +305,28 @@ header.navbar {
   border-color: $white;
 }
 
+.block-type-video-block:after{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .2s ease;
+  background: $primary;
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+}
+
 .block-type-video-block {
   padding-bottom: 170px;
   padding-top: 170px;
 
+  .container{
+    position: relative;
+    z-index: 99;
+  }
   h2 {
     color: $white;
   }
@@ -317,6 +346,15 @@ header.navbar {
       color: $primary;
     }
   }
+
+  .block__title{
+    text-align: center;
+  }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
 }
 
 .mask + .container {
@@ -340,9 +378,25 @@ header.navbar {
 
   img {
     border-radius: 8px;
+    width: 100%;
   }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
+  .block__title{
+    text-align: center;
+  }
+
 }
 
+
+.block-type-services-block{
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+}
 
 .field--name-field-services-items {
   .field__item {
