@@ -9,8 +9,8 @@ dependencies:
     - field.field.paragraph.feature_item.field_title
     - paragraphs.paragraphs_type.feature_item
   module:
-    - element_class_formatter
     - field_formatter_class
+    - link
     - text
 id: paragraph.feature_item.default
 targetEntityType: paragraph
@@ -34,7 +34,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'feature-icon  mb-4  mx-auto'
+        class: ''
     type: entity_reference_entity_view
     region: content
   field_link:
@@ -42,7 +42,6 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-link mt-5'
       url_only: false
       url_plain: false
       rel: '0'
@@ -50,21 +49,16 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: link_class
+    type: link
     region: content
   field_title:
     weight: 1
     label: hidden
     settings:
-      link_class: ''
-      tag: h3
-      class: ''
-      link: false
-      summary: false
-      trim: 200
+      link_to_entity: false
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: wrapper_class
+    type: string
     region: content
 hidden: {  }
