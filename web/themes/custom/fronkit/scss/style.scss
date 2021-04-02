@@ -112,11 +112,14 @@ header.navbar {
 
 }
 
+.block-type-call-to-action{
+  border-radius: 8px!important;
+}
 
-.block-our-process {
+.block-our-process-team {
   background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
 
-  .item-index {
+  .process-item-index {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -152,6 +155,12 @@ header.navbar {
   img {
     width: 144px;
     height: 48px;
+  }
+}
+
+.block-views-blockteam-block-1{
+  .block__title{
+    text-align: center;
   }
 }
 
@@ -304,6 +313,19 @@ header.navbar {
   background-color: $white;
   border-color: $white;
 }
+
+.block-type-our-working-process-block{
+
+  .block__title{
+    text-align: center;
+  }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
+}
+
 
 .block-type-video-block:after{
   top: 0;

@@ -10054,9 +10054,12 @@ header.navbar {
 .view-team .swiper-slide {
   padding: 0; }
 
-.block-our-process {
+.block-type-call-to-action {
+  border-radius: 8px !important; }
+
+.block-our-process-team {
   background: linear-gradient(0.07deg, #F9FBFD 23.31%, #fff 99.14%); }
-  .block-our-process .item-index {
+  .block-our-process-team .process-item-index {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -10067,12 +10070,12 @@ header.navbar {
     background: #003CC5;
     border-radius: 50%;
     margin-right: 12px; }
-  .block-our-process .small {
+  .block-our-process-team .small {
     padding-bottom: 16px; }
-  .block-our-process .field--type-link {
+  .block-our-process-team .field--type-link {
     display: inline-block;
     margin-right: 12px; }
-    .block-our-process .field--type-link i {
+    .block-our-process-team .field--type-link i {
       color: #506690;
       padding: 8px;
       border: 1px solid #506690;
@@ -10081,6 +10084,9 @@ header.navbar {
 .partner-image img {
   width: 144px;
   height: 48px; }
+
+.block-views-blockteam-block-1 .block__title {
+  text-align: center; }
 
 .block-type-features-block .block__title {
   text-align: center; }
@@ -10173,6 +10179,12 @@ header.navbar {
   color: #161C2D;
   background-color: #fff;
   border-color: #fff; }
+
+.block-type-our-working-process-block .block__title {
+  text-align: center; }
+
+.block-type-our-working-process-block .field--type-text-long p:last-child {
+  margin-bottom: 0px; }
 
 .block-type-video-block:after {
   top: 0;
