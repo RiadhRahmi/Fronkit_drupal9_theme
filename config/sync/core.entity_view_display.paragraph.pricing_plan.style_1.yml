@@ -1,8 +1,9 @@
-uuid: 68846287-9fc2-416d-8569-500bd7a10b81
+uuid: 8e486e25-744c-4fe0-91b6-45d2eb75d586
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.style_1
     - field.field.paragraph.pricing_plan.field_link
     - field.field.paragraph.pricing_plan.field_options
     - field.field.paragraph.pricing_plan.field_period
@@ -10,18 +11,24 @@ dependencies:
     - field.field.paragraph.pricing_plan.field_title
     - paragraphs.paragraphs_type.pricing_plan
   module:
+    - element_class_formatter
     - field_formatter_class
-    - link
-id: paragraph.pricing_plan.default
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.pricing_plan.style_1
 targetEntityType: paragraph
 bundle: pricing_plan
-mode: default
+mode: style_1
 content:
   field_link:
     weight: 4
     label: hidden
     settings:
       trim_length: 80
+      class: 'btn btn-outline-primary mt-6'
       url_only: false
       url_plain: false
       rel: '0'
@@ -29,17 +36,18 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: link
+    type: link_class
     region: content
   field_options:
     weight: 3
     label: hidden
     settings:
-      link_to_entity: false
+      list_type: ul
+      class: list-unstyled
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: string
+    type: string_list_class
     region: content
   field_period:
     weight: 2
@@ -58,17 +66,22 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: display-4
     type: string
     region: content
   field_title:
     weight: 0
     label: hidden
     settings:
-      link_to_entity: false
+      link_class: ''
+      tag: h4
+      class: ''
+      link: false
+      summary: false
+      trim: 200
     third_party_settings:
       field_formatter_class:
-        class: ''
-    type: string
+        class: 'pricing-title h4'
+    type: wrapper_class
     region: content
 hidden: {  }

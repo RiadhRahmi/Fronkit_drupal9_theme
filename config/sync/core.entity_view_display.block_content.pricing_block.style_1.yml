@@ -1,21 +1,50 @@
-uuid: 68910680-afb4-4cba-bc41-83242ad20515
+uuid: d8dd4264-3526-497d-b729-eb84a01fcb5b
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.pricing_block
+    - core.entity_view_mode.block_content.style_1
     - field.field.block_content.pricing_block.field_description
     - field.field.block_content.pricing_block.field_pricing_plans
     - field.field.block_content.pricing_block.field_subtitle
     - field.field.block_content.pricing_block.field_title
   module:
+    - element_class_formatter
     - entity_reference_revisions
     - field_formatter_class
+    - field_group
+    - layout_builder
     - text
-id: block_content.pricing_block.default
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_subtitle
+        - field_title
+        - field_description
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-6 offset-3 text-center'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.pricing_block.style_1
 targetEntityType: block_content
 bundle: pricing_block
-mode: default
+mode: style_1
 content:
   field_description:
     weight: 3
@@ -23,7 +52,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: block-description
     type: text_default
     region: content
   field_pricing_plans:
@@ -31,11 +60,11 @@ content:
     weight: 4
     label: hidden
     settings:
-      view_mode: default
+      view_mode: style_1
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'row pt-9'
     region: content
   field_subtitle:
     weight: 1
@@ -44,17 +73,22 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'badge rounded-pill badge-primary-soft text-uppercase'
     type: string
     region: content
   field_title:
     weight: 2
     label: hidden
     settings:
-      link_to_entity: false
+      link_class: ''
+      tag: h2
+      class: ''
+      link: false
+      summary: false
+      trim: 200
     third_party_settings:
       field_formatter_class:
-        class: ''
-    type: string
+        class: 'block-title h2'
+    type: wrapper_class
     region: content
 hidden: {  }

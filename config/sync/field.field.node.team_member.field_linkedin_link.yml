@@ -11,7 +11,7 @@ id: node.team_member.field_linkedin_link
 field_name: field_linkedin_link
 entity_type: node
 bundle: team_member
-label: 'Linkedin link'
+label: 'Linkedin Link'
 description: ''
 required: false
 translatable: false
