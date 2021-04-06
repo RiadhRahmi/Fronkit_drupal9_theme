@@ -159,6 +159,13 @@ header.navbar {
   }
 }
 
+
+.block-type-footer-brand-block{
+  p:last-child{
+    margin-bottom: 0px;
+  }
+}
+
 .block-views-blockteam-block-1{
   .block__title{
     text-align: center;
@@ -794,7 +801,7 @@ header.navbar {
   }
 
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   .block-type-social-links {
@@ -805,9 +812,9 @@ header.navbar {
       margin-right: 12px;
 
       i {
-        color: $gray-200;
+        color: $gray-400;
         padding: 8px;
-        border: 1px solid $gray-200;
+        border: 1px solid $gray-400;
         border-radius: 50px;
       }
     }
@@ -822,7 +829,7 @@ header.navbar {
   }
 
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   .nav {
@@ -834,10 +841,10 @@ header.navbar {
     }
 
     a {
-      color: $gray-200;
+      color: $gray-400;
 
       &.is-active {
-        color: $gray-600;
+        color: $gray-200;
       }
     }
   }
@@ -852,21 +859,21 @@ footer {
     border-top: 1px solid $gray-800;
 
     p {
-      color: $gray-200;
+      color: $gray-400;
     }
   }
 }
 
 .region-footer-bottom {
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   a {
-    color: $gray-200;
+    color: $gray-400;
 
     &.is-active {
-      color: $gray-600;
+      color: $gray-200;
     }
   }
 }

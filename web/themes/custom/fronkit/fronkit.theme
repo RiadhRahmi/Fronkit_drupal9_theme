@@ -73,6 +73,13 @@ function fronkit_preprocess_field(&$variables, $hook)
     }
   }
 
+  if ($variables['field_name'] == 'field_youtube_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="ri-youtube-fill ri-xl"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
 }
 
 /**

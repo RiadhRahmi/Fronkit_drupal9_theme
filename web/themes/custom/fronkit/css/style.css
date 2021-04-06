@@ -10086,6 +10086,9 @@ header.navbar {
   width: 144px;
   height: 48px; }
 
+.block-type-footer-brand-block p:last-child {
+  margin-bottom: 0px; }
+
 .block-views-blockteam-block-1 .block__title {
   text-align: center; }
 
@@ -10496,15 +10499,15 @@ header.navbar {
   margin-bottom: 24px; }
 
 .region-footer-brand p {
-  color: #F1F4F8; }
+  color: #C6D3E6; }
 
 .region-footer-brand .block-type-social-links .field--type-link {
   display: inline-block;
   margin-right: 12px; }
   .region-footer-brand .block-type-social-links .field--type-link i {
-    color: #F1F4F8;
+    color: #C6D3E6;
     padding: 8px;
-    border: 1px solid #F1F4F8;
+    border: 1px solid #C6D3E6;
     border-radius: 50px; }
 
 .region-footer img {
@@ -10513,7 +10516,7 @@ header.navbar {
   margin-bottom: 24px; }
 
 .region-footer p {
-  color: #F1F4F8; }
+  color: #C6D3E6; }
 
 .region-footer .nav {
   flex-direction: column !important;
@@ -10521,9 +10524,9 @@ header.navbar {
   .region-footer .nav .nav-link {
     padding-left: 0; }
   .region-footer .nav a {
-    color: #F1F4F8; }
+    color: #C6D3E6; }
     .region-footer .nav a.is-active {
-      color: #869AB8; }
+      color: #F1F4F8; }
 
 footer .block__title {
   color: #fff; }
@@ -10531,15 +10534,15 @@ footer .block__title {
 footer .footer-bottom {
   border-top: 1px solid #384C74; }
   footer .footer-bottom p {
-    color: #F1F4F8; }
+    color: #C6D3E6; }
 
 .region-footer-bottom p {
-  color: #F1F4F8; }
+  color: #C6D3E6; }
 
 .region-footer-bottom a {
-  color: #F1F4F8; }
+  color: #C6D3E6; }
   .region-footer-bottom a.is-active {
-    color: #869AB8; }
+    color: #F1F4F8; }
 
 /*------------------------------------*\
 20. Button To Top style
