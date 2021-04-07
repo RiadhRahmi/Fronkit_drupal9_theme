@@ -1,9 +1,10 @@
-uuid: 17cf55a0-7844-407f-a4ae-6cba4c8aff76
+uuid: 701ff4a9-f35c-42e3-ab67-de57d449bcce
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.call_to_action
+    - core.entity_form_mode.block_content.style_2
     - field.field.block_content.call_to_action.field_description
     - field.field.block_content.call_to_action.field_image
     - field.field.block_content.call_to_action.field_link
@@ -12,10 +13,10 @@ dependencies:
     - link
     - media_library
     - text
-id: block_content.call_to_action.default
+id: block_content.call_to_action.style_2
 targetEntityType: block_content
 bundle: call_to_action
-mode: default
+mode: style_2
 content:
   field_description:
     weight: 3

@@ -795,8 +795,8 @@ header.navbar {
 
 .region-footer-brand {
   img {
-    width: 140px;
-    height: 48px;
+    width: 80px;
+    height: 24px;
     margin-bottom: 24px;
   }
 
@@ -844,7 +844,8 @@ header.navbar {
       color: $gray-400;
 
       &.is-active {
-        color: $gray-200;
+        color: $white;
+        font-weight: 500;
       }
     }
   }

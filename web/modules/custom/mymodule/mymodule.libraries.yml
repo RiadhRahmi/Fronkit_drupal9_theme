@@ -2,3 +2,8 @@ oneplusfourgrid_section:
   css:
     theme:
       layouts/oneplusfourgrid_section/oneplusfourgrid_section.css: {}
+
+custom-layout-2-library:
+  css:
+    theme:
+      layouts/custom-layout-2/custom-layout-2-library.css: {}

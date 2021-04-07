@@ -10494,8 +10494,8 @@ header.navbar {
       border-color: #fff; }
 
 .region-footer-brand img {
-  width: 140px;
-  height: 48px;
+  width: 80px;
+  height: 24px;
   margin-bottom: 24px; }
 
 .region-footer-brand p {
@@ -10526,7 +10526,8 @@ header.navbar {
   .region-footer .nav a {
     color: #C6D3E6; }
     .region-footer .nav a.is-active {
-      color: #F1F4F8; }
+      color: #fff;
+      font-weight: 500; }
 
 footer .block__title {
   color: #fff; }

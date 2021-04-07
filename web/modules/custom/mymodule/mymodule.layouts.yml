@@ -19,3 +19,15 @@ layout_oneplusfourgrid_section:
       label: Fourth
     fifth:
       label: Fifth
+
+
+custom_layout_2:
+  label: Custom Layout 2
+  category: Custom
+  class: '\Drupal\mymodule\Plugin\Layout\MyLayoutClass'
+  path: layouts/custom-layout-2
+  template: custom-layout-2
+  library: mymodule/custom-layout-2-library
+  regions:
+    main:
+      label: Main content
