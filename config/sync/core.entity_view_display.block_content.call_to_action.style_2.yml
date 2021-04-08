@@ -64,7 +64,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'block-icon col-2 pe-0'
+        class: 'block-icon col-2 pe-0 ps-0'
   field_link:
     weight: 2
     label: hidden
