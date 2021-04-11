@@ -1,0 +1,98 @@
+uuid: a4baede7-9b9d-4f31-87c6-5cf32c32334a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - core.entity_view_mode.block_content.style_2
+    - field.field.block_content.call_to_action.field_description
+    - field.field.block_content.call_to_action.field_image
+    - field.field.block_content.call_to_action.field_link
+    - field.field.block_content.call_to_action.field_title
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - field_group
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_content:
+      children:
+        - field_title
+        - field_description
+        - field_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-10 ps-0'
+      label: Content
+id: block_content.call_to_action.style_2
+targetEntityType: block_content
+bundle: call_to_action
+mode: style_2
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'block-icon col-2 pe-0 ps-0'
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 800
+      class: 'btn btn-link p-0 mt-2'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link_class
+    region: content
+  field_title:
+    type: wrapper_class
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h2
+      class: block__title
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+hidden: {  }

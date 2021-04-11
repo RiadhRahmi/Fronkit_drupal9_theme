@@ -1,6 +1,7 @@
 <?php
 
 
+use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\search\SearchPageInterface;
@@ -38,11 +39,47 @@ function fronkit_preprocess_field(&$variables, $hook)
 //    }
 //  }
 
-  if($variables['field_name'] == 'field_process_items' || $variables['field_name'] == 'field_features'){
-    foreach($variables['items'] as $idx => $item) {
-      $variables['items'][$idx]['content']['#paragraph']->index = $idx+1;
+  if ($variables['field_name'] == 'field_process_items' || $variables['field_name'] == 'field_features') {
+    foreach ($variables['items'] as $idx => $item) {
+      $variables['items'][$idx]['content']['#paragraph']->index = $idx + 1;
     }
   }
+
+  if ($variables['field_name'] == 'field_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = $variables['items'][$key]['content']['#title'];
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
+  if ($variables['field_name'] == 'field_facebook_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="ri-facebook-fill ri-xl"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
+  if ($variables['field_name'] == 'field_linkedin_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="ri-linkedin-fill ri-xl"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
+  if ($variables['field_name'] == 'field_twitter_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="ri-twitter-fill ri-xl"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
+  if ($variables['field_name'] == 'field_youtube_link') {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="ri-youtube-fill ri-xl"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+    }
+  }
+
 }
 
 /**
@@ -192,7 +229,7 @@ function fronkit_preprocess_views_view(&$variables)
   $view = $variables['view'];
   switch ($view->storage->id()) {
     case 'portfolio':
-      if ($view->current_display == 'block_1')  {
+      if ($view->current_display == 'block_1') {
         $variables['more']['#options']['attributes']['class'] = 'btn btn-primary';
       }
   }
@@ -202,11 +239,12 @@ function fronkit_preprocess_views_view(&$variables)
 /**
  * @param $vars
  */
-function fronkit_preprocess_node__view__team(&$vars) {
+function fronkit_preprocess_node__view__team(&$vars)
+{
   $view = $vars['view'];
   $node = $vars['node'];
-  foreach($view->result as $key => $row){
-    if($row->nid == $node->id()){
+  foreach ($view->result as $key => $row) {
+    if ($row->nid == $node->id()) {
       $vars['row_index'] = $row->index;
     }
   }

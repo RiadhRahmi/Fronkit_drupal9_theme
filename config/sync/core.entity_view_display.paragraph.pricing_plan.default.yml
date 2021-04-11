@@ -10,8 +10,8 @@ dependencies:
     - field.field.paragraph.pricing_plan.field_title
     - paragraphs.paragraphs_type.pricing_plan
   module:
-    - element_class_formatter
     - field_formatter_class
+    - link
 id: paragraph.pricing_plan.default
 targetEntityType: paragraph
 bundle: pricing_plan
@@ -22,7 +22,6 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-outline-primary mt-6'
       url_only: false
       url_plain: false
       rel: '0'
@@ -30,18 +29,17 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: link_class
+    type: link
     region: content
   field_options:
     weight: 3
     label: hidden
     settings:
-      list_type: ul
-      class: list-unstyled
+      link_to_entity: false
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: string_list_class
+    type: string
     region: content
   field_period:
     weight: 2
@@ -60,22 +58,17 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: display-4
+        class: ''
     type: string
     region: content
   field_title:
     weight: 0
     label: hidden
     settings:
-      link_class: ''
-      tag: h4
-      class: ''
-      link: false
-      summary: false
-      trim: 200
+      link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'pricing-title h4'
-    type: wrapper_class
+        class: ''
+    type: string
     region: content
 hidden: {  }

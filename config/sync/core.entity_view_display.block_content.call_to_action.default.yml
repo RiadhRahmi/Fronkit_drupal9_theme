@@ -5,7 +5,9 @@ dependencies:
   config:
     - block_content.type.call_to_action
     - field.field.block_content.call_to_action.field_description
+    - field.field.block_content.call_to_action.field_image
     - field.field.block_content.call_to_action.field_link
+    - field.field.block_content.call_to_action.field_title
   module:
     - element_class_formatter
     - field_formatter_class
@@ -16,27 +18,43 @@ bundle: call_to_action
 mode: default
 content:
   field_description:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: col-6
+        class: ''
     type: text_default
     region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_link:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       trim_length: 800
-      class: 'btn btn-primary float-end'
+      class: ''
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: col-3
+        class: ''
     type: link_class
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden: {  }

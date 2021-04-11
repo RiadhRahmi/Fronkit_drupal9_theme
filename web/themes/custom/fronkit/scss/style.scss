@@ -76,30 +76,31 @@ header.navbar {
   .card-odd:before {
     content: '';
     position: absolute;
-    left: 42%;
-    top: -32px;
+    left: 46%;
+    top: -24px;
     width: 0;
     height: 0;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid white;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid white;
     clear: both;
   }
 
   .card-even:after {
     content: '';
     position: absolute;
-    left: 42%;
     top: 100%;
     width: 0;
     height: 0;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 16px solid white;
-    border-bottom: 16px solid transparent;
     clear: both;
     z-index: 99;
+    left: 46%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    border-bottom: 12px solid transparent;
+    clear: both;
   }
 
   .swiper-wrapper {
@@ -112,11 +113,14 @@ header.navbar {
 
 }
 
+.block-type-call-to-action{
+  border-radius: 8px!important;
+}
 
-.block-our-process {
+.block-our-process-team {
   background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
 
-  .item-index {
+  .process-item-index {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -156,6 +160,56 @@ header.navbar {
 }
 
 
+.block-type-footer-brand-block{
+  p:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.block-views-blockteam-block-1{
+  .block__title{
+    text-align: center;
+  }
+
+  .view-header .col-6 p:last-child{
+    margin-bottom: 0px;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .field--name-body p:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.block-views-blockportfolio-block-1{
+  .view-header .col-6 p:last-child{
+    margin-bottom: 0px;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+.block-type-pricing-block{
+  .field--name-field-description p:last-child{
+    margin-bottom: 0px;
+  }
+
+  .block__title{
+    text-align: center;
+  }
+}
+
+.block-type-features-block{
+  .block__title{
+    text-align: center;
+  }
+}
+
 .paragraph--type--feature-item.item-2 {
   background: $primary;
   color: $white;
@@ -175,6 +229,9 @@ header.navbar {
 
 .paragraph--type--feature-item {
 
+  transition: .5s;
+  border-radius: 8px;
+
   .field--name-field-description {
     p {
       margin-bottom: 1.5rem;
@@ -184,6 +241,7 @@ header.navbar {
   &:hover {
     background: $primary;
     color: $white;
+    transform: translateY(-10px);
 
     h3 {
       color: $gray-200;
@@ -199,6 +257,8 @@ header.navbar {
 
   }
 }
+
+
 
 
 .feature-icon {
@@ -294,10 +354,41 @@ header.navbar {
   border-color: $white;
 }
 
+.block-type-our-working-process-block{
+
+  .block__title{
+    text-align: center;
+  }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.block-type-video-block:after{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .2s ease;
+  background: $primary;
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+}
+
 .block-type-video-block {
   padding-bottom: 170px;
   padding-top: 170px;
 
+  .container{
+    position: relative;
+    z-index: 99;
+  }
   h2 {
     color: $white;
   }
@@ -317,6 +408,15 @@ header.navbar {
       color: $primary;
     }
   }
+
+  .block__title{
+    text-align: center;
+  }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
 }
 
 .mask + .container {
@@ -340,9 +440,25 @@ header.navbar {
 
   img {
     border-radius: 8px;
+    width: 100%;
   }
+
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+
+  .block__title{
+    text-align: center;
+  }
+
 }
 
+
+.block-type-services-block{
+  .field--type-text-long p:last-child{
+    margin-bottom: 0px;
+  }
+}
 
 .field--name-field-services-items {
   .field__item {
@@ -636,6 +752,23 @@ header.navbar {
 }
 
 .field--name-field-pricing-plans {
+  .item-1{
+    background: $primary;
+    color: $gray-200;
+
+    h4 {
+      color: $gray-200;
+    }
+
+    .display-4 {
+      color: $gray-200;
+    }
+
+    .btn {
+      color: $white;
+      border-color: $white;
+    }
+  }
   .field__item {
     border-radius: 8px;
 
@@ -662,13 +795,13 @@ header.navbar {
 
 .region-footer-brand {
   img {
-    width: 140px;
-    height: 48px;
+    width: 80px;
+    height: 24px;
     margin-bottom: 24px;
   }
 
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   .block-type-social-links {
@@ -679,9 +812,9 @@ header.navbar {
       margin-right: 12px;
 
       i {
-        color: $gray-200;
+        color: $gray-400;
         padding: 8px;
-        border: 1px solid $gray-200;
+        border: 1px solid $gray-400;
         border-radius: 50px;
       }
     }
@@ -696,7 +829,7 @@ header.navbar {
   }
 
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   .nav {
@@ -708,10 +841,11 @@ header.navbar {
     }
 
     a {
-      color: $gray-200;
+      color: $gray-400;
 
       &.is-active {
-        color: $gray-600;
+        color: $white;
+        font-weight: 500;
       }
     }
   }
@@ -726,21 +860,21 @@ footer {
     border-top: 1px solid $gray-800;
 
     p {
-      color: $gray-200;
+      color: $gray-400;
     }
   }
 }
 
 .region-footer-bottom {
   p {
-    color: $gray-200;
+    color: $gray-400;
   }
 
   a {
-    color: $gray-200;
+    color: $gray-400;
 
     &.is-active {
-      color: $gray-600;
+      color: $gray-200;
     }
   }
 }

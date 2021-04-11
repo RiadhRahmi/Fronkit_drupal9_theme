@@ -9,65 +9,45 @@ dependencies:
     - field.field.block_content.video_block.field_link
   module:
     - field_formatter_class
-    - field_group
     - link
     - text
-third_party_settings:
-  field_group:
-    group_content:
-      children:
-        - field_description
-        - field_link
-      parent_name: ''
-      weight: 1
-      format_type: html_element
-      region: content
-      format_settings:
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-        id: ''
-        classes: 'col-10 offset-1 text-center'
-      label: Content
 id: block_content.video_block.default
 targetEntityType: block_content
 bundle: video_block
 mode: default
 content:
   field_description:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: text-white
+        class: ''
     type: text_default
     region: content
   field_image:
     weight: 0
     label: hidden
     settings:
-      link: true
       view_mode: default
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: entity_reference_entity_view
     region: content
   field_link:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
-      url_only: true
       url_plain: true
+      url_only: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: mt-5
+        class: ''
     type: link
     region: content
 hidden: {  }

@@ -1,0 +1,60 @@
+uuid: 23ea7124-2c66-4c87-8728-42a9765424d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.style_1
+    - field.field.paragraph.process.field_description
+    - field.field.paragraph.process.field_image
+    - field.field.paragraph.process.field_title
+    - paragraphs.paragraphs_type.process
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.process.style_1
+targetEntityType: paragraph
+bundle: process
+mode: style_1
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: process-description
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'process-icon mb-6'
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h5
+      class: process-title
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: wrapper_class
+    region: content
+hidden: {  }

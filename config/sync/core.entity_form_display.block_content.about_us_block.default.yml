@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.about_us_block.field_description
     - field.field.block_content.about_us_block.field_image
     - field.field.block_content.about_us_block.field_link
+    - field.field.block_content.about_us_block.field_subtitle
+    - field.field.block_content.about_us_block.field_title
   module:
     - link
     - media_library
@@ -26,7 +28,7 @@ content:
     region: content
   field_image:
     type: media_library_widget
-    weight: 1
+    weight: 5
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -38,6 +40,22 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   info:
     type: string_textfield

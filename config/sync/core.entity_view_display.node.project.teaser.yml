@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project.field_image
     - node.type.project
   module:
+    - field_formatter_class
     - user
 id: node.project.teaser
 targetEntityType: node
@@ -22,7 +23,9 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: project-img
 hidden:
   body: true
   links: true

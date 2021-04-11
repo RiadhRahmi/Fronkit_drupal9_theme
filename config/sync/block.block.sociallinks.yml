@@ -11,7 +11,7 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: 'col-12 mt-5'
+    classes: 'col-12 mt-6'
 id: sociallinks
 theme: fronkit
 region: footer_brand

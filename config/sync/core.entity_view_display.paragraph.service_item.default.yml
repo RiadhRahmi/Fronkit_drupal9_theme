@@ -22,7 +22,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: service-description
+        class: ''
     type: text_default
     region: content
   field_image:
@@ -33,7 +33,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'service-image pb-4'
+        class: ''
     type: entity_reference_entity_view
     region: content
   field_title:
@@ -41,7 +41,7 @@ content:
     label: hidden
     settings:
       link_class: ''
-      tag: h5
+      tag: div
       class: ''
       link: false
       summary: false

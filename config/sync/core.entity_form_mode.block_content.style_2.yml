@@ -1,0 +1,10 @@
+uuid: e437c797-7c06-482c-a893-338a6a6651e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.style_2
+label: 'Style 2'
+targetEntityType: block_content
+cache: true

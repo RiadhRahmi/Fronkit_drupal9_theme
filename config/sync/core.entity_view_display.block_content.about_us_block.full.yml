@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.about_us_block.field_description
     - field.field.block_content.about_us_block.field_image
     - field.field.block_content.about_us_block.field_link
+    - field.field.block_content.about_us_block.field_subtitle
+    - field.field.block_content.about_us_block.field_title
   module:
     - element_class_formatter
     - layout_builder
@@ -50,4 +52,6 @@ content:
     third_party_settings: {  }
     type: link_class
     region: content
-hidden: {  }
+hidden:
+  field_subtitle: true
+  field_title: true

@@ -13,9 +13,32 @@ dependencies:
     - node.type.team_member
   module:
     - field_formatter_class
+    - field_group
     - link
     - text
     - user
+third_party_settings:
+  field_group:
+    group_social_links:
+      children:
+        - field_facebook_link
+        - field_twitter_link
+        - field_linkedin_link
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: mt-5
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Social Links'
 id: node.team_member.teaser
 targetEntityType: node
 bundle: team_member
@@ -29,20 +52,22 @@ content:
       trim_length: 600
     third_party_settings:
       field_formatter_class:
-        class: mb-5
+        class: ''
     region: content
   field_facebook_link:
     type: link
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
   field_image:
     type: entity_reference_entity_view
     weight: 0
@@ -66,27 +91,31 @@ content:
         class: small
   field_linkedin_link:
     type: link
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+  field_twitter_link:
+    type: link
     weight: 5
     region: content
     label: hidden
     settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-  field_twitter_link:
-    type: link
-    weight: 4
-    region: content
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
 hidden:
   links: true

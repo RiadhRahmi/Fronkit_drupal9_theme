@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one plus four grid layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="custom-layout-2 {{ settings.layout_classes }}">
+  <div class="main-region {{ settings.region_classes }} ">
+    {{ content.main }}
+  </div>
+</div>

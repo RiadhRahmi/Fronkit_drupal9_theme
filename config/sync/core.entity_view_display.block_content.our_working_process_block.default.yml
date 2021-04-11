@@ -9,33 +9,9 @@ dependencies:
     - field.field.block_content.our_working_process_block.field_subtitle
     - field.field.block_content.our_working_process_block.field_title
   module:
-    - element_class_formatter
     - entity_reference_revisions
     - field_formatter_class
-    - field_group
     - text
-third_party_settings:
-  field_group:
-    group_content:
-      children:
-        - field_subtitle
-        - field_title
-        - field_description
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      region: content
-      format_settings:
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-        id: ''
-        classes: 'col-6 offset-3  text-center'
-      label: Content
 id: block_content.our_working_process_block.default
 targetEntityType: block_content
 bundle: our_working_process_block
@@ -47,7 +23,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: block-description
+        class: ''
     type: text_default
     region: content
   field_process_items:
@@ -59,7 +35,7 @@ content:
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: 'row pb-9 pt-7'
+        class: ''
     region: content
   field_subtitle:
     weight: 1
@@ -68,22 +44,17 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'badge rounded-pill badge-primary-soft text-uppercase'
+        class: ''
     type: string
     region: content
   field_title:
     weight: 2
     label: hidden
     settings:
-      link_class: ''
-      tag: h2
-      class: ''
-      link: false
-      summary: false
-      trim: 200
+      link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'block-title h2'
-    type: wrapper_class
+        class: ''
+    type: string
     region: content
 hidden: {  }
