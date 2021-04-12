@@ -189,7 +189,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'pt-9 pb-14 border-top  overflow-hidden partners-swiper-container'
+      css_class: 'py-9 border-top  overflow-hidden partners-swiper-container'
     cache_metadata:
       max-age: -1
       contexts:

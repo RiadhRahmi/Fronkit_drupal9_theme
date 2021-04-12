@@ -6,6 +6,23 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Plugin\PluginFormInterface;
 
+/**
+ * Custom Layout.
+ *
+ * @Layout(
+ *   id = "custom_layout_2",
+ *   label = @Translation("Custom Layout 2"),
+ *   category = @Translation("Custom"),
+ *   path = "layouts/custom-layout-2",
+ *   template = "custom-layout-2",
+ *   library = "mymodule/custom-layout-2-library",
+ *   regions = {
+ *     "main" = {
+ *       "label" = @Translation("Main content"),
+ *     }
+ *   }
+ * )
+ */
 class MyLayoutClass extends LayoutDefault implements PluginFormInterface
 {
 

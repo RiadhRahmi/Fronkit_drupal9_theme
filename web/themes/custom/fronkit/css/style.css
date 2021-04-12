@@ -10056,7 +10056,7 @@ header.navbar {
   padding: 0; }
 
 .block-type-call-to-action {
-  border-radius: 8px !important; }
+  border-radius: 4px !important; }
 
 .block-our-process-team {
   background: linear-gradient(0.07deg, #F9FBFD 23.31%, #fff 99.14%); }
@@ -10083,8 +10083,8 @@ header.navbar {
       border-radius: 50px; }
 
 .partner-image img {
-  width: 144px;
-  height: 48px; }
+  width: 104px;
+  height: auto; }
 
 .block-type-footer-brand-block p:last-child {
   margin-bottom: 0px; }
@@ -10437,8 +10437,8 @@ header.navbar {
 
 .block-type-job-offers-cta,
 .block-webform-block {
-  min-height: 260px;
-  border-radius: 8px; }
+  min-height: 257px;
+  border-radius: 4px; }
 
 .webform-submission-newsletter-form .webform-element-description {
   padding-bottom: 12px; }
@@ -10494,8 +10494,7 @@ header.navbar {
       border-color: #fff; }
 
 .region-footer-brand img {
-  width: 80px;
-  height: 24px;
+  width: 104px;
   margin-bottom: 24px; }
 
 .region-footer-brand p {
@@ -10509,11 +10508,6 @@ header.navbar {
     padding: 8px;
     border: 1px solid #C6D3E6;
     border-radius: 50px; }
-
-.region-footer img {
-  width: 140px;
-  height: 48px;
-  margin-bottom: 24px; }
 
 .region-footer p {
   color: #C6D3E6; }
