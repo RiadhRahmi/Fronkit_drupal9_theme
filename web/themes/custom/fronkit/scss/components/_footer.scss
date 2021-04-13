@@ -1,0 +1,55 @@
+// footer section
+.footer{
+  p {
+    color: $gray-400;
+  }
+
+  a {
+    color: $gray-400;
+    &.is-active {
+      color: $white;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  .block-title {
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-bottom {
+    // TODO: refactoring
+    border-top: 1px solid $gray-800;
+  }
+
+  // footer brand section
+  .region-footer-brand {
+    // TODO: refactoring
+    img {
+      width: 104px;
+      margin-bottom: 24px;
+    }
+
+    .block-type-social-links {
+      .field--type-link {
+        i {
+          color: $gray-400;
+          padding: .5rem;
+          border: 1px solid $gray-400;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  // footer links section
+  .region-footer {
+    .nav {
+      flex-direction: column !important;
+      .nav-link {
+        padding-left: 0;
+      }
+    }
+  }
+
+}

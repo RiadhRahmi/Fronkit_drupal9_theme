@@ -1,0 +1,39 @@
+.view-team .card {
+  border: none; }
+
+.view-team .card-body {
+  position: relative; }
+
+.view-team .card-odd:before {
+  content: '';
+  position: absolute;
+  left: 46%;
+  top: -24px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid white;
+  clear: both; }
+
+.view-team .card-even:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  clear: both;
+  z-index: 99;
+  left: 46%;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid white;
+  border-bottom: 12px solid transparent;
+  clear: both; }
+
+.view-team .swiper-wrapper {
+  padding: 0; }
+
+.view-team .swiper-slide {
+  padding: 0; }

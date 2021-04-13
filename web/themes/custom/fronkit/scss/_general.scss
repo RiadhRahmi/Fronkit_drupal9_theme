@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.field--type-text-long{
+  p:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.bg-gray-900 {
+  background-color: $gray-900;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.badge {
+  margin-bottom: $spacer * 0.75;
+  line-height: 1.3;
+}
+
+
+.btn.btn-link {
+  font-weight: 500 !important;
+}
+
+
+.badge-primary-soft {
+  background: $gray-200;
+  color: $blue-lighter;
+}
+
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.is-active {
+  color: $white;
+  background: $primary;
+}
+
+
+
+.mb-grid-gutter {
+  margin-bottom: 30px;
+}
+
+.layout-container{
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+

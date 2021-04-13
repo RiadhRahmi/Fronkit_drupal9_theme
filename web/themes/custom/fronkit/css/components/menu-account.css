@@ -1,0 +1,6 @@
+.menu--account .nav-link {
+  padding: 0.5rem 0.5rem; }
+
+.block-menu.menu--main,
+.block-menu.menu--account {
+  margin-left: auto !important; }

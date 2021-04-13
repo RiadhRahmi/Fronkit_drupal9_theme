@@ -1,0 +1,88 @@
+
+
+.block-type-pricing-block{
+  .field--name-field-description p:last-child{
+    margin-bottom: 0px;
+  }
+
+  .block__title{
+    text-align: center;
+  }
+}
+
+
+
+.field--name-field-pricing-plans {
+  .item-1{
+    background: $primary;
+    color: $gray-200;
+
+    h4 {
+      color: $gray-200;
+    }
+
+    .display-4 {
+      color: $gray-200;
+    }
+
+    .btn {
+      color: $white;
+      border-color: $white;
+    }
+  }
+  .field__item {
+    border-radius: 8px;
+
+    &:hover {
+      background: $primary;
+      color: $gray-200;
+
+      h4 {
+        color: $gray-200;
+      }
+
+      .display-4 {
+        color: $gray-200;
+      }
+
+      .btn {
+        color: $white;
+        border-color: $white;
+      }
+    }
+  }
+
+}
+
+
+
+.pricing-title h4 {
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: $black;
+}
+
+.field--name-field-options {
+  margin-top: 24px;
+
+  ul {
+    li {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.field--name-field-price.display-4 {
+  font-weight: 900;
+  display: inline-block;
+  color: $black;
+}
+
+.field--name-field-period {
+  display: inline-block;
+
+  &::before {
+    content: '/'
+  }
+}
+

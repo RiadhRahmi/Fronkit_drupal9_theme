@@ -1,0 +1,24 @@
+.block-views-blockportfolio-block-1{
+  .view-header .col-6 p:last-child{
+    margin-bottom: 0px;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+
+.node--type-project .card {
+  border-radius: 16px;
+
+  h5 {
+    a {
+      color: $black;
+    }
+  }
+}
+
+.view-portfolio .view-content {
+  padding-bottom: 34px;
+}

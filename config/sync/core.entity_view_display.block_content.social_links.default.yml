@@ -27,7 +27,7 @@ content:
       rel: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_linkedin_link:
@@ -41,7 +41,7 @@ content:
       rel: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_twitter_link:
@@ -55,7 +55,7 @@ content:
       rel: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_youtube_link:
@@ -69,7 +69,7 @@ content:
       rel: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
 hidden: {  }

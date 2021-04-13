@@ -87,7 +87,7 @@ function fronkit_preprocess_field(&$variables, $hook)
  */
 function fronkit_preprocess_block(&$variables)
 {
-  $variables['title_attributes']['class'][] = 'block__title';
+  $variables['title_attributes']['class'][] = 'block-title';
   // Add a class indicating the custom block bundle.
   if (isset($variables['elements']['content']['#block_content'])) {
     $variables['attributes']['class'][] = Html::getClass('block-type-' . $variables['elements']['content']['#block_content']->bundle());
