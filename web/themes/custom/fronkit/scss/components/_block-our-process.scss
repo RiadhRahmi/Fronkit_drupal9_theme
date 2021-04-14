@@ -1,59 +1,51 @@
-
-
+// Block our process
 .block-our-process-team {
   background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
 
-  .process-item-index {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    color: $white;
-    display: inline-block;
-    background: $primary;
-    border-radius: 50%;
-    margin-right: 12px;
-  }
+  .block-type-our-working-process-block {
 
-  .small {
-    padding-bottom: 16px;
-  }
+    .block-title {
+      text-align: center;
+    }
 
-  .field--type-link {
+    .process-icon {
+      display: inline-block;
 
-    display: inline-block;
-    margin-right: 12px;
+      img {
+        width: 110px;
+        height: 130px;
+      }
+    }
 
-    i {
-      color: $gray-700;
-      padding: 8px;
-      border: 1px solid $gray-700;
-      border-radius: 50px;
+    .process-item-index {
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      text-align: center;
+      vertical-align: middle;
+      color: $white;
+      display: inline-block;
+      background: $primary;
+      border-radius: 50%;
+      margin-right: .75rem;
+    }
+
+    .small {
+      padding-bottom: 1rem;
+    }
+
+    .field--type-link {
+      display: inline-block;
+      margin-right: .75rem;
+
+      i {
+        color: $gray-700;
+        padding: .5rem;
+        border: 1px solid $gray-700;
+        border-radius: 50%;
+      }
     }
   }
-
 }
 
 
-.block-type-our-working-process-block{
-
-  .block__title{
-    text-align: center;
-  }
-
-  .field--type-text-long p:last-child{
-    margin-bottom: 0px;
-  }
-
-}
-
-
-.process-icon {
-  display: inline-block;
-
-  img {
-    width: 110px;
-    height: 130px;
-  }
-}

@@ -1,19 +1,21 @@
+// Blocks call to action
+.block-type-call-to-action {
+  border-radius: .25rem;
 
-.block-type-call-to-action{
-  border-radius: 4px!important;
+  .block-icon {
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  .block-content {
+    padding-left: 2rem;
+  }
 }
 
-.block-icon img {
-  width: 48px;
-  height: 48px;
-}
-
-.block-content {
-  padding-left: 32px;
-}
-
+// TODO: refactoring
 .block-type-job-offers-cta,
 .block-webform-block {
   min-height: 257px;
-  border-radius: 4px;
 }

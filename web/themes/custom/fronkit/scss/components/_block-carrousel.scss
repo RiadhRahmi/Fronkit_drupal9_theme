@@ -1,54 +1,29 @@
-.carrousel-items {
-  .field__item {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-}
-
-.mask-carrousel {
-  background: $black;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 66;
-  opacity: .3;
-}
-
-
-
+// Block carrousel
 .block-type-carrousel {
 
-  .swiper-button-next{
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
 
-  &:hover{
-    .swiper-button-next{
+  &:hover {
+    .swiper-button-prev,
+    .swiper-button-next {
       display: block;
     }
   }
 
+  .carrousel-items {
+    .field__item {
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  }
+
   .display-3 {
-    margin-bottom: 24px;
-    font-weight: 500 !important;
-  }
-
-  .btn {
-    padding: 16px 24px;
-  }
-
-  .field--name-field-video-link a:after {
-    content: "\F00A";
-    width: 12px;
-    height: 12px;
-    margin-left: 8px;
-    font-family: 'remixicon';
-    vertical-align: middle;
+    margin-bottom: 1.5rem;
+    font-weight: $font-weight-medium;
   }
 
   .slide-item-content {
@@ -63,70 +38,58 @@
     right: 25%;
   }
 
-  p {
-    margin: 0;
-  }
-
-
-  .text-gray-100 {
-    color: $gray-100;
-  }
 
   img {
     width: 100%;
     height: 850px;
   }
 
-  a.btn.btn-primary.me-3:after {
-    content: "\EA6C";
-    /* width: 12px; */
-    /* height: 12px; */
-    margin-left: 8px;
-    color: #f8f9fb;
-    font-family: 'remixicon';
-    vertical-align: middle;
-    /* font-weight: 600; */
-    font-size: 1rem;
+  .btn {
+    padding: 1rem 1.5rem;
   }
 
-  .block-type-carrousel .field--name-field-video-link a:after {
-    content: "\F00A";
-    /* width: 12px; */
-    /* height: 12px; */
-    margin-left: 8px;
-    font-family: 'remixicon';
-    vertical-align: middle;
-    font-size: 1rem;
-    color: $gray-800;
+  .btn-primary {
+    &:after {
+      content: "\EA6C";
+      margin-left: .5rem;
+      color: $gray-200;
+      font-family: $font-family-remixicon;
+      vertical-align: middle;
+      font-size: 1rem;
+    }
   }
 
   .btn-light {
-    color: $gray-800;
+    &:after {
+      content: "\F00A";
+      margin-left: .5rem;
+      font-family: $font-family-remixicon;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: $gray-800;
+    }
   }
 
-  .swiper-slide:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
+  .swiper-slide {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
-}
 
-
-
-
-.carrousel-swiper-container {
   .swiper-pagination-bullets {
-    bottom: 64px !important;
+    bottom: 4rem !important;
 
     .swiper-pagination-bullet {
-      margin-right: 12px;
-      width: 12px;
-      height: 12px;
+      margin-right: .75rem;
+      width: .75rem;
+      height: .75rem;
       background: $gray-200;
       opacity: 1;
 
@@ -135,31 +98,33 @@
       }
     }
   }
-}
-
-.swiper-button-prev {
-  left: 64px;
-}
 
 
-.swiper-button-prev:after {
-  content: "\EA64";
-  font-family: remixicon;
-  background: $white;
-  color: $gray-900;
-  font-size: 24px;
-  padding: 12px;
+  .swiper-button-prev {
+    left: 4rem;
+
+    &:after {
+      content: "\EA64";
+      font-family: $font-family-remixicon;
+      background: $white;
+      color: $gray-900;
+      font-size: 1.5rem;
+      padding: .75rem;
+    }
+  }
+
+  .swiper-button-next {
+    right: 4rem;
+
+    &:after {
+      content: "\EA6E";
+      font-family: $font-family-remixicon;
+      background: $white;
+      color: $gray-900;
+      font-size: 1.5rem;
+      padding: .75rem;
+    }
+  }
 }
 
-.swiper-button-next {
-  right: 64px
-}
 
-.swiper-button-next:after {
-  content: "\EA6E";
-  font-family: remixicon;
-  background: $white;
-  color: $gray-900;
-  font-size: 24px;
-  padding: 12px;
-}

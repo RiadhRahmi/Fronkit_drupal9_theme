@@ -43,7 +43,7 @@ content:
     label: hidden
     settings:
       list_type: ul
-      class: list-unstyled
+      class: 'list-unstyled mt-4'
     third_party_settings:
       field_formatter_class:
         class: ''

@@ -1,87 +1,84 @@
-
-
-.block-type-features-block{
-  .block__title{
+// Block Features
+.block-type-features-block {
+  .block-title {
     text-align: center;
   }
-}
 
-.paragraph--type--feature-item.item-2 {
-  background: $primary;
-  color: $white;
+  .paragraph--type--feature-item {
+    // TODO
+    transition: .5s;
+    border-radius: .25rem;
 
-  h3 {
-    color: $gray-200;
-  }
+    .feature-icon {
+      width: 8.125rem;
+      height: 8.125rem;
+      background: $gray-200;
+      border-radius: 50%;
 
-  .btn {
-    color: $gray-100;
-  }
+      .field__item {
+        line-height: 8.125rem;
+      }
 
-  a:after {
-    color: $gray-100;
-  }
-}
-
-.paragraph--type--feature-item {
-
-  transition: .5s;
-  border-radius: 8px;
-
-  .field--name-field-description {
-    p {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &:hover {
-    background: $primary;
-    color: $white;
-    transform: translateY(-10px);
-
-    h3 {
-      color: $gray-200;
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
     }
 
     .btn {
-      color: $gray-100;
+      &:after {
+        content: "\EA6C";
+        width: .75rem;
+        height: .75rem;
+        margin-left: .5rem;
+        color: $primary;
+        font-family: $font-family-remixicon;
+        vertical-align: middle;
+        font-weight: $font-weight-medium;
+      }
     }
 
-    a:after {
-      color: $gray-100;
+    .item-2 {
+      background: $primary;
+      color: $white;
+
+      h3 {
+        color: $gray-200;
+      }
+
+      .btn {
+        color: $gray-100;
+
+        &:after {
+          color: $gray-100;
+        }
+      }
     }
 
+    &:hover {
+      background: $primary;
+      color: $white;
+      transform: translateY(-10px);
+
+      h3 {
+        color: $gray-200;
+      }
+
+      .btn {
+        color: $gray-100;
+
+        &:after {
+          color: $gray-100;
+        }
+      }
+    }
   }
 }
 
 
 
 
-.feature-icon {
-  width: 130px;
-  height: 130px;
-  background: $gray-200;
-  border-radius: 50%;
-
-  .field__item {
-    line-height: 130px;
-  }
-
-  img {
-    width: 48px;
-    height: 48px;
-  }
-}
 
 
 
-.paragraph--type--feature-item a:after {
-  content: "\EA6C";
-  width: 12px;
-  height: 12px;
-  margin-left: 8px;
-  color: $primary;
-  font-family: 'remixicon';
-  vertical-align: middle;
-  font-weight: 600;
-}
+

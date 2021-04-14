@@ -1,18 +1,12 @@
-
-
+// Block About us
 .block-type-about-us-block {
-
   img {
-    border-radius: 8px;
+    // TODO: refactoring
+    border-radius: .5rem;
     width: 100%;
   }
 
-  .field--type-text-long p:last-child{
-    margin-bottom: 0px;
-  }
-
-  .block__title{
+  .block-title{
     text-align: center;
   }
-
 }

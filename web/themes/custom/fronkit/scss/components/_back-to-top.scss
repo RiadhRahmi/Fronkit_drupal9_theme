@@ -1,5 +1,5 @@
-//Button Back To Top style
-a#to-top {
+//Button Back To Top
+.btn-go-top {
   width: 2.5rem;
   height: 2.5rem;
   background-color: $gray-600;
@@ -13,8 +13,8 @@ a#to-top {
   line-height: 2.5rem;
   font-size: 1rem;
   text-align: center;
-}
 
-#to-top:hover {
-  opacity: 0.9;
+  &:hover{
+    opacity: 0.8;
+  }
 }

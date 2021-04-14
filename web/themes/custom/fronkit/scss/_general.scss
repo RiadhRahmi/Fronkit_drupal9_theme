@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.form-type-webform-markup,
 .field--type-text-long{
   p:last-child{
     margin-bottom: 0;
@@ -51,3 +52,10 @@ body {
   margin: 0;
 }
 
+.btn-light {
+  color: $gray-800;
+}
+
+.text-gray-100 {
+  color: $gray-100;
+}
