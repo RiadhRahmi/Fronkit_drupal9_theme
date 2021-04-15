@@ -43,7 +43,7 @@ body {
 
 
 .mb-grid-gutter {
-  margin-bottom: 30px;
+  margin-bottom: 1.87500rem;
 }
 
 .layout-container{
@@ -58,4 +58,11 @@ body {
 
 .text-gray-100 {
   color: $gray-100;
+}
+
+
+.btn-white {
+  color: $black;
+  background-color: $white;
+  border-color: $white;
 }

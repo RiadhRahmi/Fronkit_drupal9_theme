@@ -1,66 +1,63 @@
+// Header section
+header{
+  .navbar {
+    line-height: 2.3125rem;
+  }
 
-header.navbar {
-  line-height: 37px;
+  // region primary menu
+  .region-primary-menu {
+    display: inherit;
+    flex-grow: inherit;
+  }
+
+  // main menu
+  .menu--main {
+    margin-left: auto !important;
+
+    ul {
+      .dropdown {
+        margin-right: .25rem;
+        font-weight: $font-weight-medium;
+
+        .nav-link {
+          color: $gray-800 !important;
+
+          &:after {
+            content: "\EA4E";
+            margin-left: 0.125rem;
+            color: $gray-800;
+            font-family: $font-family-remixicon;
+            vertical-align: middle;
+          }
+
+          &.is-active {
+            color: $primary !important;
+            font-weight: $font-weight-bolder;
+
+            &:after {
+              color: $primary !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // account menu
+  .menu--account {
+    margin-left: auto !important;
+
+    ul {
+      align-items: center;
+
+      .nav-link {
+        padding: 0.5rem 0.5rem;
+        color: $gray-800 !important;
+      }
+    }
+  }
 }
 
-.region-primary-menu {
-  display: inherit;
-  flex-grow: inherit;
-}
-
-.menu--main ul li a.nav-link,
-.menu--account ul li a.nav-link {
-  color: $gray-800 !important;
-}
-
-.menu--main ul li.dropdown {
-  margin-right: 4px;
-  font-weight: 500;
-}
-
-.menu--main ul li a.is-active {
-  color: $primary !important;
-  font-weight: 900;
-}
-
-.menu--main ul li a.is-active:after {
-  color: $primary !important;
-}
-
-.menu--main ul li.dropdown a:after {
-  content: "\EA4E";
-  margin-left: 2px;
-  color: #384C74;
-  font-family: 'remixicon';
-  vertical-align: middle;
-}
 
 
-.block-menu.menu--main,
-.block-menu.menu--account {
-  margin-left: auto !important;
-}
 
-.menu--account .nav-link {
-  padding: 0.5rem 0.5rem;
-}
-
-.block-menu.menu--main,
-.block-menu.menu--account {
-  margin-left: auto !important;
-}
-
-
-.menu--account .nav-link {
-  padding: 0.5rem 0.5rem;
-}
-
-.block-menu.menu--main,
-.block-menu.menu--account {
-  margin-left: auto !important;
-}
-
-
-.menu--account ul {
-  align-items: center;
-}

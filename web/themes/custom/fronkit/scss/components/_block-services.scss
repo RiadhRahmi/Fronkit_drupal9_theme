@@ -1,45 +1,31 @@
+// Block Services
+.block-type-services-block {
 
-.service-image {
-  img {
-    width: 48px;
-    height: 48px
+  .service-image {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  h5 {
+    color: $gray-800;
+  }
+
+  .field__items {
+    margin-bottom: 3.75rem;
+
+    .field__item {
+      border-radius: .5rem;
+    }
+
+    .item {
+      &:nth-child(odd) {
+        top: 5.625rem;
+        position: relative;
+      }
+    }
   }
 }
 
-.field--name-field-services-items {
-  margin-bottom: 60px;
-}
 
-.btn-white {
-  color: $black;
-  background-color: $white;
-  border-color: $white;
-}
-
-
-.field--name-field-services-items .row .col-6:nth-child(odd) {
-  top: 90px;
-  position: relative;
-}
-
-.field--name-field-services-items h5 {
-  color: $gray-800;
-}
-
-.field--name-field-services-items p {
-  margin-bottom: 0;
-}
-
-
-
-.block-type-services-block{
-  .field--type-text-long p:last-child{
-    margin-bottom: 0px;
-  }
-}
-
-.field--name-field-services-items {
-  .field__item {
-    border-radius: 8px;
-  }
-}

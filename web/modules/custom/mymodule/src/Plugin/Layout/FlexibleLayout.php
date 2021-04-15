@@ -10,8 +10,8 @@ use Drupal\Core\Layout\LayoutDefault;
  * @Layout(
  *   id = "flexible_layout",
  *   deriver = "Drupal\mymodule\Plugin\Deriver\FlexibleLayoutDeriver",
- *   admin_label = @Translation("Dynamic layout"),
- *   category = @Translation("Dynamic layout category"),
+ *   admin_label = @Translation("Flexible layout"),
+ *   category = @Translation("Flexible layout category"),
  * )
  */
 class FlexibleLayout extends LayoutDefault {
