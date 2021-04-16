@@ -2,17 +2,11 @@
 .btn-go-top {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: $gray-600;
-  display: none;
-  position: fixed;
   bottom: 2rem;
   right: 2rem;
-  // TODO: refactoring
   z-index: 99;
-  color: $gray-200;
   line-height: 2.5rem;
   font-size: 1rem;
-  text-align: center;
 
   &:hover{
     opacity: 0.8;

@@ -37,7 +37,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'slide-item-content swiper-no-swiping'
+        classes: 'slide-item-content swiper-no-swiping position-absolute text-center top-50 start-25 end-25 zindex-99  '
       label: Content
   layout_builder:
     allow_custom: false
@@ -72,7 +72,7 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-primary me-3'
+      class: 'btn btn-primary btn-arrow-right me-3'
       url_only: false
       url_plain: false
       rel: '0'
@@ -89,7 +89,7 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'display-3 text-white mb-4'
+        class: 'display-3 text-white mb-4 fw-medium'
     type: string
     region: content
   field_video_link:
@@ -97,7 +97,7 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-light fancybox'
+      class: 'btn btn-light btn-play fancybox'
       url_only: false
       url_plain: false
       rel: '0'

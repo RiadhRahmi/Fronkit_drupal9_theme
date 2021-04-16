@@ -3,33 +3,13 @@
   background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
 
   .block-type-our-working-process-block {
-
     .block-title {
       text-align: center;
     }
 
-    .process-icon {
-      display: inline-block;
-
-      img {
-        width: 110px;
-        height: 130px;
-      }
-    }
-
-    .process-item-index {
-      width: 2.5rem;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      text-align: center;
-      vertical-align: middle;
-      color: $white;
-      display: inline-block;
-      background: $primary;
-      border-radius: 50%;
-      margin-right: .75rem;
+    img {
+      width: 110px;
+      height: 130px;
     }
   }
 }
-
-

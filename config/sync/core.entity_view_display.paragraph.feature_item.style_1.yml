@@ -48,14 +48,14 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-link p-0 mt-4'
+      class: 'btn btn-link btn-link-arrow p-0'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mt-4
     type: link_class
     region: content
   field_title:

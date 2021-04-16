@@ -3,52 +3,32 @@
   .block-title {
     text-align: center;
   }
-
   .paragraph--type--feature-item {
     // TODO
     transition: .5s;
-    border-radius: .25rem;
 
     .feature-icon {
       width: 8.125rem;
       height: 8.125rem;
       background: $gray-200;
       border-radius: 50%;
-
       .field__item {
         line-height: 8.125rem;
       }
-
       img {
         width: 3rem;
         height: 3rem;
       }
     }
 
-    .btn {
-      &:after {
-        content: "\EA6C";
-        width: .75rem;
-        height: .75rem;
-        margin-left: .5rem;
-        color: $primary;
-        font-family: $font-family-remixicon;
-        vertical-align: middle;
-        font-weight: $font-weight-medium;
-      }
-    }
-
-    .item-2 {
+    &.item-2 {
       background: $primary;
       color: $white;
-
       h3 {
         color: $gray-200;
       }
-
       .btn {
         color: $gray-100;
-
         &:after {
           color: $gray-100;
         }
@@ -59,14 +39,11 @@
       background: $primary;
       color: $white;
       transform: translateY(-10px);
-
       h3 {
         color: $gray-200;
       }
-
       .btn {
         color: $gray-100;
-
         &:after {
           color: $gray-100;
         }

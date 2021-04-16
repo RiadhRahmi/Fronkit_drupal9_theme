@@ -39,7 +39,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'process-icon mb-6'
+        class: 'process-icon d-inline-block mb-6'
     type: entity_reference_entity_view
     region: content
   field_title:

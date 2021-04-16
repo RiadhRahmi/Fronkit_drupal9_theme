@@ -50,8 +50,8 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="process-item-index">
-        {{ paragraph.index }}
+      <div class="btn btn-lg btn-primary btn-rounded-circle">
+        <span>{{ paragraph.index }}</span>
       </div>
       {{ content }}
     {% endblock %}
