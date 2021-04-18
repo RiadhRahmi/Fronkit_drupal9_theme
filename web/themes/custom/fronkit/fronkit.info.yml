@@ -2,11 +2,11 @@ name: Fronkit Theme
 type: theme
 base theme: false
 description: A flexible theme with a responsive, mobile-first layout.
-package: Custom
+package: Fronkit
 core: 8.x
 core_version_requirement: ^8 || ^9
 libraries:
-  - fronkit/global
+  - fronkit/global-styling
 regions:
   brand: 'Brand'
   primary_menu: 'Primary menu'

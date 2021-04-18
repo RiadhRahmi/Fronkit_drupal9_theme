@@ -38,14 +38,19 @@
     bottom: 4rem !important;
     .swiper-pagination-bullet {
       margin-right: .5rem;
-      width: .5rem;
-      height: .5rem;
+      width: .75rem;
+      height: .75rem;
       background: $gray-200;
       opacity: 1;
       &.swiper-pagination-bullet-active {
         background: $primary;
       }
     }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
 
   &:hover {

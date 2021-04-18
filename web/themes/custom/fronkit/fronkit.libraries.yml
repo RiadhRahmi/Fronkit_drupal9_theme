@@ -1,31 +1,12 @@
-# Main theme library.
-global:
+# global styling.
+global-styling:
   css:
-    #    base:
-    #      css/base/elements.css: {}
-    #    component:
-    #      css/components/block.css: {}
-    #      css/components/breadcrumb.css: {}
-    #      css/components/field.css: {}
-    #      css/components/form.css: {}
-    #      css/components/header.css: {}
-    #      css/components/menu.css: {}
-    #      css/components/messages.css: {}
-    #      css/components/node.css: {}
-    #      css/components/sidebar.css: {}
-    #      css/components/table.css: {}
-    #      css/components/tabs.css: {}
-    #      css/components/buttons.css: {}
-    #    layout:
-    #      css/layouts/layout.css: {}
     theme:
       node_modules/swiper/swiper-bundle.min.css: {}
       node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css: {}
-      css/style.css: {}
-      templates/repetitivetheme/custom.css:  {}
       node_modules/remixicon/fonts/remixicon.css: {}
       node_modules/animate.css/animate.min.css: {}
-  #      css/theme/print.css: { media: print }
+      css/style.css: {}
   js:
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}
     node_modules/swiper/swiper-bundle.min.js: {}

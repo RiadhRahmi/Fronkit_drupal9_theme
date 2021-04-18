@@ -10155,12 +10155,16 @@ header .menu--account {
   bottom: 4rem !important; }
   .block-type-carrousel .swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: .5rem;
-    width: .5rem;
-    height: .5rem;
+    width: .75rem;
+    height: .75rem;
     background: #F1F4F8;
     opacity: 1; }
     .block-type-carrousel .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background: #003CC5; }
+
+.block-type-carrousel .swiper-button-prev,
+.block-type-carrousel .swiper-button-next {
+  display: none; }
 
 .block-type-carrousel:hover .swiper-button-prev,
 .block-type-carrousel:hover .swiper-button-next {
@@ -10314,7 +10318,7 @@ header .menu--account {
   position: initial; }
 
 .block-views-blockteam-block-1 .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin-right: .75rem;
+  margin-right: .5rem;
   width: .75rem;
   height: .75rem;
   background: #C6D3E6;
