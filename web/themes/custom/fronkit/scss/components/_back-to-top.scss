@@ -1,5 +1,5 @@
 //Button Back To Top
-.btn-go-top {
+.btn-back-to-top {
   width: 2.5rem;
   height: 2.5rem;
   bottom: 2rem;
@@ -7,7 +7,7 @@
   z-index: 99;
   line-height: 2.5rem;
   font-size: 1rem;
-
+  display: none;
   &:hover{
     opacity: 0.8;
   }

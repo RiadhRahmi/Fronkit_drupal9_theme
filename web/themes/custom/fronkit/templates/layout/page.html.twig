@@ -46,7 +46,6 @@
 
   {% include '@fronkit/layout/partials/header.html.twig' %}
 
-
   {% if page.breadcrumb %}
     <div class="container">
       <div class="row">
@@ -70,20 +69,19 @@
   {{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
+      <aside class="layout-sidebar-first">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
+      <aside class="layout-sidebar-second">
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
@@ -92,9 +90,9 @@
 
   {% include '@fronkit/layout/partials/footer.html.twig' %}
 
-  <a id="to-top" href="#layout-container" data-scroll="scrollTo"
-     class="cd-top btn-go-top rounded-circle bg-gray-600 position-fixed d-none text-gray-200 text-center">
+  <a id="btn-back-to-top" href="#layout-container"
+     class="btn-back-to-top rounded-circle bg-gray-600 position-fixed text-gray-200 text-center">
     <i class="ri-arrow-up-line"></i>
   </a>
 
-</div>{# /.layout-container #}
+</div>

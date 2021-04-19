@@ -1,33 +1,39 @@
-uuid: 5a5841f6-1b49-4c2b-b55a-81934adae265
+uuid: 6c9aa0cf-0dc4-4c3f-8871-50902c238452
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_content.type.social_links
+    - core.entity_view_mode.block_content.style_2
     - field.field.block_content.social_links.field_facebook_link
     - field.field.block_content.social_links.field_linkedin_link
     - field.field.block_content.social_links.field_twitter_link
     - field.field.block_content.social_links.field_youtube_link
   module:
     - field_formatter_class
+    - layout_builder
     - link
-id: block_content.social_links.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.social_links.style_2
 targetEntityType: block_content
 bundle: social_links
-mode: default
+mode: style_2
 content:
   field_facebook_link:
     weight: 0
     label: hidden
     settings:
       trim_length: 800
+      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-      target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_linkedin_link:
@@ -35,13 +41,13 @@ content:
     label: hidden
     settings:
       trim_length: 800
+      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-      target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_twitter_link:
@@ -49,13 +55,13 @@ content:
     label: hidden
     settings:
       trim_length: 800
+      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-      target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
   field_youtube_link:
@@ -63,13 +69,13 @@ content:
     label: hidden
     settings:
       trim_length: 800
+      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-      target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: 'd-inline-block me-2'
     type: link
     region: content
 hidden: {  }

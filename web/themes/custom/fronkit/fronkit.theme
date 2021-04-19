@@ -1,4 +1,5 @@
 <?php
+
 use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Utility\Html;
 
@@ -17,35 +18,35 @@ function fronkit_preprocess_field(&$variables, $hook)
   if ($variables['field_name'] == 'field_link') {
     foreach ($variables['items'] as $key => $item) {
       $title = $variables['items'][$key]['content']['#title'];
-      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
 
   if ($variables['field_name'] == 'field_facebook_link') {
     foreach ($variables['items'] as $key => $item) {
       $title = '<i class="ri-facebook-fill"></i>';
-      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
 
   if ($variables['field_name'] == 'field_linkedin_link') {
     foreach ($variables['items'] as $key => $item) {
       $title = '<i class="ri-linkedin-fill"></i>';
-      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
 
   if ($variables['field_name'] == 'field_twitter_link') {
     foreach ($variables['items'] as $key => $item) {
       $title = '<i class="ri-twitter-fill"></i>';
-      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
 
   if ($variables['field_name'] == 'field_youtube_link') {
     foreach ($variables['items'] as $key => $item) {
       $title = '<i class="ri-youtube-fill"></i>';
-      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title,[]);
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
 
@@ -56,21 +57,27 @@ function fronkit_preprocess_field(&$variables, $hook)
  */
 function fronkit_preprocess_block(&$variables)
 {
+  // Add a class to block title
   $variables['title_attributes']['class'][] = 'block-title';
   // Add a class indicating the custom block bundle.
   if (isset($variables['elements']['content']['#block_content'])) {
-    $variables['attributes']['class'][] = Html::getClass('block-type-' . $variables['elements']['content']['#block_content']->bundle());
+    $bundle = $variables['elements']['content']['#block_content']->bundle();
+    $variables['attributes']['class'][] = Html::getClass('block-type-' . $bundle);
   }
 }
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter() for block templates.
  */
-function fronkit_theme_suggestions_block_alter(array &$suggestions, array $variables)
+function fronkit_theme_suggestions_block_alter(array &$suggestions, array $variables, $hook)
 {
   // Block suggestions for custom block bundles.
   if (isset($variables['elements']['content']['#block_content'])) {
-    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+    $bundle = $variables['elements']['content']['#block_content']->bundle();
+    $view_mode = strtr($variables['elements']['#configuration']['view_mode'], '.', '_');
+
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $bundle);
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $bundle . '__' . $view_mode);
   }
 }
 
@@ -87,7 +94,6 @@ function fronkit_preprocess_views_view(&$variables)
       }
   }
 }
-
 
 /**
  * @param $vars

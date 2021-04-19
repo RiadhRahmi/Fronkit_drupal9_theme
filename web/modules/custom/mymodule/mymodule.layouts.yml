@@ -31,3 +31,17 @@ layout_oneplusfourgrid_section:
 #  regions:
 #    main:
 #      label: Main content
+
+
+custom_layout_bootstrap:
+  label: 'Custom Layout'
+  path: layouts/custom_layout_bootstrap
+  template: custom--layout--bootstrap
+  class: '\Drupal\mymodule\Plugin\Layout\CustomBootstrapLayout'
+  category: 'Custom'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
