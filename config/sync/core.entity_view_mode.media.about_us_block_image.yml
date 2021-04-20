@@ -1,0 +1,10 @@
+uuid: ce73bb87-490b-44c7-b1b9-d91355d446bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.about_us_block_image
+label: 'About Us Block Image'
+targetEntityType: media
+cache: true

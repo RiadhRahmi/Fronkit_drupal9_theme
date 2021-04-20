@@ -63,6 +63,9 @@ function fronkit_preprocess_block(&$variables)
   if (isset($variables['elements']['content']['#block_content'])) {
     $bundle = $variables['elements']['content']['#block_content']->bundle();
     $variables['attributes']['class'][] = Html::getClass('block-type-' . $bundle);
+
+    $view_mode = strtr($variables['elements']['#configuration']['view_mode'], '.', '_');
+    $variables['attributes']['class'][] = Html::getClass('view-mode-' . $view_mode);
   }
 }
 

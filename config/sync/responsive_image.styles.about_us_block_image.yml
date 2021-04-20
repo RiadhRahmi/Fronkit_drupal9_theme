@@ -1,0 +1,38 @@
+uuid: caede08c-4540-4f92-9774-6e767cdca5d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.about_us_block_image_700x500
+  theme:
+    - fronkit
+id: about_us_block_image
+label: 'About Us Block Image'
+image_style_mappings:
+  -
+    breakpoint_id: fronkit.extra_large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: about_us_block_image_700x500
+  -
+    breakpoint_id: fronkit.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: about_us_block_image_700x500
+  -
+    breakpoint_id: fronkit.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: about_us_block_image_700x500
+  -
+    breakpoint_id: fronkit.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: about_us_block_image_700x500
+  -
+    breakpoint_id: fronkit.extra_small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: about_us_block_image_700x500
+breakpoint_group: fronkit
+fallback_image_style: '_original image_'

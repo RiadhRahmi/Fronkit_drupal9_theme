@@ -1,0 +1,15 @@
+uuid: 90c0dbd2-ae9f-4f55-b6cb-81e3603062b1
+langcode: en
+status: true
+dependencies: {  }
+name: about_us_block_image_700x500
+label: 'About Us Block Image (700x500)'
+effects:
+  d52824fe-3256-400b-9dba-d5128cdeb127:
+    uuid: d52824fe-3256-400b-9dba-d5128cdeb127
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: 500
+      upscale: false
