@@ -10090,6 +10090,9 @@ body {
   background-color: #fff;
   border-color: #fff; }
 
+.ri-md {
+  font-size: 1.25rem !important; }
+
 header .navbar {
   line-height: 2.3125rem; }
 
@@ -10326,7 +10329,7 @@ header .menu--account {
   .block-views-blockteam-block-1 .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #003CC5; }
 
-.block-type-call-to-action .block-icon img {
+.block-type-call-to-action .view-mode-style-2 img {
   width: 3.5rem;
   height: 3.5rem; }
 
@@ -10385,9 +10388,9 @@ header .menu--account {
       color: #fff;
       border-color: #fff; }
 
-.partner-image img {
-  width: 104px;
-  height: auto; }
+.view-partners img {
+  width: 112px;
+  height: 40px; }
 
 .footer p {
   color: #C6D3E6; }
@@ -10404,10 +10407,6 @@ header .menu--account {
 
 .footer .footer-bottom {
   border-top: 1px solid #384C74; }
-
-.footer .region-footer-brand img {
-  width: 104px;
-  margin-bottom: 24px; }
 
 .footer .region-footer-brand .block-type-social-links .field--type-link i {
   color: #C6D3E6;

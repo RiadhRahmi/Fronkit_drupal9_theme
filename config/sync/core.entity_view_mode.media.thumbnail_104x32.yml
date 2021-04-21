@@ -1,0 +1,10 @@
+uuid: 83f5b2e6-c650-4555-af21-744b60421846
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.thumbnail_104x32
+label: 'Thumbnail 104x32'
+targetEntityType: media
+cache: true

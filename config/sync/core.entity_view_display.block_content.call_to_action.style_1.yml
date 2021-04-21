@@ -36,7 +36,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      trim_length: 800
+      trim_length: null
       class: 'btn btn-primary float-end'
       url_only: false
       url_plain: false

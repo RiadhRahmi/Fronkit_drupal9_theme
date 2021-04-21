@@ -83,20 +83,20 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'block-icon col-2 pe-0 ps-0'
+        class: 'col-2 pe-0 ps-0'
   field_link:
     weight: 2
     label: hidden
     settings:
-      trim_length: 800
-      class: 'btn btn-link p-0 mt-2'
+      trim_length: null
+      class: 'btn btn-link p-0 '
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mt-4
     type: link_class
     region: content
   field_title:
@@ -107,7 +107,7 @@ content:
     settings:
       link_class: ''
       tag: h2
-      class: block__title
+      class: ''
       link: false
       summary: false
       trim: 200

@@ -1,0 +1,14 @@
+uuid: 07d0fb13-2d86-4c36-b1c3-1e422ed21387
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_104_32
+label: 'Thumbnail (104×32)'
+effects:
+  1b32f06a-73e4-493e-84da-94b2d4906b1c:
+    uuid: 1b32f06a-73e4-493e-84da-94b2d4906b1c
+    id: image_resize
+    weight: 1
+    data:
+      width: 104
+      height: 32

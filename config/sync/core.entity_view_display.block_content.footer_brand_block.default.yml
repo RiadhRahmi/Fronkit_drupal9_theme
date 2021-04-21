@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.footer_brand_block.field_description
     - field.field.block_content.footer_brand_block.field_logo
   module:
+    - field_formatter_class
     - text
 id: block_content.footer_brand_block.default
 targetEntityType: block_content
@@ -27,6 +28,8 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
 hidden: {  }
