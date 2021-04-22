@@ -52,7 +52,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: block-description
+        class: ''
     type: text_default
     region: content
   field_pricing_plans:
@@ -88,7 +88,7 @@ content:
       trim: 200
     third_party_settings:
       field_formatter_class:
-        class: 'block-title h2'
+        class: ''
     type: wrapper_class
     region: content
 hidden: {  }

@@ -16,7 +16,6 @@ function fronkit_preprocess_field(&$variables, $hook)
   }
 
 
-
   if ($variables['field_type'] == 'link') {
     foreach ($variables['items'] as $key => $item) {
       $title = $variables['items'][$key]['content']['#title'];
@@ -24,33 +23,18 @@ function fronkit_preprocess_field(&$variables, $hook)
     }
   }
 
-//  if ($variables['field_name'] == 'field_facebook_link') {
-//    foreach ($variables['items'] as $key => $item) {
-//      $title = '<i class="ri-facebook-fill"></i>';
-//      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
-//    }
-//  }
-//
-//  if ($variables['field_name'] == 'field_linkedin_link') {
-//    foreach ($variables['items'] as $key => $item) {
-//      $title = '<i class="ri-linkedin-fill"></i>';
-//      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
-//    }
-//  }
-//
-//  if ($variables['field_name'] == 'field_twitter_link') {
-//    foreach ($variables['items'] as $key => $item) {
-//      $title = '<i class="ri-twitter-fill"></i>';
-//      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
-//    }
-//  }
-//
-//  if ($variables['field_name'] == 'field_youtube_link') {
-//    foreach ($variables['items'] as $key => $item) {
-//      $title = '<i class="ri-youtube-fill"></i>';
-//      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
-//    }
-//  }
+  $social_links = [
+    'field_facebook_link' => 'ri-facebook-fill ri-md',
+    'field_linkedin_link' => 'ri-linkedin-fill ri-md',
+    'field_twitter_link' => 'ri-twitter-fill ri-md'
+  ];
+
+  if (array_key_exists($variables['field_name'], $social_links)) {
+    foreach ($variables['items'] as $key => $item) {
+      $title = '<i class="'.$social_links[$variables['field_name']].'"></i>';
+      $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
+    }
+  }
 
 }
 

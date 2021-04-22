@@ -63,13 +63,13 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'col-6 pe-0 me-0 img-about-us'
+        class: 'col-6 pe-0 me-0'
     region: content
   field_link:
     weight: 5
     label: hidden
     settings:
-      trim_length: 800
+      trim_length: null
       class: 'btn btn-primary mt-7'
       url_only: false
       url_plain: false

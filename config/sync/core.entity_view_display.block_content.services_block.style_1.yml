@@ -54,14 +54,14 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: block-description
+        class: ''
     type: text_default
     region: content
   field_link:
     weight: 4
     label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
       class: 'btn btn-primary mt-7'
       url_only: false
       url_plain: false
@@ -105,7 +105,7 @@ content:
       trim: 200
     third_party_settings:
       field_formatter_class:
-        class: 'block-title h2'
+        class: ''
     type: wrapper_class
     region: content
 hidden: {  }

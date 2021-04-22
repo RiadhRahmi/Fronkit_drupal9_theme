@@ -93,13 +93,15 @@
 
   <div{{ content_attributes.addClass('node__content card card-hover shadow mx-auto') }}>
 
+    <a href="{{ url }}">
     {{ content.field_image }}
+    </a>
 
     <div class="card-body text-center py-4">
       {{ title_prefix }}
       {% if label and not page %}
         <h5{{ title_attributes.addClass('m-0 p-0') }}>
-          <a href="{{ url }}" rel="bookmark" class="">{{ label }}</a>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
         </h5>
       {% endif %}
       {{ title_suffix }}

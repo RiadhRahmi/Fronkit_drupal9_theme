@@ -60,7 +60,7 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
       target: _blank
       url_only: false
       url_plain: false
@@ -95,7 +95,7 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
       target: _blank
       url_only: false
       url_plain: false
@@ -109,7 +109,7 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
       target: _blank
       url_only: false
       url_plain: false
