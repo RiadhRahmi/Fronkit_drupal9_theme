@@ -3,6 +3,7 @@
 use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Utility\Html;
 
+
 /**
  * Implements hook_preprocess_field().
  */
@@ -31,7 +32,7 @@ function fronkit_preprocess_field(&$variables, $hook)
 
   if (array_key_exists($variables['field_name'], $social_links)) {
     foreach ($variables['items'] as $key => $item) {
-      $title = '<i class="'.$social_links[$variables['field_name']].'"></i>';
+      $title = '<i class="' . $social_links[$variables['field_name']] . '"></i>';
       $variables['items'][$key]['content']['#title'] = new FormattableMarkup($title, []);
     }
   }
