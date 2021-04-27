@@ -9986,8 +9986,16 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .form-type-webform-markup p:last-child,
+.field--type-text-with-summary p:last-child,
 .field--type-text-long p:last-child {
   margin-bottom: 0; }
+
+.text-black {
+  color: #161C2D; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 .zindex-99 {
   z-index: 99; }
@@ -10329,68 +10337,44 @@ header .menu--account {
   .block-views-blockteam-block-1 .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #003CC5; }
 
-.block-type-call-to-action .view-mode-style-2 img {
-  width: 3.5rem;
-  height: 3.5rem; }
-
 .block-type-job-offers-cta,
 .block-webform-block {
   min-height: 16.0625rem; }
 
-.block-views-blockportfolio-block-1 .card {
-  border-radius: .5rem; }
-  .block-views-blockportfolio-block-1 .card h5 a, .block-views-blockportfolio-block-1 .card .h5 a {
-    color: #161C2D; }
-
-.block-views-blockportfolio-block-1 img {
-  width: 100%; }
-
-.block-views-blockportfolio-block-1 .view-content {
-  padding-bottom: 2.125rem; }
-
 .block-type-pricing-block .block-title {
   text-align: center; }
 
-.block-type-pricing-block .field__items .field__item {
-  border-radius: .25rem; }
-  .block-type-pricing-block .field__items .field__item h4, .block-type-pricing-block .field__items .field__item .h4 {
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    color: #161C2D; }
-  .block-type-pricing-block .field__items .field__item .display-4 {
-    font-weight: bolder;
-    display: inline-block;
-    color: #161C2D; }
-  .block-type-pricing-block .field__items .field__item .field--name-field-period {
-    display: inline-block; }
-    .block-type-pricing-block .field__items .field__item .field--name-field-period::before {
-      content: '/'; }
-  .block-type-pricing-block .field__items .field__item .field--name-field-options li {
-    padding-bottom: 8px; }
-  .block-type-pricing-block .field__items .field__item.item-1 {
-    background: #003CC5;
-    color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item.item-1 h4, .block-type-pricing-block .field__items .field__item.item-1 .h4 {
-      color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item.item-1 .display-4 {
-      color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item.item-1 .btn {
-      color: #fff;
-      border-color: #fff; }
-  .block-type-pricing-block .field__items .field__item:hover {
-    background: #003CC5;
-    color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item:hover h4, .block-type-pricing-block .field__items .field__item:hover .h4 {
-      color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item:hover .display-4 {
-      color: #F1F4F8; }
-    .block-type-pricing-block .field__items .field__item:hover .btn {
-      color: #fff;
-      border-color: #fff; }
+.block-type-pricing-block .field__item .field--name-field-period::before {
+  content: '/'; }
 
-.view-partners img {
-  width: 112px;
-  height: 40px; }
+.block-type-pricing-block .field__item .field--name-field-options li {
+  padding-bottom: .5rem; }
+
+.block-type-pricing-block .field__item.item-1 {
+  background: #003CC5;
+  color: #F1F4F8; }
+  .block-type-pricing-block .field__item.item-1 h4, .block-type-pricing-block .field__item.item-1 .h4 {
+    color: #F1F4F8; }
+  .block-type-pricing-block .field__item.item-1 .display-4 {
+    color: #F1F4F8; }
+  .block-type-pricing-block .field__item.item-1 .btn {
+    color: #fff;
+    border-color: #fff; }
+
+.block-type-pricing-block .field__item:hover {
+  background: #003CC5;
+  color: #F1F4F8; }
+  .block-type-pricing-block .field__item:hover h4, .block-type-pricing-block .field__item:hover .h4 {
+    color: #F1F4F8; }
+  .block-type-pricing-block .field__item:hover .display-4 {
+    color: #F1F4F8; }
+  .block-type-pricing-block .field__item:hover .btn {
+    color: #fff;
+    border-color: #fff; }
+
+.footer .block-title {
+  color: #fff;
+  margin-bottom: 1.5rem; }
 
 .footer p {
   color: #C6D3E6; }
@@ -10401,23 +10385,22 @@ header .menu--account {
     color: #fff;
     font-weight: 500; }
 
-.footer .block-title {
-  color: #fff;
-  margin-bottom: 1.5rem; }
-
-.footer .footer-bottom {
-  border-top: 1px solid #384C74; }
-
 .footer .region-footer-brand .block-type-social-links .field--type-link i {
   color: #C6D3E6;
   padding: .5rem;
   border: 1px solid #C6D3E6;
   border-radius: 50%; }
+  .footer .region-footer-brand .block-type-social-links .field--type-link i:hover {
+    background: #003CC5;
+    border: #003CC5; }
 
 .footer .region-footer .nav {
   flex-direction: column !important; }
   .footer .region-footer .nav .nav-link {
     padding-left: 0; }
+
+.footer .footer-bottom {
+  border-top: 1px solid #384C74; }
 
 .btn-back-to-top {
   width: 2.5rem;

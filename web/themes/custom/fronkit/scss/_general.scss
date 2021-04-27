@@ -3,12 +3,22 @@ body {
 }
 
 .form-type-webform-markup,
+.field--type-text-with-summary,
 .field--type-text-long {
   p:last-child {
     margin-bottom: 0;
   }
 }
 
+
+.text-black{
+  color: $black;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
 
 .zindex-99 {
   z-index: 99;

@@ -29,7 +29,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: col-6
+        class: col-10
     type: text_default
     region: content
   field_link:
@@ -44,7 +44,7 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: col-3
+        class: col-2
     type: link_class
     region: content
 hidden:
