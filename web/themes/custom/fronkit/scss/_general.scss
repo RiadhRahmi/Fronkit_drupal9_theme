@@ -25,9 +25,9 @@ img{
 }
 
 //carrousel
-.btn {
-  padding: 1rem 1.5rem;
-}
+//.btn {
+//  padding: 1rem 1.5rem;
+//}
 
 .btn-arrow-right {
   &:after {
@@ -65,7 +65,7 @@ img{
 //  margin-right: .75rem;
 //}
 
-.btn-link-arrow {
+.btn-icon-arrow {
   &:after {
     content: "\EA6C";
     width: .75rem;
@@ -154,6 +154,10 @@ img{
   overflow: hidden;
   padding: 0;
   margin: 0;
+}
+
+.rounded-4{
+  border-radius: $border-radius-xlg;
 }
 
 .btn-light {

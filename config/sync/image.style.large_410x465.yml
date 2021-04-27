@@ -1,0 +1,14 @@
+uuid: 636f2617-019c-4c05-98e2-dc926939394b
+langcode: en
+status: true
+dependencies: {  }
+name: large_410x465
+label: 'Large (410x465)'
+effects:
+  f8eb1551-68fc-45cc-b061-c32d5e31248d:
+    uuid: f8eb1551-68fc-45cc-b061-c32d5e31248d
+    id: image_resize
+    weight: 1
+    data:
+      width: 410
+      height: 465

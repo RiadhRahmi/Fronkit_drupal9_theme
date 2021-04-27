@@ -46,7 +46,7 @@
       %}
       <li{{ item.attributes.addClass(classes) }}>
         {% if loop.last %}
-          {{ link(item.title, item.url, { 'class':['btn btn-primary ms-3']}) }}
+          {{ link(item.title, item.url, { 'class':['btn btn-primary btn-sm ms-3']}) }}
         {% else %}
           {{ link(item.title, item.url, { 'class':['nav-link']}) }}
         {% endif %}

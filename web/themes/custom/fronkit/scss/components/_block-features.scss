@@ -3,18 +3,20 @@
   .block-title {
     text-align: center;
   }
-  .paragraph--type--feature-item {
-    // TODO
-    transition: .5s;
 
-    .feature-icon {
-      width: 8.125rem;
-      height: 8.125rem;
+  .paragraph--type--feature-item {
+    //transition: .5s;
+
+    .field--name-field-image {
+      width: 8rem;
+      height: 8rem;
       background: $gray-200;
       border-radius: 50%;
+
       .field__item {
-        line-height: 8.125rem;
+        line-height: 8rem;
       }
+
       img {
         width: 3rem;
         height: 3rem;
@@ -38,7 +40,7 @@
     &:hover {
       background: $primary;
       color: $white;
-      transform: translateY(-10px);
+      //transform: translateY(-10px);
       h3 {
         color: $gray-200;
       }

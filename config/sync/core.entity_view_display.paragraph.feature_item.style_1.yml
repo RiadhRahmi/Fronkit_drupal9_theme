@@ -40,15 +40,15 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'feature-icon  mb-4  mx-auto'
+        class: 'mb-4 mx-auto'
     type: entity_reference_entity_view
     region: content
   field_link:
     weight: 3
     label: hidden
     settings:
-      trim_length: 80
-      class: 'btn btn-link btn-link-arrow p-0'
+      trim_length: null
+      class: 'btn btn-link btn-icon-arrow p-0'
       url_only: false
       url_plain: false
       rel: '0'

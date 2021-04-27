@@ -49,7 +49,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: text-white
+        class: ''
     type: text_default
     region: content
   field_image:
@@ -60,7 +60,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: image-cta-video
+        class: ''
     type: entity_reference_entity_view
     region: content
   field_link:
@@ -68,14 +68,14 @@ content:
     label: hidden
     settings:
       trim_length: 80
-      class: 'btn btn-lg btn-white rounded-circle mt-7 fancybox'
+      class: 'btn btn-lg btn-white rounded-circle  fancybox'
       url_only: false
       url_plain: true
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mt-7
     type: link_class
     region: content
 hidden: {  }

@@ -1,0 +1,10 @@
+uuid: 98c2813c-51aa-437b-ac5a-d4b14c4e44c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portfolio_image
+label: 'Portfolio image'
+targetEntityType: media
+cache: true

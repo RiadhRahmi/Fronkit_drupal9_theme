@@ -1,0 +1,28 @@
+uuid: 5be6ea49-6d31-448b-bf8d-caa17669adb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_410x465
+  theme:
+    - fronkit
+id: portfolio_image
+label: 'Portfolio image'
+image_style_mappings:
+  -
+    breakpoint_id: fronkit.extra_large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_410x465
+  -
+    breakpoint_id: fronkit.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_410x465
+  -
+    breakpoint_id: fronkit.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_410x465
+breakpoint_group: fronkit
+fallback_image_style: large_410x465
