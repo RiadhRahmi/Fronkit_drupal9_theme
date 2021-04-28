@@ -1,6 +1,6 @@
 // Block carrousel
 .block-type-carrousel {
-  // TODO
+
   img {
     width: 100%;
     height: 850px;
@@ -8,6 +8,11 @@
 
   .slide-item-content {
     transform: translateY(-50%);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
 
   .swiper-button-prev {
@@ -48,18 +53,12 @@
     }
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-
   &:hover {
     .swiper-button-prev,
     .swiper-button-next {
       display: block;
     }
   }
-
 }
 
 

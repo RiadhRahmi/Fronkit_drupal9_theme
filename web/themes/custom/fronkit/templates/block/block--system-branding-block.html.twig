@@ -15,22 +15,17 @@
 #}
 {% block content %}
   {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home" class="site-logo navbar-brand">
+    <a href="{{ path('<front>') }}" rel="home" class="navbar-brand">
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
   {% endif %}
   {% if site_name %}
-    <div class="site-name navbar-brand">
+    <div class="navbar-brand">
       <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
     </div>
   {% endif %}
   {% if site_slogan %}
-    <div class="site-slogan navbar-brand">{{ site_slogan }}</div>
+    <div class="navbar-brand">{{ site_slogan }}</div>
   {% endif %}
-
-{#  toggler #}
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
 {% endblock %}

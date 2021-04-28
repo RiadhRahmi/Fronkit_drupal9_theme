@@ -30,9 +30,9 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-<ul{{ attributes.addClass('menu nav') }}>
+<ul{{ attributes.addClass('menu nav align-items-center') }}>
   {% else %}
-  <ul class="menu nav">
+  <ul class="menu nav align-items-center">
     {% endif %}
     {% for item in items %}
       {%
@@ -48,7 +48,7 @@
         {% if loop.last %}
           {{ link(item.title, item.url, { 'class':['btn btn-primary btn-sm ms-3']}) }}
         {% else %}
-          {{ link(item.title, item.url, { 'class':['nav-link']}) }}
+          {{ link(item.title, item.url, { 'class':['nav-link p-2 text-gray']}) }}
         {% endif %}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

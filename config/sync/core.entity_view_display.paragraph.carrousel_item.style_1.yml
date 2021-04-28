@@ -65,21 +65,21 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: img-carrousel
+        class: ''
     region: content
   field_link:
     weight: 4
     label: hidden
     settings:
-      trim_length: 80
-      class: 'btn btn-primary btn-arrow-right me-3'
+      trim_length: null
+      class: 'btn btn-primary btn-icon-arrow'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: d-inline-block
+        class: 'd-inline-block me-3'
     type: link_class
     region: content
   field_title:
@@ -96,8 +96,8 @@ content:
     weight: 5
     label: hidden
     settings:
-      trim_length: 80
-      class: 'btn btn-light btn-play fancybox'
+      trim_length: null
+      class: 'btn btn-light btn-icon-play fancybox'
       url_only: false
       url_plain: false
       rel: '0'
