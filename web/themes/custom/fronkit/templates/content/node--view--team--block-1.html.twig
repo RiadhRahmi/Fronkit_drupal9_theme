@@ -100,19 +100,27 @@
   {% endif %}
 
 
-  <div{{ content_attributes.addClass('node__content card card-hover mx-auto') }}>
+  <div{{ content_attributes.addClass('node__content card border-0 text-center') }}>
+
     {% if row_index % 2 == 0 %}
+
       {{ content.field_image }}
-      <div class="card-body card-odd text-center p-5">
+
+      <div class="card-body position-relative card-odd p-5">
         <h4>{{ label }}</h4>
         {{ content|without('field_image') }}
       </div>
+
     {% else %}
-      <div class="card-body card-even text-center p-5">
+
+      <div class="card-body position-relative card-even p-5">
         <h4>{{ label }}</h4>
         {{ content|without('field_image') }}
       </div>
+
       {{ content.field_image }}
+
     {% endif %}
+
   </div>
 </article>

@@ -1,0 +1,14 @@
+uuid: 24196fc3-5585-4b04-849b-0f2e94fe51fd
+langcode: en
+status: true
+dependencies: {  }
+name: large_540_372
+label: 'Large (540×372)'
+effects:
+  635eb493-8e12-41b5-bae5-88ca719974a5:
+    uuid: 635eb493-8e12-41b5-bae5-88ca719974a5
+    id: image_resize
+    weight: 1
+    data:
+      width: 540
+      height: 372

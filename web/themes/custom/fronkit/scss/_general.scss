@@ -2,6 +2,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.layout-container {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 .form-type-webform-markup,
 .field--type-text-with-summary,
 .field--type-text-long {
@@ -10,169 +21,13 @@ body {
   }
 }
 
-
-.text-black{
-  color: $black;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-.zindex-99 {
-  z-index: 99;
-}
-
-//carrousel
-//.btn {
-//  padding: 1rem 1.5rem;
-//}
-
-.btn-primary{
-  &.btn-icon-arrow {
-    &:after {
-      color: $gray-200;
-    }
+.block-type-video-block,
+.block-views-blockteam-block-1,
+.block-type-pricing-block,
+.block-type-our-working-process-block,
+.block-type-features-block,
+.block-type-about-us-block {
+  .block-title{
+    text-align: center;
   }
-}
-
-.btn-rounded-circle {
-  padding-left: .8125rem;
-  padding-right: .8125rem;
-  border-radius: 50%;
-
-  * {
-    display: block;
-    line-height: 1;
-    width: 1em;
-  }
-}
-
-//.process-item-index {
-//  width: 2.5rem;
-//  height: 2.5rem;
-//  line-height: 2.5rem;
-//  text-align: center;
-//  vertical-align: middle;
-//  color: $white;
-//  display: inline-block;
-//  background: $primary;
-//  border-radius: 50%;
-//  margin-right: .75rem;
-//}
-
-.btn-icon-arrow {
-  &:after {
-    content: "\EA6C";
-    width: .75rem;
-    height: .75rem;
-    margin-left: .5rem;
-    color: $primary;
-    font-family: $font-family-remixicon;
-    vertical-align: middle;
-    font-weight: $font-weight-medium;
-  }
-}
-
-.overlay-30 {
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.btn-icon-play {
-  &:after {
-    content: "\F00A";
-    margin-left: .5rem;
-    font-family: $font-family-remixicon;
-    vertical-align: middle;
-    font-size: 1rem;
-    color: $gray-800;
-  }
-}
-
-.fw-medium {
-  font-weight: $font-weight-medium;
-}
-
-.text-gray-200 {
-  color: $gray-200;
-}
-
-.bg-gray-600 {
-  background-color: $gray-600
-}
-
-.bg-gray-900 {
-  background-color: $gray-900;
-}
-
-.bg-gray-100 {
-  background-color: $gray-100;
-}
-
-.badge {
-  margin-bottom: $spacer * 0.75;
-  line-height: 1.3;
-}
-
-
-.btn.btn-link {
-  font-weight: 500 !important;
-}
-
-
-.badge-primary-soft {
-  background: $gray-200;
-  color: $blue-lighter;
-}
-
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link.is-active {
-  color: $white;
-  background: $primary;
-}
-
-
-.mb-grid-gutter {
-  margin-bottom: 1.87500rem;
-}
-
-.layout-container {
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-}
-
-.rounded-4{
-  border-radius: $border-radius-xlg;
-}
-
-.btn-light {
-  color: $gray-800;
-}
-
-.text-gray-100 {
-  color: $gray-100;
-}
-
-
-.btn-white {
-  color: $black;
-  background-color: $white;
-  border-color: $white;
-}
-
-
-.ri-md{
-  font-size: 1.25rem!important;
 }

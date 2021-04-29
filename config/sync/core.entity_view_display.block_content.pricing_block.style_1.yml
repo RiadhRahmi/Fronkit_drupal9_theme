@@ -64,7 +64,7 @@ content:
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: 'row pt-9'
+        class: 'row pt-8'
     region: content
   field_subtitle:
     weight: 1

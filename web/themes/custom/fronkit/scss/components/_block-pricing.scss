@@ -1,56 +1,54 @@
 // Block Pricing
 .block-type-pricing-block {
-  .block-title {
-    text-align: center;
-  }
+  .field--name-field-pricing-plans {
+    .field__item {
 
-  .field__item {
-
-    .field--name-field-period {
-      &::before {
-        content: '/'
+      .field--name-field-period {
+        &::before {
+          content: '/'
+        }
       }
-    }
 
-    .field--name-field-options {
-      li {
-        padding-bottom: .5rem;
+      .field--name-field-options {
+        li {
+          padding-bottom: .5rem;
+        }
       }
-    }
 
-    &.item-1 {
-      background: $primary;
-      color: $gray-200;
-
-      h4 {
+      &.item-1 {
+        background: $primary;
         color: $gray-200;
+
+        h4 {
+          color: $gray-200!important;
+        }
+
+        .display-4 {
+          color: $gray-200!important;
+        }
+
+        .btn {
+          color: $white;
+          border-color: $white;
+        }
       }
 
-      .display-4 {
+      &:hover {
+        background: $primary;
         color: $gray-200;
-      }
 
-      .btn {
-        color: $white;
-        border-color: $white;
-      }
-    }
+        h4 {
+          color: $gray-200!important;
+        }
 
-    &:hover {
-      background: $primary;
-      color: $gray-200;
+        .display-4 {
+          color: $gray-200!important;
+        }
 
-      h4 {
-        color: $gray-200;
-      }
-
-      .display-4 {
-        color: $gray-200;
-      }
-
-      .btn {
-        color: $white;
-        border-color: $white;
+        .btn {
+          color: $white;
+          border-color: $white;
+        }
       }
     }
   }

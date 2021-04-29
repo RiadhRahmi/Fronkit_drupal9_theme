@@ -93,7 +93,8 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "gray":       $gray-800,
-  "dark":       $dark
+  "dark":       $dark,
+  "black":       $black
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -611,7 +612,7 @@ $input-btn-padding-x-lg:      1.5rem !default;
 //
 //$btn-border-width:            $input-btn-border-width;
 //
-$btn-font-weight:            $font-weight-medium; //default $font-weight-normal;
+//$btn-font-weight:            $font-weight-medium; //default $font-weight-normal;
 //$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075);
 //$btn-focus-width:             $input-btn-focus-width;
 //$btn-focus-box-shadow:        $input-btn-focus-box-shadow;

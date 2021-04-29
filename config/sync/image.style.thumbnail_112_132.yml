@@ -1,0 +1,14 @@
+uuid: 91ea3e46-830b-4834-9d04-54242f0712ce
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_112_132
+label: 'Thumbnail (112×132)'
+effects:
+  a5409813-2165-4608-80ba-43651275d921:
+    uuid: a5409813-2165-4608-80ba-43651275d921
+    id: image_resize
+    weight: 1
+    data:
+      width: 112
+      height: 132

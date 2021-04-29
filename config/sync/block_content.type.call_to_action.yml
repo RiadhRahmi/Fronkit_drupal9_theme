@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: call_to_action
-label: 'Call to action'
+label: 'Call to action Block'
 revision: 0
-description: 'Call to action Block'
+description: 'Create Call to action Block'

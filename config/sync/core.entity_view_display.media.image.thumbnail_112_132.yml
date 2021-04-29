@@ -1,0 +1,44 @@
+uuid: 8270cc40-743f-43ee-961f-423f9c4e92e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.thumbnail_112_132
+    - field.field.media.image.field_media_image
+    - image.style.thumbnail_112_132
+    - media.type.image
+  module:
+    - field_formatter_class
+    - layout_builder
+    - svg_image
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.thumbnail_112_132
+targetEntityType: media
+bundle: image
+mode: thumbnail_112_132
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: thumbnail_112_132
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

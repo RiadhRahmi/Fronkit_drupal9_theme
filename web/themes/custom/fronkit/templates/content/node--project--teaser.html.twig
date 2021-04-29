@@ -100,9 +100,9 @@
     <div class="card-body text-center py-4">
       {{ title_prefix }}
       {% if label and not page %}
-        <h5{{ title_attributes.addClass('m-0 p-0') }}>
+        <h6{{ title_attributes.addClass('m-0 p-0') }}>
           <a href="{{ url }}" rel="bookmark" class="text-black">{{ label }}</a>
-        </h5>
+        </h6>
       {% endif %}
       {{ title_suffix }}
     </div>

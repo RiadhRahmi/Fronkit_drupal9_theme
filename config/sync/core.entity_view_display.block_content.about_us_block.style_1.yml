@@ -70,14 +70,14 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-primary mt-7'
+      class: 'btn btn-primary'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mt-7
     type: link_class
     region: content
   field_subtitle:

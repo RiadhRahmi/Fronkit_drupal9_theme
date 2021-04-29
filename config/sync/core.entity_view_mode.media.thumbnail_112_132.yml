@@ -1,0 +1,10 @@
+uuid: a4f2c92c-a629-444c-bb14-16d961366358
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.thumbnail_112_132
+label: 'Thumbnail 112×132'
+targetEntityType: media
+cache: true

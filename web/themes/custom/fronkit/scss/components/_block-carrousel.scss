@@ -8,6 +8,15 @@
 
   .slide-item-content {
     transform: translateY(-50%);
+
+    .btn-primary{
+      &.btn-icon-arrow {
+        &:after {
+          color: $gray-200;
+        }
+      }
+    }
+
   }
 
   .swiper-button-prev,

@@ -45,8 +45,10 @@
   {{ title_suffix }}
   {% if header %}
     <div class="view-header row text-center justify-content-center">
-      <div class="col-6 field--type-text-long">
-        {{ header }}
+      <div class="col-6">
+        <div class="field--type-text-long">
+          {{ header }}
+        </div>
       </div>
     </div>
   {% endif %}
@@ -62,11 +64,11 @@
   {% endif %}
 
   {% if rows %}
-    <div class="team-swiper-container overflow-hidden position-relative" >
+    <div class="team-swiper-container overflow-hidden position-relative">
       <div class="view-content swiper-wrapper py-9 px-0">
         {{ rows }}
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination "></div>
     </div>
   {% elseif empty %}
     <div class="view-empty">
