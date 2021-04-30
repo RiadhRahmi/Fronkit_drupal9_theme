@@ -33,7 +33,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-10 offset-1 text-center'
+        classes: 'col-md-10 offset-md-1 col-12 text-center'
       label: Content
   layout_builder:
     allow_custom: false
@@ -67,7 +67,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
       class: 'btn btn-lg btn-white rounded-circle  fancybox'
       url_only: false
       url_plain: true

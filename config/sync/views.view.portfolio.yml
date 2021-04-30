@@ -55,7 +55,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-4 mb-grid-gutter'
+          row_class: 'col-md-4 col-12 mb-grid-gutter'
           default_row_class: false
           uses_fields: false
       row:

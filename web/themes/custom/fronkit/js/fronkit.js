@@ -37,8 +37,8 @@
 
       // home team slider
       new Swiper('.team-swiper-container', {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -47,7 +47,7 @@
 
       // home partners slider
       new Swiper('.partners-swiper-container', {
-        slidesPerView: 6,
+        slidesPerView: 2,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,

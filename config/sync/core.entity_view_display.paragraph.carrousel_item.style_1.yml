@@ -72,7 +72,7 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-primary btn-icon-arrow'
+      class: 'btn btn-lg btn-primary btn-icon-arrow'
       url_only: false
       url_plain: false
       rel: '0'
@@ -97,7 +97,7 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-light btn-icon-play fancybox'
+      class: 'btn btn-lg btn-light btn-icon-play fancybox'
       url_only: false
       url_plain: false
       rel: '0'

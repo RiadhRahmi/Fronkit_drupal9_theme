@@ -23,11 +23,14 @@
     &.item-2 {
       background: $primary;
       color: $white;
+
       h3 {
         color: $gray-200;
       }
+
       .btn {
         color: $gray-100;
+
         &:after {
           color: $gray-100;
         }
@@ -41,14 +44,28 @@
       h3 {
         color: $gray-200;
       }
+
       .btn {
         color: $gray-100;
+
         &:after {
           color: $gray-100;
         }
       }
     }
   }
+
+  // for sm
+  .field__items {
+    .field__item {
+      padding-bottom: 1.75rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
 }
 
 

@@ -36,7 +36,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-6 offset-3  text-center'
+        classes: 'col-md-6 offset-md-3 col-12 text-center'
       label: Content
   layout_builder:
     allow_custom: false
