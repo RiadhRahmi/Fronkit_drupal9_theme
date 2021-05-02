@@ -1,5 +1,3 @@
-
-
 // mixins
 .btn-icon-arrow {
   &:after {
@@ -30,7 +28,7 @@
 }
 
 // mixins
-.overlay-30 {
+.overlay-50 {
   &:after {
     content: "";
     display: block;
@@ -39,9 +37,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
   }
 }
+
 // mixins
 .btn-icon-play {
   &:after {
@@ -97,7 +96,7 @@
 }
 
 // mixins
-.rounded-4{
+.rounded-4 {
   border-radius: $border-radius-xlg;
 }
 
@@ -119,11 +118,37 @@
 }
 
 // mixins
-.ri-md{
-  font-size: 1.25rem!important;
+.ri-md {
+  font-size: 1.25rem !important;
 }
 
 // existe deja
 .mb-grid-gutter {
   margin-bottom: 1.87500rem;
+}
+
+
+//@mixin alert-variant($background, $border, $color) {
+//  color: $color;
+//  @include gradient-bg($background);
+//  border-color: $border;
+//
+//  .alert-link {
+//    color: shade-color($color, 20%);
+//  }
+//}
+
+
+// Opacity
+@mixin opacity($opacity) {
+  $opacity-ie: ($opacity * 100); // IE8 filter
+  filter: alpha(opacity=$opacity-ie);
+  opacity: $opacity;
+}
+
+
+@each $state, $value in $opacitys {
+  .opacity-#{$state} {
+    @include opacity(($value)/100);
+  }
 }

@@ -1,2 +1,23 @@
-// Block About us
+/**
+Block About us
+ */
 
+p {
+  color: red;
+
+  @include media-breakpoint-up(sm) {
+    color: #0a6eb4;
+  }
+  @include media-breakpoint-up(md) {
+    color: green;
+  }
+  @include media-breakpoint-up(lg) {
+    color: orange;
+  }
+  @include media-breakpoint-up(xl) {
+    color: mistyrose;
+  }
+  @include media-breakpoint-up(xxl) {
+    color: yellow;
+  }
+}

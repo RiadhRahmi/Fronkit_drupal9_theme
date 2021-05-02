@@ -5,6 +5,7 @@
 // customize bootstrap
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "alert";
 
 // global
 @import "general";
@@ -19,3 +20,5 @@
 // footers style
 @import "components/footer";
 @import "components/back-to-top";
+
+

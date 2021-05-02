@@ -3,13 +3,14 @@
 
   img {
     width: 100%;
-    height: 850px;
+    //height: 850px;
+    height: 450px;
   }
 
   .slide-item-content {
     transform: translateY(-50%);
 
-    .btn-primary{
+    .btn-primary {
       &.btn-icon-arrow {
         &:after {
           color: $gray-200;
@@ -26,6 +27,7 @@
 
   .swiper-button-prev {
     left: 4rem;
+
     &:after {
       content: "\EA64";
       font-family: $font-family-remixicon;
@@ -38,6 +40,7 @@
 
   .swiper-button-next {
     right: 4rem;
+
     &:after {
       content: "\EA6E";
       font-family: $font-family-remixicon;
@@ -49,13 +52,16 @@
   }
 
   .swiper-pagination-bullets {
-    bottom: 4rem !important;
+    //bottom: 4rem !important;
+    bottom: 1.5rem !important;
+
     .swiper-pagination-bullet {
       margin-right: .5rem;
       width: .75rem;
       height: .75rem;
       background: $gray-200;
       opacity: 1;
+
       &.swiper-pagination-bullet-active {
         background: $primary;
       }

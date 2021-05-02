@@ -11,7 +11,7 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: 'col-12 col-md-6'
+    classes: 'col-12 col-md-6 mt-3'
 _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: fronkit_footer

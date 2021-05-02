@@ -38,7 +38,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-10 ps-0'
+        classes: 'col-12 col-md-10 ps-md-0'
       label: Content
     group_wrapper:
       children:
@@ -83,7 +83,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'col-2 pe-0 ps-0'
+        class: 'col-12 col-md-2 mb-3 pe-md-0 ps-md-0'
   field_link:
     weight: 2
     label: hidden

@@ -1,5 +1,5 @@
 // footer section
-.footer{
+.footer {
 
   .block-title {
     color: $white;
@@ -12,6 +12,7 @@
 
   a {
     color: $gray-400;
+
     &.is-active {
       color: $white;
       font-weight: $font-weight-medium;
@@ -28,7 +29,8 @@
           border: 1px solid $gray-400;
           border-radius: 50%;
           transition: .2s;
-          &:hover{
+
+          &:hover {
             background: $primary;
             border: $primary;
             color: $white;
@@ -42,6 +44,7 @@
   .region-footer {
     .nav {
       flex-direction: column !important;
+
       .nav-link {
         padding-left: 0;
       }
@@ -51,5 +54,9 @@
   // footer bottom
   .footer-bottom {
     border-top: 1px solid $gray-800;
+  }
+
+  .menu--footer ul li:first-child a {
+    padding-left: 0 !important;
   }
 }
