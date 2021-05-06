@@ -10498,6 +10498,13 @@ Block About us
     top: 5.625rem;
     position: relative; } }
 
+.block-type-video-block.view-mode-style-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%; }
+
 .block-type-video-block h2, .block-type-video-block .h2 {
   color: #fff; }
 
