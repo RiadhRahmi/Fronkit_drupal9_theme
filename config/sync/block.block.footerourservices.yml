@@ -11,7 +11,7 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: 'col-6 col-md-4 col-lg-3 pt-6'
+    classes: 'col-6 col-lg-3 pt-6 pt-lg-0'
 id: footerourservices
 theme: fronkit
 region: footer

@@ -43,6 +43,16 @@
           el: '.swiper-pagination',
           clickable: true,
         },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+        },
       });
 
       // home partners slider
@@ -51,6 +61,20 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+          1400: {
+            slidesPerView: 6,
+          },
         },
       });
 

@@ -10260,6 +10260,9 @@ img {
 .block-type-about-us-block .block-title {
   text-align: center; }
 
+.layout-builder-block {
+  background-color: inherit; }
+
 .btn-icon-arrow:after {
   content: "\EA6C";
   width: .75rem;
@@ -10477,24 +10480,6 @@ header .menu--main .dropdown {
 /**
 Block About us
  */
-p {
-  color: red; }
-  @media (min-width: 576px) {
-    p {
-      color: #0a6eb4; } }
-  @media (min-width: 768px) {
-    p {
-      color: green; } }
-  @media (min-width: 992px) {
-    p {
-      color: orange; } }
-  @media (min-width: 1200px) {
-    p {
-      color: mistyrose; } }
-  @media (min-width: 1400px) {
-    p {
-      color: yellow; } }
-
 .block-type-services-block .field__items {
   margin-bottom: 0; }
   .block-type-services-block .field__items .item:last-child {
@@ -10567,7 +10552,6 @@ p {
   color: #fff; }
 
 .view-portfolio img {
-  width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem; }
 

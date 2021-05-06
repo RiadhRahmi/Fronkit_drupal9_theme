@@ -40,7 +40,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-md-6 col-lg-5 ps-md-0 ms-md-0 col-12 pt-5'
+        classes: 'col-xl-5 ps-xl-0 ms-xl-0 col-12 pt-5'
       label: Content
 id: block_content.about_us_block.style_1
 targetEntityType: block_content
@@ -63,7 +63,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: 'col-md-6 pe-md-0 me-md-0 col-12'
+        class: 'col-xl-6 pe-xl-0 me-xl-0 col-12'
     region: content
   field_link:
     weight: 5

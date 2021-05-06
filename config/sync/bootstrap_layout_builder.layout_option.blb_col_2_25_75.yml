@@ -9,7 +9,9 @@ layout_id: blb_col_2
 label: '25% 75%'
 structure: '3 9'
 breakpoints:
+  extra_large: extra_large
   desktop: desktop
   tablet: tablet
+  small: small
   mobile: mobile
 weight: '-9'
