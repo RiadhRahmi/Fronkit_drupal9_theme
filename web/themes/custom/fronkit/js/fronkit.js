@@ -19,6 +19,15 @@
       // initiate wow for animations
       new WOW().init();
 
+      // Navbar Fixed Top
+      $(window).scroll(function() {
+        if ($('.navbar').offset().top > 50) {
+          $('.fixed-top').addClass('shadow-sm');
+        } else {
+          $('.fixed-top').removeClass('shadow-sm');
+        }
+      });
+
       // home carrousel
       new Swiper('.carrousel-swiper-container', {
         navigation: {
@@ -29,10 +38,10 @@
           el: '.swiper-pagination',
           clickable: true,
         },
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
       });
 
       // home team slider

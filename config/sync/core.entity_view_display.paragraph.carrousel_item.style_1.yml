@@ -37,7 +37,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'slide-item-content swiper-no-swiping position-absolute text-center top-50 start-md-25 end-md-25 zindex-99  '
+        classes: 'slide-item-content swiper-no-swiping'
       label: Content
   layout_builder:
     allow_custom: false
@@ -89,7 +89,7 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'display-md-5 display-5 text-white mb-4 fw-medium'
+        class: 'display-5 text-white mb-4 fw-medium'
     type: string
     region: content
   field_video_link:
