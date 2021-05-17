@@ -94,6 +94,13 @@
   @include media-breakpoint-up(md) {
     .paragraph--type--carrousel-item {
       height: 100vh;
+
+      .content {
+        .slide-item-content {
+          left: 10%;
+          right: 10%;
+        }
+      }
     }
 
     .swiper-button-prev {

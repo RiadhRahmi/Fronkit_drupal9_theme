@@ -4,9 +4,10 @@
   .field__items {
     margin-bottom: 0;
 
-    .item:last-child{
-      margin-bottom: 0!important;
+    .item:last-child {
+      margin-bottom: 0 !important;
     }
+
     .item {
       &:nth-child(odd) {
         top: 0;
@@ -23,11 +24,11 @@
   @include media-breakpoint-up(md) {
     .field__items {
       margin-bottom: 3.75rem;
-    }
 
-    .item:nth-child(odd) {
-      top: 5.625rem;
-      position: relative;
+      .item:nth-child(odd) {
+        top: 5.625rem;
+        position: relative;
+      }
     }
   }
 }

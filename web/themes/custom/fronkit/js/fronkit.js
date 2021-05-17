@@ -57,7 +57,7 @@
             slidesPerView: 2,
             slidesPerGroup: 2,
           },
-          1200: {
+          992: {
             slidesPerView: 3,
             slidesPerGroup: 3,
           },

@@ -1,0 +1,14 @@
+uuid: e832ed93-0ea2-4018-90a9-a41f8c27a4c8
+langcode: en
+status: true
+dependencies: {  }
+name: large_360x295
+label: 'Large (360x295)'
+effects:
+  02d46281-2b60-4303-8683-ba84e19be82f:
+    uuid: 02d46281-2b60-4303-8683-ba84e19be82f
+    id: image_resize
+    weight: 1
+    data:
+      width: 360
+      height: 295
