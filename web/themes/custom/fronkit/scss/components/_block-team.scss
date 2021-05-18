@@ -22,14 +22,13 @@
       content: '';
       position: absolute;
       left: 46%;
-      top: -1.5rem;
+      top: -1.3rem;
       width: 0;
       height: 0;
       border-left: .75rem solid transparent;
       border-right: .75rem solid transparent;
       border-top: .75rem solid transparent;
       border-bottom: .75rem solid $white;
-      clear: both;
     }
   }
 
@@ -37,7 +36,7 @@
     &:after {
       content: '';
       position: absolute;
-      top: 100%;
+      top: 99%;
       width: 0;
       height: 0;
       clear: both;
@@ -47,7 +46,6 @@
       border-right: .75rem solid transparent;
       border-top: .75rem solid $white;
       border-bottom: .75rem solid transparent;
-      clear: both;
     }
   }
 
@@ -67,6 +65,25 @@
           background: $primary;
         }
       }
+    }
+  }
+
+
+  /**
+     Small devices
+   */
+  @include media-breakpoint-up(sm) {
+    img {
+      min-height: 350px;
+    }
+  }
+
+  /**
+     Medium devices
+   */
+  @include media-breakpoint-up(md) {
+    img {
+      min-height: 295px;
     }
   }
 

@@ -10512,6 +10512,9 @@ body {
   position: absolute;
   z-index: 99999; }
 
+#drupal-off-canvas {
+  background: none; }
+
 .user-logged-in .navbar {
   margin-top: 5rem; }
 
@@ -10647,6 +10650,9 @@ header .menu--main .dropdown {
  */
 .block-type-carrousel {
   /**
+     Small devices
+   */
+  /**
      Medium devices
    */ }
   .block-type-carrousel .paragraph--type--carrousel-item {
@@ -10703,6 +10709,9 @@ header .menu--main .dropdown {
       opacity: 1; }
       .block-type-carrousel .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background: #003CC5; }
+  @media (min-width: 576px) {
+    .block-type-carrousel .paragraph--type--carrousel-item {
+      height: 60vh; } }
   @media (min-width: 768px) {
     .block-type-carrousel .paragraph--type--carrousel-item {
       height: 100vh; }
@@ -10767,7 +10776,7 @@ Block About us
     width: 3rem;
     height: 3rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .block-type-services-block .field__items {
     margin-bottom: 3.75rem; }
     .block-type-services-block .field__items .item:nth-child(odd) {
@@ -10809,6 +10818,12 @@ Block About us
 
 .block-views-blockteam-block-1 {
   /**
+     Small devices
+   */
+  /**
+     Medium devices
+   */
+  /**
      Large devices
    */
   /**
@@ -10828,18 +10843,17 @@ Block About us
     content: '';
     position: absolute;
     left: 46%;
-    top: -1.5rem;
+    top: -1.3rem;
     width: 0;
     height: 0;
     border-left: .75rem solid transparent;
     border-right: .75rem solid transparent;
     border-top: .75rem solid transparent;
-    border-bottom: 0.75rem solid #fff;
-    clear: both; }
+    border-bottom: 0.75rem solid #fff; }
   .block-views-blockteam-block-1 .card-even:after {
     content: '';
     position: absolute;
-    top: 100%;
+    top: 99%;
     width: 0;
     height: 0;
     clear: both;
@@ -10848,8 +10862,7 @@ Block About us
     border-left: .75rem solid transparent;
     border-right: .75rem solid transparent;
     border-top: 0.75rem solid #fff;
-    border-bottom: .75rem solid transparent;
-    clear: both; }
+    border-bottom: .75rem solid transparent; }
   .block-views-blockteam-block-1 .swiper-pagination {
     position: initial; }
     .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -10860,6 +10873,12 @@ Block About us
       opacity: 1; }
       .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background: #003CC5; }
+  @media (min-width: 576px) {
+    .block-views-blockteam-block-1 img {
+      min-height: 350px; } }
+  @media (min-width: 768px) {
+    .block-views-blockteam-block-1 img {
+      min-height: 295px; } }
   @media (min-width: 992px) {
     .block-views-blockteam-block-1 img {
       min-height: 324px; } }

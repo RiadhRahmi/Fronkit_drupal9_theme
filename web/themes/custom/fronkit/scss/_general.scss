@@ -10,6 +10,10 @@ body {
   z-index: 99999;
 }
 
+#drupal-off-canvas {
+  background: none;
+}
+
 .user-logged-in {
   .navbar {
     margin-top: 5rem;

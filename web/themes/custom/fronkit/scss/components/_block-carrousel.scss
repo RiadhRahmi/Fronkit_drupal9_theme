@@ -89,6 +89,16 @@
 
 
   /**
+     Small devices
+   */
+  @include media-breakpoint-up(sm) {
+    .paragraph--type--carrousel-item {
+      height: 60vh;
+    }
+  }
+
+
+  /**
      Medium devices
    */
   @include media-breakpoint-up(md) {
@@ -117,6 +127,7 @@
         display: block;
       }
     }
+
   }
 
 }
