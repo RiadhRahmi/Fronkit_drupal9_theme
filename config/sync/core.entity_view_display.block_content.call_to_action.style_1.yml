@@ -37,7 +37,7 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-light float-md-end'
+      class: 'btn btn-light float-md-end lift'
       url_only: false
       url_plain: false
       rel: '0'

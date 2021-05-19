@@ -15,6 +15,18 @@
         }
       }
 
+      .btn{
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        &:hover{
+            color: $white;
+            background: $primary;
+        }
+      }
+
       &.item-1 {
         background: $primary;
         color: $gray-200;
@@ -30,26 +42,13 @@
         .btn {
           color: $white;
           border-color: $white;
+          &:hover{
+            background: $white;
+            color: $primary;
+          }
         }
       }
 
-      &:hover {
-        background: $primary;
-        color: $gray-200;
-
-        h4 {
-          color: $gray-200!important;
-        }
-
-        .display-4 {
-          color: $gray-200!important;
-        }
-
-        .btn {
-          color: $white;
-          border-color: $white;
-        }
-      }
     }
   }
 }

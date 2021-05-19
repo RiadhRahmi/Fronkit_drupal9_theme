@@ -70,7 +70,7 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-primary'
+      class: 'btn btn-primary lift'
       url_only: false
       url_plain: false
       rel: '0'

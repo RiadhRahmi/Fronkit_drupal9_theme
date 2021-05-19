@@ -2,7 +2,11 @@
 .block-type-features-block {
 
   .paragraph--type--feature-item {
-    //transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 
     .field--name-field-image {
       width: 8rem;
@@ -20,10 +24,14 @@
       }
     }
 
-    &.item-2 {
+    &:hover {
       background: $primary;
       color: $white;
-
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
       h3 {
         color: $gray-200;
       }
@@ -36,11 +44,10 @@
         }
       }
     }
-
-    &:hover {
+    &.item-2 {
       background: $primary;
       color: $white;
-      //transform: translateY(-10px);
+
       h3 {
         color: $gray-200;
       }

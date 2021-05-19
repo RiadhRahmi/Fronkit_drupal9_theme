@@ -80,7 +80,7 @@ function fronkit_preprocess_views_view(&$variables)
   switch ($view->storage->id()) {
     case 'portfolio':
       if ($view->current_display == 'block_1') {
-        $variables['more']['#options']['attributes']['class'] = 'btn btn-primary';
+        $variables['more']['#options']['attributes']['class'] = 'btn btn-primary lift';
       }
   }
 }

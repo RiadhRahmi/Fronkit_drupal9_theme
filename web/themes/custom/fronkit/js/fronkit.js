@@ -38,10 +38,22 @@
           el: '.swiper-pagination',
           clickable: true,
         },
-        // autoplay: {
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            $('.display-5').removeClass('animated fadeInUp animation-display-5');
+            $('.field--name-field-description').removeClass('animated fadeInUp animation-field--name-field-description');
+            $('.btn').removeClass('animated fadeInUp animation-btn');
+          },
+          slideChangeTransitionEnd: function () {
+            $('.display-5').addClass('animated fadeInUp animation-display-5');
+            $('.field--name-field-description').addClass('animated fadeInUp animation-field--name-field-description');
+            $('.btn').addClass('animated fadeInUp animation-btn');
+          },
+        }
       });
 
       // home team slider

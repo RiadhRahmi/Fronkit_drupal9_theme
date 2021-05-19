@@ -68,7 +68,7 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-lg btn-white rounded-circle  fancybox'
+      class: 'btn btn-lg btn-white rounded-circle  fancybox lift'
       url_only: false
       url_plain: true
       rel: '0'

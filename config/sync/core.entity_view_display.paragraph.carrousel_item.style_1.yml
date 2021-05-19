@@ -53,7 +53,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: 'text-gray-100 mb-7'
+        class: 'text-gray-100 mb-7  animated fadeInUp'
     type: text_default
     region: content
   field_image:
@@ -72,14 +72,14 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-primary btn-icon-arrow'
+      class: 'btn btn-primary btn-icon-arrow lift  animated fadeInUp'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'd-inline-block me-3'
+        class: 'd-inline-block me-3 '
     type: link_class
     region: content
   field_title:
@@ -89,7 +89,7 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'display-5 text-white mb-4 fw-medium'
+        class: 'display-5 text-white mb-4 fw-medium  animated fadeInUp'
     type: string
     region: content
   field_video_link:
@@ -97,14 +97,14 @@ content:
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-light btn-icon-play fancybox'
+      class: 'btn btn-light btn-icon-play fancybox lift  animated fadeInUp'
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: d-inline-block
+        class: 'd-inline-block '
     type: link_class
     region: content
 hidden: {  }
