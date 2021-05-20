@@ -21,6 +21,12 @@
         right: 0;
         transform: translateY(-50%);
 
+        .btn,
+        .field--name-field-description,
+        .display-5{
+          visibility: hidden;
+        }
+
         .btn-primary {
           &.btn-icon-arrow {
             &:after {

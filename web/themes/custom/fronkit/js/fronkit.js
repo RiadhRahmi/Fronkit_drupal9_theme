@@ -20,7 +20,7 @@
       new WOW().init();
 
       // Navbar Fixed Top
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         if ($('.navbar').offset().top > 50) {
           $('.fixed-top').addClass('shadow-sm');
         } else {
@@ -43,18 +43,31 @@
           disableOnInteraction: false,
         },
         on: {
-          slideChangeTransitionStart: function () {
-            $('.display-5').removeClass('animated fadeInUp animation-display-5');
-            $('.field--name-field-description').removeClass('animated fadeInUp animation-field--name-field-description');
-            $('.btn').removeClass('animated fadeInUp animation-btn');
+          init: function (s) {
+            startAnimation(s);
           },
-          slideChangeTransitionEnd: function () {
-            $('.display-5').addClass('animated fadeInUp animation-display-5');
-            $('.field--name-field-description').addClass('animated fadeInUp animation-field--name-field-description');
-            $('.btn').addClass('animated fadeInUp animation-btn');
+          slideChangeTransitionStart: function (s) {
+            stopAnimation(s);
+          },
+          slideChangeTransitionEnd: function (s) {
+            startAnimation(s);
           },
         }
       });
+
+      function startAnimation(s) {
+        var currentSlide = $(s.slides[s.activeIndex]);
+        currentSlide.find('.display-5').addClass('animate__animated animate__fadeInLeft visible');
+        currentSlide.find('.field--name-field-description').addClass('animate__animated animate__fadeInLeft visible');
+        currentSlide.find('.btn').addClass('animate__animated animate__fadeInLeft visible');
+      }
+
+      function stopAnimation(s) {
+        var currentSlide = $(s.slides[s.activeIndex]);
+        currentSlide.find('.display-5').removeClass('animate__animated animate__fadeInLeft visible');
+        currentSlide.find('.field--name-field-description').removeClass('animate__animated animate__fadeInLeft visible');
+        currentSlide.find('.btn').removeClass('animate__animated animate__fadeInLeft visible');
+      }
 
       // home team slider
       new Swiper('.team-swiper-container', {
