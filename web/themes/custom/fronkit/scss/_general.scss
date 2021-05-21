@@ -15,8 +15,25 @@ body {
 }
 
 .user-logged-in {
-  .navbar {
-    margin-top: 5rem;
+  .navbar{
+    margin-top: 2.5rem;
+  }
+
+  /**
+      Medium devices
+   */
+  @include media-breakpoint-up(lg) {
+    .navbar{
+      margin-top: 5rem;
+    }
+  }
+
+  .dialog-off-canvas-main-canvas{
+    margin-top: 6rem;
+  }
+
+  .ui-dialog-off-canvas{
+    z-index: 99999
   }
 }
 

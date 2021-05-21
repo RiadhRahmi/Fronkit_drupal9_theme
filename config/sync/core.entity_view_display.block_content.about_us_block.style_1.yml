@@ -40,7 +40,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-xl-5 ps-xl-0 ms-xl-0 col-12 pt-5'
+        classes: 'col-xl-5 ps-xl-0 ms-xl-0 pt-7 pt-xl-0'
       label: Content
 id: block_content.about_us_block.style_1
 targetEntityType: block_content

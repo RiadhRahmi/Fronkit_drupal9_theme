@@ -1,6 +1,14 @@
 // Block Pricing
 .block-type-pricing-block {
   .field--name-field-pricing-plans {
+    .pricing-item {
+      padding-bottom: 1.87500rem;
+
+      &:last-child {
+        padding-bottom: 0 !important;
+      }
+    }
+
     .field__item {
 
       .field--name-field-period {
@@ -49,6 +57,15 @@
         }
       }
 
+    }
+
+    /**
+    Large devices
+      */
+    @include media-breakpoint-up(lg) {
+      .pricing-item {
+        padding-bottom: 0 !important;
+      }
     }
   }
 }

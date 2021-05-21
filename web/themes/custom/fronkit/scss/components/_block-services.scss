@@ -4,11 +4,13 @@
   .field__items {
     margin-bottom: 0;
 
-    .item:last-child {
-      margin-bottom: 0 !important;
-    }
+    .service-item {
+      margin-bottom: 1.87500rem;
 
-    .item {
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       &:nth-child(odd) {
         top: 0;
         position: initial;
@@ -21,13 +23,37 @@
     }
   }
 
+
+  /**
+      Medium devices
+   */
+  @include media-breakpoint-up(md) {
+    .field__items {
+      .service-item {
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+
+
   @include media-breakpoint-up(xl) {
     .field__items {
       margin-bottom: 3.75rem;
 
-      .item:nth-child(odd) {
+      .service-item:nth-child(odd) {
         top: 5.625rem;
         position: relative;
+      }
+
+      .service-item {
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+          margin-bottom: 1.87500rem;
+        }
       }
     }
   }

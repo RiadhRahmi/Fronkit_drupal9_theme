@@ -2,8 +2,30 @@
   Block Portfolio
  */
 .view-portfolio {
+  .portfolio-item {
+    padding-bottom: 1.87500rem;
+
+    &:last-child {
+      padding-bottom: 0 !important;
+    }
+  }
+
   img {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    width: 100%;
+  }
+
+  /**
+      Medium devices
+        */
+  @include media-breakpoint-up(md) {
+    .portfolio-item {
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
+        padding-bottom: 0;
+      }
+    }
   }
 }

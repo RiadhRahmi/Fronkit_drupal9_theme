@@ -2,9 +2,41 @@
 .block-our-process-team {
   background: linear-gradient(0.07deg, $gray-100 23.31%, $white 99.14%);
 
-  .paragraph--type--process {
-    .process-step {
-      cursor: default!important;
+  .field--name-field-process-items {
+    .process-item {
+      padding-bottom: 1.87500rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .paragraph--type--process {
+        .process-step {
+          cursor: default !important;
+        }
+      }
     }
+
+    /**
+     Medium devices
+       */
+    @include media-breakpoint-up(md) {
+      .process-item {
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    /**
+      Large devices
+        */
+    @include media-breakpoint-up(lg) {
+      .process-item {
+        padding-bottom: 0;
+      }
+    }
+
   }
 }

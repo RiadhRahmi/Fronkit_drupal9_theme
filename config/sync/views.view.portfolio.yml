@@ -55,7 +55,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-lg-4 col-sm-6 mb-grid-gutter'
+          row_class: 'col-lg-4 col-sm-6 portfolio-item'
           default_row_class: false
           uses_fields: false
       row:

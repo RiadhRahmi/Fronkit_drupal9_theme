@@ -64,7 +64,7 @@ content:
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: 'row pt-8'
+        class: 'row py-7 pb-md-13'
     region: content
   field_subtitle:
     weight: 1

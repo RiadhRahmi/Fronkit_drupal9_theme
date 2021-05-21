@@ -38,7 +38,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-xl-5 col-12'
+        classes: col-xl-5
       label: Content
   layout_builder:
     allow_custom: false
@@ -81,7 +81,7 @@ content:
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: 'col-xl-6 col-12 offset-xl-1 mt-5'
+        class: 'col-xl-6 offset-xl-1 mt-7  mt-xl-0'
     region: content
   field_subtitle:
     weight: 1

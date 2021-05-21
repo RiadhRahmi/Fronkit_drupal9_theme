@@ -1,78 +1,88 @@
 // Block Features
 .block-type-features-block {
 
-  .paragraph--type--feature-item {
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-
-    .field--name-field-image {
-      width: 8rem;
-      height: 8rem;
-      background: $gray-200;
-      border-radius: 50%;
-
-      .field__item {
-        line-height: 8rem;
-      }
-
-      img {
-        width: 3rem;
-        height: 3rem;
-      }
-    }
-
-    &:hover {
-      background: $primary;
-      color: $white;
-      -moz-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-      -o-transform: translateY(-10px);
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
-      h3 {
-        color: $gray-200;
-      }
-
-      .btn {
-        color: $gray-100;
-
-        &:after {
-          color: $gray-100;
-        }
-      }
-    }
-    &.item-2 {
-      background: $primary;
-      color: $white;
-
-      h3 {
-        color: $gray-200;
-      }
-
-      .btn {
-        color: $gray-100;
-
-        &:after {
-          color: $gray-100;
-        }
-      }
-    }
-  }
-
-  // for sm
   .field__items {
     .field__item {
-      padding-bottom: 1.75rem;
+      padding-bottom: 1.87500rem;
 
       &:last-child {
         padding-bottom: 0;
       }
     }
-  }
 
+    .paragraph--type--feature-item {
+      -moz-transition: .5s;
+      -ms-transition: .5s;
+      -o-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+
+      .field--name-field-image {
+        width: 8rem;
+        height: 8rem;
+        background: $gray-200;
+        border-radius: 50%;
+
+        .field__item {
+          line-height: 8rem;
+        }
+
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+
+      &:hover {
+        background: $primary;
+        color: $white;
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+
+        h3 {
+          color: $gray-200;
+        }
+
+        .btn {
+          color: $gray-100;
+
+          &:after {
+            color: $gray-100;
+          }
+        }
+      }
+
+      &.item-2 {
+        background: $primary;
+        color: $white;
+
+        h3 {
+          color: $gray-200;
+        }
+
+        .btn {
+          color: $gray-100;
+
+          &:after {
+            color: $gray-100;
+          }
+        }
+      }
+    }
+
+    /**
+       Large devices
+    */
+    @include media-breakpoint-up(lg) {
+      .field__item {
+        padding-bottom: 0;
+      }
+    }
+
+  }
 }
 
 
