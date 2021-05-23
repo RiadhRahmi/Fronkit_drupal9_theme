@@ -10,3 +10,7 @@ https://unsplash.com/photos/9ZWtkOCMxbM
 https://unsplash.com/photos/MGaFENpDCsw
 https://unsplash.com/photos/g1Kr4Ozfoac
 https://unsplash.com/photos/MxVkWPiJALs
+
+
+// banner images
+https://unsplash.com/photos/ewy3k02ApSw
