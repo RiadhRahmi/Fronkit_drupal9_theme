@@ -1,0 +1,47 @@
+uuid: 56561a89-f523-4320-a094-252a42bc8cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_information
+    - field.field.block_content.contact_information.body
+    - field.field.block_content.contact_information.field_contact_informations
+  module:
+    - paragraphs
+    - text
+id: block_content.contact_information.default
+targetEntityType: block_content
+bundle: contact_information
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_contact_informations:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,59 @@
+uuid: a6b87a26-b297-4560-9f70-bfd06cf603bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.style_1
+    - field.field.paragraph.contact_item.field_description
+    - field.field.paragraph.contact_item.field_icon
+    - field.field.paragraph.contact_item.field_title
+    - paragraphs.paragraphs_type.contact_item
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.contact_item.style_1
+targetEntityType: paragraph
+bundle: contact_item
+mode: style_1
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: mt-3
+    type: text_default
+    region: content
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: mx-auto
+    type: string
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h4
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: mt-4
+    type: wrapper_class
+    region: content
+hidden: {  }

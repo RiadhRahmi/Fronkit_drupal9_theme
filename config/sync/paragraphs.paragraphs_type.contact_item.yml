@@ -1,0 +1,10 @@
+uuid: 98626c76-fdec-4840-99d9-e68792b4bb67
+langcode: en
+status: true
+dependencies: {  }
+id: contact_item
+label: 'Contact Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

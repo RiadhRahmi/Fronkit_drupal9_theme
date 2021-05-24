@@ -1,0 +1,8 @@
+uuid: 73ceb14c-5283-4e32-835b-7e65914a00a7
+langcode: en
+status: true
+dependencies: {  }
+id: contact_information
+label: 'Contact Informations'
+revision: 0
+description: ''

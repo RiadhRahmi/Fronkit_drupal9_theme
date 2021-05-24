@@ -17,7 +17,7 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: "'#attributes':\n  class:\n    - row\nname:\n  '#type': textfield\n  '#title': Name\n  '#title_display': before\n  '#placeholder': 'Enter your name'\n  '#required': true\n  '#default_value': '[current-user:display-name]'\n  '#wrapper_attributes':\n    class:\n      - 'col-lg-6 mb-4'\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': before\n  '#placeholder': 'Enter your email'\n  '#required': true\n  '#default_value': '[current-user:mail]'\n  '#wrapper_attributes':\n    class:\n      - 'col-lg-6 mb-4'\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nphone_number:\n  '#type': tel\n  '#title': 'Phone number'\n  '#title_display': before\n  '#placeholder': 'Enter your phone'\n  '#wrapper_attributes':\n    class:\n      - 'col-lg-6 mb-4'\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#title_display': before\n  '#placeholder': 'Enter your subject'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - 'col-lg-6 mb-4'\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': before\n  '#placeholder': 'Enter your message'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - col-lg-12\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n  '#submit__attributes':\n    class:\n      - 'btn btn-primary mt-7'\nmarkup:\n  '#type': webform_markup\n  '#wrapper_attributes':\n    class:\n      - mt-7\n  '#markup': |-\n    <p><strong>* Required fields</strong><br />\n    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
 css: ''
 javascript: ''
 settings:
@@ -99,7 +99,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0

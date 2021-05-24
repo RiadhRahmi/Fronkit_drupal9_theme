@@ -1,0 +1,19 @@
+uuid: c7ec81be-fee2-4d48-8a82-405d974e48fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.contact_item
+id: paragraph.contact_item.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: contact_item
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

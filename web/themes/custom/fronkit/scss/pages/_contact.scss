@@ -1,0 +1,23 @@
+/**
+ contact styles
+ */
+
+.block-type-contact-information {
+  &.view-mode-style-1 {
+    .field--name-field-icon {
+      background: rgba($primary,0.05);
+      width: 4.37500rem;
+      height: 4.37500rem;
+      border-radius: 50%;
+      text-align: center;
+      i {
+        color: $primary;
+        line-height: 4.37500rem;
+      }
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+}

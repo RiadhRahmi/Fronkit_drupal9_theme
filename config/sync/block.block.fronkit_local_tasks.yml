@@ -8,7 +8,7 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: mb-3
+    classes: my-4
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: fronkit_local_tasks

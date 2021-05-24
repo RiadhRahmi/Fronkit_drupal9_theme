@@ -11033,6 +11033,22 @@ Block About us
     .block-type-pricing-block .field--name-field-pricing-plans .pricing-item {
       padding-bottom: 0 !important; } }
 
+/**
+ contact styles
+ */
+.block-type-contact-information.view-mode-style-1 .field--name-field-icon {
+  background: rgba(0, 60, 197, 0.05);
+  width: 4.37500rem;
+  height: 4.37500rem;
+  border-radius: 50%;
+  text-align: center; }
+  .block-type-contact-information.view-mode-style-1 .field--name-field-icon i {
+    color: #003CC5;
+    line-height: 4.37500rem; }
+
+iframe {
+  width: 100%; }
+
 .footer .block-title {
   color: #fff;
   margin-bottom: 1.5rem; }

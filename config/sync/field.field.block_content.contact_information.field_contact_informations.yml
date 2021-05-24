@@ -1,0 +1,46 @@
+uuid: 6466d6f6-6267-4625-901c-f894ef178874
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_information
+    - field.storage.block_content.field_contact_informations
+    - paragraphs.paragraphs_type.contact_item
+  module:
+    - entity_reference_revisions
+id: block_content.contact_information.field_contact_informations
+field_name: field_contact_informations
+entity_type: block_content
+bundle: contact_information
+label: 'Contact Informations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_item: contact_item
+    target_bundles_drag_drop:
+      carrousel_item:
+        weight: 7
+        enabled: false
+      contact_item:
+        enabled: true
+        weight: 8
+      feature_item:
+        weight: 9
+        enabled: false
+      pricing_plan:
+        weight: 10
+        enabled: false
+      process:
+        weight: 11
+        enabled: false
+      service_item:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

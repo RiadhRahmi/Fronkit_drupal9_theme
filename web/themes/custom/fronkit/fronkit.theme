@@ -37,6 +37,13 @@ function fronkit_preprocess_field(&$variables, $hook)
     }
   }
 
+  if ($variables['field_name'] == "field_icon"){
+    foreach ($variables['items'] as $key => $item) {
+      $field_value = $variables['items'][$key]['content']['#context']['value'];
+      $variables['items'][$key]['content']['#context']['value'] = new FormattableMarkup($field_value, []);
+    }
+  }
+
 }
 
 /**

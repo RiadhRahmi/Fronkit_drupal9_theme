@@ -1,0 +1,35 @@
+uuid: b7fb6ca1-f363-4e55-aa06-a9ee9d6b5149
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_information
+    - core.entity_view_mode.block_content.style_1
+    - field.field.block_content.contact_information.body
+    - field.field.block_content.contact_information.field_contact_informations
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.contact_information.style_1
+targetEntityType: block_content
+bundle: contact_information
+mode: style_1
+content:
+  field_contact_informations:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: style_1
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: row
+    region: content
+hidden:
+  body: true
