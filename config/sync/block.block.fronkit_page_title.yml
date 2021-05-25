@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - fronkit
+third_party_settings:
+  block_class:
+    classes: d-inline-block
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: fronkit_page_title
@@ -22,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/node/26"
     negate: true

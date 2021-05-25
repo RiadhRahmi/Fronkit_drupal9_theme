@@ -1,0 +1,15 @@
+/**
+breadcrumb styles
+ */
+
+.layout-header {
+
+  //breadcrumb style 1
+  .breadcrumb-item {
+    &.active,
+    a {
+      color: $gray-700 !important;
+    }
+  }
+}
+

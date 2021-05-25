@@ -5,10 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#toolbar-administration {
-  position: absolute;
-  z-index: 99999;
-}
+//#toolbar-administration {
+//  //position: absolute;
+//  z-index: 99999;
+//}
 
 #drupal-off-canvas {
   background: none;
@@ -17,6 +17,7 @@ body {
 .user-logged-in {
   .navbar{
     margin-top: 2.5rem;
+    z-index: 99;
   }
 
   /**
@@ -25,11 +26,8 @@ body {
   @include media-breakpoint-up(lg) {
     .navbar{
       margin-top: 5rem;
+      z-index: 99;
     }
-  }
-
-  .dialog-off-canvas-main-canvas{
-    margin-top: 6rem;
   }
 
   .ui-dialog-off-canvas{
@@ -40,7 +38,7 @@ body {
 .layout-container {
   overflow: hidden;
   padding: 0;
-  margin: 0;
+  margin: 80px 0 0;
 }
 
 .mb-grid-gutter {
@@ -143,4 +141,15 @@ img {
 .lift-lg:focus {
   box-shadow: $box-shadow-lift-lg !important;
   transform: translate3d(0, -5px, 0);
+}
+
+
+.block-help {
+  margin-bottom: 1em;
+  padding: 1.26em;
+  word-wrap: break-word;
+  color: inherit;
+  border: 1px solid #b3daf0;
+  background-color: #eef5f9;
+  overflow-wrap: break-word;
 }

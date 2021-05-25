@@ -15,6 +15,7 @@ regions:
   featured: 'Featured'
   highlighted  : 'Highlighted '
   breadcrumb: 'Breadcrumb'
+  help: 'Help'
   content: 'Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

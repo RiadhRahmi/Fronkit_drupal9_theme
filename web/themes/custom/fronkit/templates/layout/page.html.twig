@@ -46,7 +46,7 @@
 
   {% include '@fronkit/layout/partials/header.html.twig' %}
 
-  {% if page.breadcrumb %}
+  {% if page.breadcrumb|render|striptags|trim is not empty %}
     <div class="layout-header bg-gray-200">
       <div class="container py-9">
         <div class="row">
@@ -58,7 +58,7 @@
     </div>
   {% endif %}
 
-  {% if page.highlighted %}
+  {% if page.highlighted|render|striptags|trim is not empty %}
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -68,7 +68,15 @@
     </div>
   {% endif %}
 
-  {{ page.help }}
+  {% if page.help|render|striptags|trim is not empty %}
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {{ page.help }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
 
   <main role="main">
 

@@ -3,15 +3,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - fronkit
+third_party_settings:
+  block_class:
+    classes: 'd-inline-block my-auto'
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: fronkit_breadcrumbs
 theme: fronkit
 region: breadcrumb
-weight: -13
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -22,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/node/26"
     negate: true

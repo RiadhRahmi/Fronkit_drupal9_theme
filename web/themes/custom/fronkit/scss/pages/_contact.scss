@@ -2,21 +2,58 @@
  contact styles
  */
 
-.block-type-contact-information {
-  &.view-mode-style-1 {
+.block-contact-info {
+  &.style-1 {
     .field--name-field-icon {
-      background: rgba($primary,0.05);
+      background: rgba($primary, 0.05);
       width: 4.37500rem;
       height: 4.37500rem;
       border-radius: 50%;
       text-align: center;
+
       i {
         color: $primary;
         line-height: 4.37500rem;
       }
     }
   }
+
+  &.style-2 {
+    .field--name-field-icon {
+      background: $primary;
+      width: 4.37500rem;
+      height: 4.37500rem;
+      border-radius: 50%;
+      text-align: center;
+
+      i {
+        color: $white;
+        line-height: 4.37500rem;
+      }
+    }
+  }
+
+  .field--name-field-contact-informations {
+    .contact-item {
+      padding-bottom: 1.87500rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    /**
+     Large devices
+  */
+    @include media-breakpoint-up(lg) {
+      .contact-item {
+        padding-bottom: 0;
+      }
+    }
+
+  }
 }
+
 
 iframe {
   width: 100%;
