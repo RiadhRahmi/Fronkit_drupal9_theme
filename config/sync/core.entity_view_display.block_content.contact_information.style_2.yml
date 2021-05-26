@@ -1,6 +1,6 @@
 uuid: 5e20479a-9fa7-426d-bff8-7c904940866a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - block_content.type.contact_information
@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.contact_information.field_contact_informations
   module:
     - entity_reference_revisions
+    - field_formatter_class
     - layout_builder
     - text
 third_party_settings:
@@ -25,15 +26,19 @@ content:
     type: text_default
     weight: 0
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: mb-7
     region: content
   field_contact_informations:
     type: entity_reference_revisions_entity_view
     weight: 1
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: style_1
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
 hidden: {  }

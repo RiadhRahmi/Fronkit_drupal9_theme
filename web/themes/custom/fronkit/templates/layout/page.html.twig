@@ -47,8 +47,8 @@
   {% include '@fronkit/layout/partials/header.html.twig' %}
 
   {% if page.breadcrumb|render|striptags|trim is not empty %}
-    <div class="layout-header bg-gray-200">
-      <div class="container py-9">
+    <div class="layout-header style-3"  style="background-image: url({{ url_banner_image }})">
+      <div class="container">
         <div class="row">
           <div class="col-12">
             {{ page.breadcrumb }}

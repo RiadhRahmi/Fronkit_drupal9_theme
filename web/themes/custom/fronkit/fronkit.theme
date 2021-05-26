@@ -5,6 +5,30 @@ use Drupal\Component\Utility\Html;
 
 
 /**
+ * @param $variables
+ */
+function fronkit_preprocess_page(&$variables)
+{
+  $node = \Drupal::routeMatch()->getParameter('node_preview');
+
+  if (isset($variables['node']) || !empty($node)) {
+    if (empty($node)) {
+      $node = $variables['node'];
+    }
+
+    $type = $node->getType();
+
+    if ($type == 'webform') {
+      if ($node->hasField('field_banner_image')) {
+        $media_entity = $node->get('field_banner_image')->referencedEntities()[0];
+        $variables['url_banner_image'] = file_create_url($media_entity->get('field_media_image')->entity->uri->value);
+      }
+    }
+  }
+
+}
+
+/**
  * Implements hook_preprocess_field().
  */
 function fronkit_preprocess_field(&$variables, $hook)
@@ -37,7 +61,7 @@ function fronkit_preprocess_field(&$variables, $hook)
     }
   }
 
-  if ($variables['field_name'] == "field_icon"){
+  if ($variables['field_name'] == "field_icon") {
     foreach ($variables['items'] as $key => $item) {
       $field_value = $variables['items'][$key]['content']['#context']['value'];
       $variables['items'][$key]['content']['#context']['value'] = new FormattableMarkup($field_value, []);
@@ -78,6 +102,17 @@ function fronkit_theme_suggestions_block_alter(array &$suggestions, array $varia
   }
 }
 
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function fronkit_theme_suggestions_field_alter(array &$suggestions, array $variables, $hook)
+{
+
+  $element = $variables['element'];
+  $suggestions[] = 'field__' . $element['#entity_type'] . '__' . $element['#field_name'] . '__' . $element['#bundle'] . '__' . $element['#view_mode'];
+}
+
 /**
  * @param $variables
  */
@@ -107,11 +142,11 @@ function fronkit_preprocess_node__view__team(&$vars)
 }
 
 
-
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function fronkit_preprocess_breadcrumb(&$variables) {
+function fronkit_preprocess_breadcrumb(&$variables)
+{
   // We are creating a variable for the Current Page Title, to allow us to print
   // it after the breadcrumbs loop has run.
   $route_match = \Drupal::routeMatch();
@@ -123,8 +158,7 @@ function fronkit_preprocess_breadcrumb(&$variables) {
   $entity = $route_match->getParameter('entity');
   if ($entity instanceof SearchPageInterface) {
     $variables['current_page_title'] = $entity->getPlugin()->suggestedTitle();
-  }
-  else {
+  } else {
     $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route_match->getRouteObject());
   }
   // Since we are printing the 'Current Page Title', add the URL cache context.

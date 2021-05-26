@@ -10677,9 +10677,32 @@ header .menu--main .dropdown {
 /**
 breadcrumb styles
  */
-.layout-header .breadcrumb-item.active,
-.layout-header .breadcrumb-item a {
-  color: #506690 !important; }
+.layout-header.style-1 {
+  background: #F1F4F8;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important; }
+  .layout-header.style-1 .breadcrumb-item::before, .layout-header.style-1 .breadcrumb-item.active,
+  .layout-header.style-1 .breadcrumb-item a {
+    color: #506690 !important; }
+
+.layout-header.style-2 {
+  background: #2B354F;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important; }
+  .layout-header.style-2 h1, .layout-header.style-2 .h1 {
+    color: #fff; }
+  .layout-header.style-2 .breadcrumb-item::before, .layout-header.style-2 .breadcrumb-item.active,
+  .layout-header.style-2 .breadcrumb-item a {
+    color: #F1F4F8 !important; }
+
+.layout-header.style-3 {
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important; }
+  .layout-header.style-3 h1, .layout-header.style-3 .h1 {
+    color: #fff; }
+  .layout-header.style-3 .breadcrumb-item::before, .layout-header.style-3 .breadcrumb-item.active,
+  .layout-header.style-3 .breadcrumb-item a {
+    color: #F1F4F8 !important; }
 
 /**
  Block carrousel

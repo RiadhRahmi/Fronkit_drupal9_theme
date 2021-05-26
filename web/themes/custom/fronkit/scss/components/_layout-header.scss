@@ -1,0 +1,55 @@
+/**
+breadcrumb styles
+ */
+
+.layout-header {
+
+  //breadcrumb style 1
+  &.style-1 {
+    background: $gray-200;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+
+    .breadcrumb-item {
+      &::before,
+      &.active,
+      a {
+        color: $gray-700 !important;
+      }
+    }
+  }
+
+  //breadcrumb style 2
+  &.style-2 {
+    background: $gray-900;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+
+    h1{
+      color: $white;
+    }
+    .breadcrumb-item {
+      &::before,
+      &.active,
+      a {
+        color: $gray-200 !important;
+      }
+    }
+  }
+
+  //breadcrumb style 3
+  &.style-3{
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+    h1{
+      color: $white;
+    }
+    .breadcrumb-item {
+      &::before,
+      &.active,
+      a {
+        color: $gray-200 !important;
+      }
+    }
+  }
+}

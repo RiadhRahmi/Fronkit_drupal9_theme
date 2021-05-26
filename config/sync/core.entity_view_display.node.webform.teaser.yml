@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.webform.body
+    - field.field.node.webform.field_banner_image
     - field.field.node.webform.layout_builder__layout
     - field.field.node.webform.webform
     - node.type.webform
@@ -32,5 +33,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_banner_image: true
   layout_builder__layout: true
   webform: true
