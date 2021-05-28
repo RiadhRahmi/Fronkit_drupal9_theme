@@ -6,3 +6,6 @@ fronkit.settings:
     font_size:
       type: integer
       label: Font size
+    banner_background:
+      type: string
+      label: Banner background

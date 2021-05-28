@@ -1,0 +1,10 @@
+uuid: f4ee482f-5718-4eda-8b40-741a0b2641df
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.style_2
+label: 'Style 2'
+targetEntityType: paragraph
+cache: true

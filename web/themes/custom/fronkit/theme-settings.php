@@ -8,7 +8,8 @@
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
-function fronkit_form_system_theme_settings_alter(&$form, &$form_state) {
+function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
+{
 
   $form['fronkit'] = [
     '#type' => 'details',
@@ -22,6 +23,17 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state) {
     '#min' => 12,
     '#max' => 18,
     '#default_value' => theme_get_setting('font_size'),
+  ];
+
+  $form['fronkit']['banner_background'] = [
+    '#type' => 'select',
+    '#title' => t('Banner background'),
+    '#options' => [
+      'style-1' => t('White background'),
+      'style-2' => t('Dark background'),
+      'style-3' => t('Image background'),
+    ],
+    '#default_value' => theme_get_setting('banner_background'),
   ];
 
 }

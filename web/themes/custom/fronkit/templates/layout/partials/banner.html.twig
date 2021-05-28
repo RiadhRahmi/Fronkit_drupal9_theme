@@ -1,0 +1,12 @@
+{% if page.breadcrumb|render|striptags|trim is not empty %}
+  <div class="layout-banner {{ banner_background }}"
+    {% if banner_background == "style-3" %} style="background-image: url({{ url_banner_image }})" {% endif %} >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {{ page.breadcrumb }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

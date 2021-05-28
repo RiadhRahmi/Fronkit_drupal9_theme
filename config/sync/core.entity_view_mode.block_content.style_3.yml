@@ -1,0 +1,10 @@
+uuid: 94547539-4d68-4106-9767-15df63de4891
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.style_3
+label: 'Style 3'
+targetEntityType: block_content
+cache: true

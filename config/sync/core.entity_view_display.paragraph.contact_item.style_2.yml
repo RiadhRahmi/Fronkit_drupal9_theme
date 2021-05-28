@@ -1,9 +1,9 @@
-uuid: a6b87a26-b297-4560-9f70-bfd06cf603bd
+uuid: 6ded8bf0-d457-4818-af7a-99236c8deeef
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.paragraph.style_1
+    - core.entity_view_mode.paragraph.style_2
     - field.field.paragraph.contact_item.field_description
     - field.field.paragraph.contact_item.field_icon
     - field.field.paragraph.contact_item.field_title
@@ -11,24 +11,43 @@ dependencies:
   module:
     - element_class_formatter
     - field_formatter_class
+    - field_group
     - layout_builder
     - text
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: paragraph.contact_item.style_1
+  field_group:
+    group_contact_infos:
+      children:
+        - field_title
+        - field_description
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: contact-infos
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Contact Infos'
+id: paragraph.contact_item.style_2
 targetEntityType: paragraph
 bundle: contact_item
-mode: style_1
+mode: style_2
 content:
   field_description:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
-    third_party_settings:
-      field_formatter_class:
-        class: mt-3
+    third_party_settings: {  }
     type: text_default
     region: content
   field_icon:
@@ -36,13 +55,11 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: mx-auto
+    third_party_settings: {  }
     type: string
     region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_class: ''
@@ -53,7 +70,7 @@ content:
       trim: 200
     third_party_settings:
       field_formatter_class:
-        class: mt-4
+        class: ''
     type: wrapper_class
     region: content
 hidden: {  }

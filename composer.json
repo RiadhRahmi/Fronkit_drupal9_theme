@@ -103,6 +103,9 @@
         "patches": {
             "drupal/core": {
                 "Add contextual links with layout builder": "https://www.drupal.org/files/issues/2020-05-20/contextual_links_with_LB-3020876-32.patch"
+            },
+            "drupal/bootstrap_layout_builder": {
+                "Bootstrap 1 col columns settings classes not work": "https://www.drupal.org/files/issues/2021-02-14/3198047.patch"
             }
         }
     }

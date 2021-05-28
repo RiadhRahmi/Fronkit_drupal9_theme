@@ -9,19 +9,26 @@ use Drupal\Component\Utility\Html;
  */
 function fronkit_preprocess_page(&$variables)
 {
-  $node = \Drupal::routeMatch()->getParameter('node_preview');
+  // get theme settings
+  $banner_background_setting = theme_get_setting('banner_background');
+  $variables['banner_background'] = $banner_background_setting;
 
-  if (isset($variables['node']) || !empty($node)) {
-    if (empty($node)) {
-      $node = $variables['node'];
-    }
+  // add background image to banner
+  if ($banner_background_setting == "style-3") {
+    $node = \Drupal::routeMatch()->getParameter('node_preview');
+    // default background image
+    $variables['url_banner_image'] = base_path() . '/themes/custom/fronkit/images/banner.jpg';
+    if (isset($variables['node']) || !empty($node)) {
+      if (empty($node)) {
+        $node = $variables['node'];
+      }
+      $type = $node->getType();
 
-    $type = $node->getType();
-
-    if ($type == 'webform') {
-      if ($node->hasField('field_banner_image')) {
-        $media_entity = $node->get('field_banner_image')->referencedEntities()[0];
-        $variables['url_banner_image'] = file_create_url($media_entity->get('field_media_image')->entity->uri->value);
+      if ($type == 'webform') {
+        if ($node->get('field_banner_image')->value) {
+          $media_entity = $node->get('field_banner_image')->referencedEntities()[0];
+          $variables['url_banner_image'] = file_create_url($media_entity->get('field_media_image')->entity->uri->value);
+        }
       }
     }
   }
@@ -39,7 +46,6 @@ function fronkit_preprocess_field(&$variables, $hook)
       $variables['items'][$idx]['content']['#paragraph']->index = $idx + 1;
     }
   }
-
 
   if ($variables['field_type'] == 'link') {
     foreach ($variables['items'] as $key => $item) {
@@ -81,7 +87,6 @@ function fronkit_preprocess_block(&$variables)
   if (isset($variables['elements']['content']['#block_content'])) {
     $bundle = $variables['elements']['content']['#block_content']->bundle();
     $variables['attributes']['class'][] = Html::getClass('block-type-' . $bundle);
-
     $view_mode = strtr($variables['elements']['#configuration']['view_mode'], '.', '_');
     $variables['attributes']['class'][] = Html::getClass('view-mode-' . $view_mode);
   }
@@ -96,7 +101,6 @@ function fronkit_theme_suggestions_block_alter(array &$suggestions, array $varia
   if (isset($variables['elements']['content']['#block_content'])) {
     $bundle = $variables['elements']['content']['#block_content']->bundle();
     $view_mode = strtr($variables['elements']['#configuration']['view_mode'], '.', '_');
-
     array_splice($suggestions, 1, 0, 'block__bundle__' . $bundle);
     array_splice($suggestions, 1, 0, 'block__bundle__' . $bundle . '__' . $view_mode);
   }
@@ -108,7 +112,6 @@ function fronkit_theme_suggestions_block_alter(array &$suggestions, array $varia
  */
 function fronkit_theme_suggestions_field_alter(array &$suggestions, array $variables, $hook)
 {
-
   $element = $variables['element'];
   $suggestions[] = 'field__' . $element['#entity_type'] . '__' . $element['#field_name'] . '__' . $element['#bundle'] . '__' . $element['#view_mode'];
 }

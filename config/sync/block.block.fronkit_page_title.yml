@@ -9,7 +9,7 @@ dependencies:
     - fronkit
 third_party_settings:
   block_class:
-    classes: d-inline-block
+    classes: 'd-md-inline-block text-center'
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: fronkit_page_title

@@ -1,10 +1,10 @@
-uuid: 5e20479a-9fa7-426d-bff8-7c904940866a
+uuid: 376eccd9-55f5-4cb0-9622-a91372e4c46e
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.contact_information
-    - core.entity_view_mode.block_content.style_2
+    - core.entity_view_mode.block_content.style_3
     - field.field.block_content.contact_information.body
     - field.field.block_content.contact_information.field_contact_informations
   module:
@@ -16,10 +16,10 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: block_content.contact_information.style_2
+id: block_content.contact_information.style_3
 targetEntityType: block_content
 bundle: contact_information
-mode: style_2
+mode: style_3
 content:
   body:
     label: hidden
@@ -28,17 +28,17 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: mb-7
+        class: 'mb-7 text-center'
     region: content
   field_contact_informations:
     type: entity_reference_revisions_entity_view
     weight: 1
     label: hidden
     settings:
-      view_mode: style_2
+      view_mode: style_3
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: row
     region: content
 hidden: {  }

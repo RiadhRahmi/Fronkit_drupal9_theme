@@ -5,41 +5,38 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-//#toolbar-administration {
-//  //position: absolute;
-//  z-index: 99999;
-//}
-
 #drupal-off-canvas {
   background: none;
-}
-
-.user-logged-in {
-  .navbar{
-    margin-top: 2.5rem;
-    z-index: 99;
-  }
-
-  /**
-      Medium devices
-   */
-  @include media-breakpoint-up(lg) {
-    .navbar{
-      margin-top: 5rem;
-      z-index: 99;
-    }
-  }
-
-  .ui-dialog-off-canvas{
-    z-index: 99999
-  }
 }
 
 .layout-container {
   overflow: hidden;
   padding: 0;
-  margin: 80px 0 0;
+  margin-top: 77px;
 }
+
+.user-logged-in {
+  .navbar {
+    position: initial;
+  }
+
+  .ui-dialog-off-canvas {
+    z-index: 99999
+  }
+
+  .layout-container {
+    margin-top: 39px;
+
+    /**
+     small devices
+    */
+    @include media-breakpoint-up(sm) {
+      margin-top: 0;
+    }
+  }
+
+}
+
 
 .mb-grid-gutter {
   margin-bottom: 1.87500rem;
@@ -48,6 +45,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+iframe {
+  width: 100%;
 }
 
 .form-type-webform-markup,

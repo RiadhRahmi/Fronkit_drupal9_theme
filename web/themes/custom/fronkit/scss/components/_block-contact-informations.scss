@@ -1,0 +1,93 @@
+/**
+   block type contact informations
+ */
+.block-type-contact-information {
+
+  // view mode style 1
+  &.view-mode-style-1 {
+
+    &.style-1 {
+      .field--name-field-icon {
+        background: rgba($primary, 0.05);
+        width: 4.37500rem;
+        height: 4.37500rem;
+        border-radius: 50%;
+        text-align: center;
+
+        i {
+          color: $primary;
+          line-height: 4.37500rem;
+        }
+      }
+    }
+
+    &.style-2 {
+      .field--name-field-icon {
+        background: $primary;
+        width: 4.37500rem;
+        height: 4.37500rem;
+        border-radius: 50%;
+        text-align: center;
+
+        i {
+          color: $white;
+          line-height: 4.37500rem;
+        }
+      }
+    }
+  }
+
+  // view mode style 2
+  &.view-mode-style-2 {
+    .field--name-field-contact-informations {
+      > .field__item {
+        margin-bottom: 1.87500rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .paragraph--view-mode--style-2 {
+          display: flex;
+
+          .field--name-field-icon {
+            background: $primary;
+            width: 4.37500rem;
+            height: 4.37500rem;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 1.87500rem;
+
+            i {
+              color: $white;
+              line-height: 4.37500rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // view mode style 2
+  &.view-mode-style-3 {
+    h5 {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .contact-item {
+    padding-bottom: 1.87500rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  /**
+      Large devices
+   */
+  @include media-breakpoint-up(lg) {
+    .contact-item {
+      padding-bottom: 0;
+    }
+  }
+}
