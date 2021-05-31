@@ -73,7 +73,6 @@ module:
   webform_devel: 0
   webform_image_select: 0
   webform_node: 0
-  webform_options_custom: 0
   webform_options_limit: 0
   webform_scheduled_email: 0
   webform_share: 0

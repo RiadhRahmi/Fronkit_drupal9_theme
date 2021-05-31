@@ -1,23 +1,18 @@
-uuid: e5c9aaf6-35b2-49c2-9d17-23da8496597b
+uuid: 5d092c93-0f42-48ff-8937-70089a9f6cf9
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform_options_custom
-_core:
-  default_config_hash: Yq5gPKCUuIY3Re5SNmD_cWUwdJBVMYpWkUO-jdPximg
+dependencies: {  }
 open: null
 close: null
 weight: 0
-uid: null
+uid: 1
 template: false
 archive: false
-id: example_options_custom
-title: 'Example: Custom Options'
-description: 'Example of a custom options element.'
-category: Example
-elements: "states:\n  '#type': 'webform_options_custom:us_states'\n  '#title': 'U.S. States'\n  '#required': true\nbutton:\n  '#type': 'webform_options_custom:buttons'\n  '#title': 'Buttons'\n  '#required': true\n  '#options':\n    one: One -- This is the number 1.\n    two: Two -- This is the number 2.\n    three:  Three -- This is the number 3.\n"
+id: evaluation_form
+title: 'Evaluation Form'
+description: ''
+category: ''
+elements: "'#attributes':\n  class:\n    - 'container py-7'\nrating:\n  '#type': webform_rating\n  '#title': Rating\n  '#title_display': before\n  '#required': true\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - 'form-label d-block'\nname:\n  '#type': textfield\n  '#title': Name\n  '#title_display': before\n  '#required': true\n  '#default_value': '[current-user:display-name]'\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\ncomments:\n  '#type': textarea\n  '#title': Comments\n  '#title_display': before\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - 'btn btn-primary mt-7'"
 css: ''
 javascript: ''
 settings:
@@ -99,10 +94,10 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 1
+  preview: 0
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -117,7 +112,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: message
+  confirmation_type: page
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
