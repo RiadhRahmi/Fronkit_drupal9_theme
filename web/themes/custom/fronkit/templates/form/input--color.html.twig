@@ -13,8 +13,8 @@
 
 
 {% set css_classes = [
-  'form-control'
+  'form-control',
+  'form-control-color'
 ] %}
 
-
-<input{{ attributes.addClass(css_classes) }} />{{ children }}
+<input{{ attributes.addClass(css_classes).removeClass('form-color-output','form-color-medium','form-color') }} />{{ children }}

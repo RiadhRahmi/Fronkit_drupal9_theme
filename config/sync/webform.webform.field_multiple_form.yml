@@ -1,4 +1,4 @@
-uuid: f371e1f0-71e4-48bb-8a20-bf3c4ba0f19f
+uuid: d6cb1ed0-b065-4b81-98ab-f39336e3974d
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: basic_form
-title: 'Basic Form'
+id: field_multiple_form
+title: 'Field Multiple Form'
 description: ''
 category: ''
-elements: "textfield:\n  '#type': textfield\n  '#title': 'Text field'\n  '#title_display': before\ntextarea:\n  '#type': textarea\n  '#title': Textarea\n  '#title_display': before\n  '#wrapper_attributes':\n    class:\n      - mt-3\nselect:\n  '#type': select\n  '#title': 'Select one'\n  '#title_display': before\n  '#options':\n    option_1: 'Option 1'\n    option_2: 'Option 2'\n    option_3: 'Option 3'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nselect_multiple:\n  '#type': select\n  '#title': 'Select multiple'\n  '#multiple': true\n  '#title_display': before\n  '#options':\n    option_1: 'Option 1'\n    option_2: 'Option 2'\n    option_3: 'Option 3'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nradios:\n  '#type': radios\n  '#title': Radios\n  '#options':\n    option_1: 'Option 1'\n    option_2: 'Option 2'\n    option_3: 'Option 3'\n  '#wrapper_type': form_element\n  '#wrapper_attributes':\n    class:\n      - mt-3\ncheckboxes:\n  '#type': checkboxes\n  '#title': Checkboxes\n  '#options':\n    option_1: 'Option 1'\n    option_2: 'Option 2'\n    option_3: 'Option 3'\n  '#wrapper_type': form_element\n  '#wrapper_attributes':\n    class:\n      - mt-3\ncheckbox:\n  '#type': checkbox\n  '#title': Checkbox\n  '#description': 'This is a description'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nmanaged_file:\n  '#type': managed_file\n  '#title': 'Managed single file'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nmanaged_file_multiple:\n  '#type': managed_file\n  '#title': 'Managed multiple file'\n  '#multiple': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\ndate:\n  '#type': date\n  '#title': Date\n  '#wrapper_attributes':\n    class:\n      - mt-3\ndatetime:\n  '#type': datetime\n  '#title': Date/time\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#date_date_format': ''\n  '#date_time_format': ''\ndatelist:\n  '#type': datelist\n  '#title': 'Date list'\n  '#wrapper_attributes':\n    class:\n      - mt-3\ndate_datepicker:\n  '#type': date\n  '#title': 'Date picker'\n  '#datepicker': true\n  '#date_date_format': 'D, m/d/Y'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nwebform_time:\n  '#type': webform_time\n  '#title': Time\n  '#wrapper_attributes':\n    class:\n      - mt-3\ncolor:\n  '#type': color\n  '#title': Color\n  '#wrapper_attributes':\n    class:\n      - mt-3\ntel:\n  '#type': tel\n  '#title': Telephone\n  '#wrapper_attributes':\n    class:\n      - mt-3\nurl:\n  '#type': url\n  '#title': URL\n  '#wrapper_attributes':\n    class:\n      - mt-3\nsearch:\n  '#type': search\n  '#title': Search\n  '#wrapper_attributes':\n    class:\n      - mt-3\nnumber:\n  '#type': number\n  '#title': Number\n  '#min': 0\n  '#max': 10\n  '#step': 1\n  '#wrapper_attributes':\n    class:\n      - mt-3\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - mt-7"
+elements: "your_name:\n  '#type': textfield\n  '#title': 'Your Name'\nyour_friend_s_name:\n  '#type': textfield\n  '#title': 'Your Friend''s Name'\n  '#multiple': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - mt-7"
 css: ''
 javascript: ''
 settings:
@@ -21,11 +21,11 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: false
+  page: true
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -94,7 +94,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: true
+  wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0

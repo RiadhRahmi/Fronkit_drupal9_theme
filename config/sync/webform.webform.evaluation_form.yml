@@ -12,7 +12,7 @@ id: evaluation_form
 title: 'Evaluation Form'
 description: ''
 category: ''
-elements: "'#attributes':\n  class:\n    - 'container py-7'\nrating:\n  '#type': webform_rating\n  '#title': Rating\n  '#title_display': before\n  '#required': true\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - 'form-label d-block'\nname:\n  '#type': textfield\n  '#title': Name\n  '#title_display': before\n  '#required': true\n  '#default_value': '[current-user:display-name]'\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\ncomments:\n  '#type': textarea\n  '#title': Comments\n  '#title_display': before\n  '#wrapper_attributes':\n    class:\n      - mt-3\n  '#attributes':\n    class:\n      - form-control\n  '#label_attributes':\n    class:\n      - form-label\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - 'btn btn-primary mt-7'"
+elements: "rating:\n  '#type': webform_rating\n  '#title': Rating\n  '#title_display': before\n  '#required': true\n  '#label_attributes':\n    class:\n      - d-block\nname:\n  '#type': textfield\n  '#title': Name\n  '#title_display': before\n  '#required': true\n  '#default_value': '[current-user:display-name]'\n  '#wrapper_attributes':\n    class:\n      - mt-3\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\ncomments:\n  '#type': textarea\n  '#title': Comments\n  '#title_display': before\n  '#wrapper_attributes':\n    class:\n      - mt-3\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - mt-7"
 css: ''
 javascript: ''
 settings:
@@ -21,7 +21,7 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''

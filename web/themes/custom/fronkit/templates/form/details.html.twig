@@ -15,14 +15,18 @@
  * @see template_preprocess_details()
  */
 #}
-<details{{ attributes }}>
+{% set css_classes = [
+  'card',
+  'mb-3',
+] %}
+
+<details{{ attributes.addClass(css_classes) }}>
   {%- if title -%}
-    {%
-      set summary_classes = [
-        required ? 'js-form-required',
-        required ? 'form-required',
-      ]
-    %}
+    {% set summary_classes = [
+      'card-header',
+      required ? 'js-form-required',
+      required ? 'form-required',
+    ] %}
     <summary{{ summary_attributes.addClass(summary_classes) }}>{{ title }}</summary>
   {%- endif -%}
   <div class="details-wrapper">
@@ -31,14 +35,16 @@
         <strong>{{ errors }}</strong>
       </div>
     {% endif %}
-    {%- if description -%}
-      <div class="details-description">{{ description }}</div>
-    {%- endif -%}
-    {%- if children -%}
-      {{ children }}
-    {%- endif -%}
-    {%- if value -%}
-      {{ value }}
-    {%- endif -%}
+    <div class="card-body">
+      {%- if description -%}
+        <div class="details-description">{{ description }}</div>
+      {%- endif -%}
+      {%- if children -%}
+        {{ children }}
+      {%- endif -%}
+      {%- if value -%}
+        {{ value }}
+      {%- endif -%}
+    </div>
   </div>
 </details>

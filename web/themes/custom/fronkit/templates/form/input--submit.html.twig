@@ -10,11 +10,8 @@
  * @see template_preprocess_input()
  */
 #}
-
-
 {% set css_classes = [
-  'form-control'
+  'btn',
+  'btn-primary'
 ] %}
-
-
-<input{{ attributes.addClass(css_classes) }} />{{ children }}
+<input{{ attributes.addClass(css_classes) }} /> {{ children }}
