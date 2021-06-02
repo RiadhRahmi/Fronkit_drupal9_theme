@@ -12,7 +12,7 @@ id: field_multiple_form
 title: 'Field Multiple Form'
 description: ''
 category: ''
-elements: "your_name:\n  '#type': textfield\n  '#title': 'Your Name'\nyour_friend_s_name:\n  '#type': textfield\n  '#title': 'Your Friend''s Name'\n  '#multiple': true\n  '#wrapper_attributes':\n    class:\n      - mt-3\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    class:\n      - mt-7"
+elements: "name:\n  '#type': textfield\n  '#title': 'Your Name'\nskills:\n  '#type': textfield\n  '#title': 'Your skills'\n  '#multiple': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
 css: ''
 javascript: ''
 settings:

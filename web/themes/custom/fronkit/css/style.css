@@ -10662,6 +10662,59 @@ iframe {
 .progress-step.is-active .progress-marker::before {
   background-color: #003cc5; }
 
+.captcha {
+  margin-top: 1rem; }
+
+.webform-flexbox {
+  margin: 0; }
+  .webform-flexbox .webform-flex:first-child .webform-flex--container {
+    margin-left: 0; }
+
+legend {
+  font-size: 1rem; }
+
+.tabledrag-toggle-weight {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  font-size: 1em; }
+
+.webform-multiple-table thead {
+  display: none; }
+
+.webform-multiple-table thead, .webform-multiple-table tbody, .webform-multiple-table tfoot, .webform-multiple-table tr, .webform-multiple-table td, .webform-multiple-table th {
+  border: none; }
+
+.webform-multiple-table .form-item {
+  margin-top: 0 !important; }
+
+a.tabledrag-handle .handle {
+  width: 16px;
+  height: 16px;
+  background: url(../images/move.svg);
+  margin: 0;
+  padding: 0; }
+
+.webform-multiple-table--operations input {
+  display: inline-block; }
+
+.webform-multiple-add {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem !important; }
+  .webform-multiple-add .form-item,
+  .webform-multiple-add input {
+    margin-top: 0 !important; }
+  .webform-multiple-add .form-item {
+    margin-left: 1rem; }
+
+.form-switch {
+  padding-left: 1rem !important; }
+  .form-switch .form-label:first-child {
+    margin-left: -1rem; }
+
 .badge {
   margin-bottom: 0.75rem;
   line-height: 1.3; }

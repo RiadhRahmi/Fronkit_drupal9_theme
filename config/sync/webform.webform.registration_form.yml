@@ -1,4 +1,4 @@
-uuid: 3e8c71c2-bfff-4f99-8c23-d1a89df37f33
+uuid: 31c5cb31-b4eb-448d-a103-4bf847fbb854
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: flexbox_layout_form
-title: 'Flexbox Layout Form'
+id: registration_form
+title: 'Registration Form'
 description: ''
 category: ''
-elements: "name:\n  '#type': webform_flexbox\n  first_name:\n    '#type': textfield\n    '#title': 'First name'\n    '#flex': 3\n  middle_name:\n    '#type': textfield\n    '#title': 'Middle name'\n    '#flex': 3\n  last_name:\n    '#type': textfield\n    '#title': 'Last name'\n    '#flex': 5\npersonal_information_1:\n  '#type': webform_flexbox\n  birth_date:\n    '#type': datelist\n    '#title': 'Birth date'\n    '#flex': 3\n    '#date_part_order':\n      - month\n      - day\n      - year\n      - hour\n      - minute\n      - second\n      - ampm\n  sex:\n    '#type': radios\n    '#title': Sex\n    '#options': sex\n    '#wrapper_type': form_element\npersonal_information_2:\n  '#type': webform_flexbox\n  ethnicity:\n    '#type': webform_checkboxes_other\n    '#title': Ethnicity\n    '#options': ethnicity\n    '#options_display': three_columns\n    '#wrapper_type': form_element\n  marital_status:\n    '#type': radios\n    '#title': 'Marital status'\n    '#options': marital_status\n    '#options_display': two_columns\n    '#wrapper_type': form_element\n    '#wrapper_attributes':\n      class:\n        - form-switch\nwork:\n  '#type': webform_flexbox\n  employment_status:\n    '#type': webform_select_other\n    '#title': 'Employment status'\n    '#options': employment_status\n  industry:\n    '#type': webform_select_other\n    '#title': 'If employed, industry of employer'\n    '#options': industry\naddress_line_1:\n  '#type': webform_flexbox\n  address:\n    '#type': textfield\n    '#title': 'Street address (Line 1)'\naddress_line_2:\n  '#type': webform_flexbox\n  address_1:\n    '#type': textfield\n    '#title': 'Street address (Line 2)'\naddress_line_3:\n  '#type': webform_flexbox\n  city:\n    '#type': textfield\n    '#title': City\n  state_province:\n    '#type': select\n    '#title': State/Province\n    '#options': state_province_names\n  zip:\n    '#type': textfield\n    '#title': ZIP\naddress_line_4:\n  country:\n    '#type': select\n    '#title': Country\n    '#options': country_names\nphone_number:\n  '#type': webform_flexbox\n  mobile_phone:\n    '#type': tel\n    '#title': 'Mobile phone'\n  home_phone:\n    '#type': tel\n    '#title': 'Home phone'\n  work_phone:\n    '#type': tel\n    '#title': 'Home phone'\nweb:\n  '#type': webform_flexbox\n  email:\n    '#type': email\n    '#title': 'Email address'\n  url:\n    '#type': url\n    '#title': 'Home page (URL)'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
+elements: "civilite:\n  '#type': radios\n  '#title': Civilité\n  '#options':\n    Monsieur: Monsieur\n    Madame: Madame\n  '#required': true\nname:\n  '#type': textfield\n  '#title': Name\n  '#required': true\ndate_de_naissance:\n  '#type': date\n  '#title': 'Date de naissance'\n  '#datepicker': true\n  '#date_date_format': m/d/Y\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\ntelephone:\n  '#type': tel\n  '#title': Téléphone\n  '#required': true\nadresse:\n  '#type': textfield\n  '#title': Adresse\nprofil:\n  '#type': radios\n  '#title': Profil\n  '#options':\n    Elève: Elève\n    Collégien: Collégien\n    Lycéen: Lycéen\n  '#required': true\nniveau_d_etude:\n  '#type': select\n  '#title': 'Niveau d''étude'\n  '#options':\n    1ére: 1ére\n    2ème: 2ème\n    3ème: 3ème\n    4ème: 4ème\n    5ème: 5ème\n    6ème: 6ème\n    7ème: 7ème\n    8ème: 8ème\n    9ème: 9ème\n    Bac: Bac\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - 'col-md-6 col-12'\n  '#attributes':\n    class:\n      - inscription-field-niveau-scolaire\nvotre_message:\n  '#type': textarea\n  '#title': 'Votre message'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - 'col-md-12 col-12'\nvotre_piece_jointe:\n  '#type': webform_document_file\n  '#title': 'Votre pièce jointe'\n  '#description': |\n    Un seul fichier.\n    Limit&eacute; &agrave; 2 Mo.\n    Types autoris&eacute;s : pdf.\n  '#wrapper_attributes':\n    class:\n      - 'col-md-12 col-12'\n  '#file_help': none\n  '#file_extensions': 'pdf '\ncaptcha:\n  '#type': captcha\n  '#captcha_type': image_captcha/Image\nprocessed_text:\n  '#type': processed_text\n  '#text': |\n    <p>Les informations recueillies lors de votre visite sur ce site sont protégées par le Règlement RGPD. Ces informations sont également confidentielles, et ne sont en aucun cas destinées à être diffusées à des tiers, notamment à des fins de prospection commerciale. Pour plus d’informations, nous vous invitons à consulter notre <a href=\"/informations-legales\">Déclaration de confidentialité</a>.</p>\n  '#format': elyos_html\ntitle_page:\n  '#type': textfield\n  '#title': 'title page'\n  '#default_value': '[current-page:query:object]'\nemailto:\n  '#type': hidden\n  '#title': emailto\n  '#default_value': '[site:email_field]'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Envoyer"
 css: ''
 javascript: ''
 settings:
@@ -21,7 +21,7 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: false
+  page: true
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''

@@ -12,7 +12,7 @@ id: webform_composite
 title: 'Webform Composite'
 description: ''
 category: ''
-elements: null
+elements: "composite_field:\n  '#type': webform_custom_composite\n  '#title': 'Composite Field'\n  '#element':\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'"
 css: ''
 javascript: ''
 settings:
