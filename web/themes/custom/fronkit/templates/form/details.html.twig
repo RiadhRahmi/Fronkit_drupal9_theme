@@ -16,14 +16,12 @@
  */
 #}
 {% set css_classes = [
-  'card',
   'mt-3',
 ] %}
 
 <details{{ attributes.addClass(css_classes) }}>
   {%- if title -%}
     {% set summary_classes = [
-      'card-header',
       required ? 'js-form-required',
       required ? 'form-required',
     ] %}
@@ -35,16 +33,14 @@
         <strong>{{ errors }}</strong>
       </div>
     {% endif %}
-    <div class="card-body">
-      {%- if description -%}
-        <div class="details-description">{{ description }}</div>
-      {%- endif -%}
-      {%- if children -%}
-        {{ children }}
-      {%- endif -%}
-      {%- if value -%}
-        {{ value }}
-      {%- endif -%}
-    </div>
+    {%- if description -%}
+      <div class="details-description">{{ description }}</div>
+    {%- endif -%}
+    {%- if children -%}
+      {{ children }}
+    {%- endif -%}
+    {%- if value -%}
+      {{ value }}
+    {%- endif -%}
   </div>
 </details>

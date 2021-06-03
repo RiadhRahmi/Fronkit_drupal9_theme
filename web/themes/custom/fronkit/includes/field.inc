@@ -69,3 +69,13 @@ function fronkit_theme_suggestions_field_alter(array &$suggestions, array $varia
   $element = $variables['element'];
   $suggestions[] = 'field__' . $element['#entity_type'] . '__' . $element['#field_name'] . '__' . $element['#bundle'] . '__' . $element['#view_mode'];
 }
+
+/**
+ * Implements hook_preprocess_file_link().
+ */
+function fronkit_preprocess_file_link(&$variables) {
+  $file = $variables['file'];
+  $mime_type = $file->getMimeType();
+  // pass mime type to twig
+  $variables['mime_type'] = file_icon_class($mime_type);
+}

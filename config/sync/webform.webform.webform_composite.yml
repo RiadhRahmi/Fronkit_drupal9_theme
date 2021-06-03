@@ -12,7 +12,7 @@ id: webform_composite
 title: 'Webform Composite'
 description: ''
 category: ''
-elements: "composite_field:\n  '#type': webform_custom_composite\n  '#title': 'Composite Field'\n  '#element':\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'"
+elements: "composite_field:\n  '#type': webform_custom_composite\n  '#title': 'Composite Field'\n  '#title_display': invisible\n  '#multiple__min_items': 10\n  '#multiple__add_more_input': false\n  '#wrapper_type': form_element\n  '#element':\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n    age:\n      '#type': textfield\n      '#title': Age\n    email:\n      '#type': email\n      '#title': Email"
 css: ''
 javascript: ''
 settings:

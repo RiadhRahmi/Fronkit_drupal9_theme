@@ -12,7 +12,7 @@ id: field_multiple_form
 title: 'Field Multiple Form'
 description: ''
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': 'Your Name'\nskills:\n  '#type': textfield\n  '#title': 'Your skills'\n  '#multiple': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
+elements: "name:\n  '#type': textfield\n  '#title': 'Your Name'\nskills:\n  '#type': textfield\n  '#title': 'Your skills'\n  '#multiple': true\n  '#multiple__header_label': Skills\n  '#multiple__min_items': 5\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
 css: ''
 javascript: ''
 settings:
@@ -21,7 +21,7 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''

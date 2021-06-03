@@ -14,4 +14,9 @@
  */
 #}
 {{ attach_library('classy/file') }}
-<span{{ attributes }}>{{ icon }} {{ link }}</span>
+
+
+{% if mime_type == 'image' %}
+  <img src="{{ link['#url'] }}" class="img-file-link"/>
+{% endif %}
+<span{{ attributes }}>{{ icon }} {{ link }} <span class="file-size">({{ file_size }})</span></span>

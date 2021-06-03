@@ -12,7 +12,7 @@ id: advanced_contact_form
 title: 'Join Us Form'
 description: ''
 category: ''
-elements: "contact_information:\n  '#title': 'Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#name__required': true\n    '#company__access': false\n    '#email__required': true\n    '#phone__required': true\n    '#address__required': true\n    '#address_2__access': false\n    '#city__access': false\n    '#state_province__access': false\n    '#postal_code__access': false\n    '#country__access': false\nresume:\n  '#title': 'Your Resume'\n  '#type': webform_section\n  resume_file:\n    '#type': webform_document_file\n    '#title': Resume\n    '#title_display': invisible\n    '#file_extensions': 'rtf pdf doc docx'"
+elements: "contact:\n  '#type': webform_contact\n  '#title': Contact\n  '#title_display': ''\n  '#wrapper_type': container\n  '#name__required': true\n  '#company__access': false\n  '#email__required': true\n  '#phone__required': true\n  '#address__required': true\n  '#address_2__access': false\n  '#city__access': false\n  '#state_province__access': false\n  '#postal_code__access': false\n  '#country__access': false\nresume_file:\n  '#type': webform_document_file\n  '#title': Resume\n  '#description_display': invisible\n  '#file_extensions': pdf\nmotivation_letter:\n  '#type': webform_document_file\n  '#title': 'Motivation letter'\n  '#description_display': invisible\n  '#file_extensions': pdf\nmessage:\n  '#type': textarea\n  '#title': Message\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\n  '#captcha_admin_mode': true"
 css: ''
 javascript: ''
 settings:
