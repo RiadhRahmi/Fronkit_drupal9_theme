@@ -10605,7 +10605,7 @@ iframe {
   width: .75rem;
   height: .75rem;
   margin-left: .5rem;
-  color: #003CC5;
+  color: #fff;
   font-family: "remixicon";
   vertical-align: middle;
   font-weight: 500; }
@@ -10825,6 +10825,54 @@ form details[open] > summary::before {
 
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
   background: #003CC5; }
+
+.btn-primary-soft {
+  background-color: rgba(0, 60, 197, 0.1);
+  color: #003CC5; }
+  .btn-primary-soft:hover {
+    color: #003CC5 !important; }
+
+.btn:not([class*=btn-outline]), .webform-file-button:not([class*=btn-outline]) {
+  border-color: transparent !important; }
+
+.btn-pill {
+  border-radius: 50rem !important; }
+  .btn-pill:hover {
+    color: #fff !important; }
+
+.btn-flat {
+  border-radius: 0 !important; }
+
+.btn-icon {
+  position: relative; }
+  .btn-icon:after {
+    content: "\EA6C";
+    width: .75rem;
+    height: .75rem;
+    margin-left: .5rem;
+    color: #fff;
+    font-family: "remixicon";
+    vertical-align: middle;
+    font-weight: 500;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.4rem;
+    pointer-events: none;
+    transition: transform .1s ease; }
+  .btn-icon.style-3:after, .btn-icon.style-2:after {
+    color: #003CC5; }
+  .btn-icon:hover:after {
+    top: 1.2rem; }
+  .btn-icon:hover.style-2:after, .btn-icon:hover.style-3:after {
+    color: #fff; }
+  .btn-icon .btn, .btn-icon .webform-file-button {
+    padding-right: 2.5rem; }
+
+.form-control-pill {
+  border-radius: 1.5rem; }
+
+.form-control-flat {
+  border-radius: 0 !important; }
 
 .badge {
   margin-bottom: 0.75rem;

@@ -95,7 +95,7 @@ iframe {
     width: .75rem;
     height: .75rem;
     margin-left: .5rem;
-    color: $primary;
+    color: $white;
     font-family: $font-family-remixicon;
     vertical-align: middle;
     font-weight: $font-weight-medium;
@@ -413,4 +413,81 @@ form {
 
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
   background: $primary;
+}
+
+
+.btn-primary-soft {
+  background-color: rgba($primary, .1);
+  color: $primary;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.btn:not([class*=btn-outline]) {
+  border-color: transparent !important;
+}
+
+.btn-pill {
+  border-radius: 50rem !important;
+  &:hover {
+    color: $white !important;
+  }
+}
+
+.btn-flat {
+  border-radius: 0 !important;
+}
+
+.btn-icon {
+  position: relative;
+
+  &:after {
+    content: "\EA6C";
+    width: .75rem;
+    height: .75rem;
+    margin-left: .5rem;
+    color: $white;
+    font-family: $font-family-remixicon;
+    vertical-align: middle;
+    font-weight: $font-weight-medium;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.4rem;
+    pointer-events: none;
+    transition: transform .1s ease;
+  }
+
+  &.style-3,
+  &.style-2 {
+    &:after {
+      color: $primary;
+    }
+  }
+
+  &:hover {
+    &:after {
+      top: 1.2rem;
+    }
+
+    &.style-2,
+    &.style-3{
+      &:after {
+        color: $white;
+      }
+    }
+  }
+
+  .btn {
+    padding-right: 2.5rem;
+  }
+}
+
+
+.form-control-pill{
+  border-radius: 1.5rem;
+}
+.form-control-flat{
+  border-radius: 0!important;
 }
