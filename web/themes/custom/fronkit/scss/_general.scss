@@ -491,3 +491,24 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 .form-control-flat{
   border-radius: 0!important;
 }
+
+
+.page-403,
+.page-404{
+  img{
+    width: 400px;
+  }
+}
+
+
+.page-maintenance{
+  background: $gray-100;
+  padding: 8rem;
+  border: .5rem solid $primary;
+  margin: 8rem auto;
+  text-align: center;
+
+  img{
+    width: 132px;
+  }
+}

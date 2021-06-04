@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - block_class
+    - system
   theme:
     - fronkit
 third_party_settings:
@@ -24,4 +25,8 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false

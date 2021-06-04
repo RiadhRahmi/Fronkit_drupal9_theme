@@ -10874,6 +10874,19 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 .form-control-flat {
   border-radius: 0 !important; }
 
+.page-403 img,
+.page-404 img {
+  width: 400px; }
+
+.page-maintenance {
+  background: #F9FBFD;
+  padding: 8rem;
+  border: 0.5rem solid #003CC5;
+  margin: 8rem auto;
+  text-align: center; }
+  .page-maintenance img {
+    width: 132px; }
+
 .badge {
   margin-bottom: 0.75rem;
   line-height: 1.3; }

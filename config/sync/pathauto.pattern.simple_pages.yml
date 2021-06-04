@@ -1,0 +1,23 @@
+uuid: 8808457e-e55f-4386-ac10-8688791e12dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: simple_pages
+label: 'Simple pages'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  583a6061-dbb0-4848-acd0-dff717b2527a:
+    id: node_type
+    bundles:
+      page: page
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 583a6061-dbb0-4848-acd0-dff717b2527a
+selection_logic: and
+weight: -5
+relationships: {  }

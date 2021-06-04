@@ -13,9 +13,9 @@ favicon:
 banner_background: style-1
 submit_button_style: style-5
 submit_button_options:
-  btn-animation: btn-animation
-  btn-icon: btn-icon
+  btn-animation: 0
+  btn-icon: 0
 submit_button_class_bg: primary
 submit_button_background: style-1
 submit_button_rounded_style: style-1
-input_rounded_style: style-3
+input_rounded_style: style-1

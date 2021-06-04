@@ -1,9 +1,9 @@
 uuid: 4130be2f-5447-4834-91e4-c6b51671f3c8
 name: Fronkit
 mail: contact@example.com
-slogan: ''
+slogan: 'Responsive Drupal Theme'
 page:
-  403: ''
+  403: /node/45
   404: /node/41
   front: /node/7
 admin_compact_mode: false
