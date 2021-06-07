@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.style_1
     - node.type.team_member
   module:
     - node
@@ -55,14 +55,14 @@ display:
       style:
         type: default
         options:
-          row_class: 'swiper-slide p-0'
+          row_class: 'col-md-4 team-item'
           default_row_class: false
           uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: style_1
       fields: {  }
       filters:
         status:
@@ -142,6 +142,42 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Team Member Page 1'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: team/style1
+      css_class: container
+      defaults:
+        css_class: false
+        header: false
+        title: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2>Team Member Description</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      title: 'Team Member'
     cache_metadata:
       max-age: -1
       contexts:
