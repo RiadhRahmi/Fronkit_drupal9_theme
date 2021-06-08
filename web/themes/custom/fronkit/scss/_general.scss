@@ -101,6 +101,13 @@ iframe {
     font-weight: $font-weight-medium;
   }
 }
+.btn-primary-soft{
+  &.btn-icon-arrow {
+    &:after {
+      color: $primary!important;
+    }
+  }
+}
 
 .btn-icon-play {
   &:after {

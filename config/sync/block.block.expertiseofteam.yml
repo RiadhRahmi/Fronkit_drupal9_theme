@@ -1,0 +1,25 @@
+uuid: fc548ef4-47bf-430b-9f37-c71c5a986ec1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:afcdead2-9a75-43cc-8fc5-154153726d27'
+  module:
+    - block_content
+  theme:
+    - fronkit
+id: expertiseofteam
+theme: fronkit
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:afcdead2-9a75-43cc-8fc5-154153726d27'
+settings:
+  id: 'block_content:afcdead2-9a75-43cc-8fc5-154153726d27'
+  label: 'EXPERTISE OF TEAM'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

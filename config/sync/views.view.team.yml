@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.style_1
+    - core.entity_view_mode.node.style_2
+    - core.entity_view_mode.node.style_3
+    - core.entity_view_mode.node.style_4
+    - core.entity_view_mode.node.style_5
+    - core.entity_view_mode.node.teaser
     - node.type.team_member
   module:
     - node
@@ -55,14 +60,14 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-md-4 team-item'
+          row_class: 'col-md-3 team-item'
           default_row_class: false
           uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: style_1
+          view_mode: style_2
       fields: {  }
       filters:
         status:
@@ -142,6 +147,20 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
     cache_metadata:
       max-age: -1
       contexts:
@@ -163,6 +182,8 @@ display:
         css_class: false
         header: false
         title: false
+        style: false
+        row: false
       header:
         area:
           id: area
@@ -178,6 +199,194 @@ display:
             format: full_html
           plugin_id: text
       title: 'Team Member'
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_1
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Team Member Page 2'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: team/style2
+      title: 'Team Member'
+      defaults:
+        title: false
+        css_class: false
+        header: false
+        style: false
+        row: false
+      css_class: container
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"col-10\">\r\n<span class=\"text-primary text-uppercase\">TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry's standard dummy text.</p>\r\n</div>\r\n<div class=\"col-2\">\r\n<a class=\"btn btn-primary-soft btn-icon-arrow\" href=\"#\">Join Our Team </a>\r\n</div>\r\n"
+            format: full_html
+          plugin_id: text
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_2
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: 'Team Member Page 3'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: team/style3
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<span class=\"text-primary text-uppercase\">TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry's standard dummy text.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
+        css_class: false
+        title: false
+        style: false
+        row: false
+      css_class: container
+      title: 'Team Member'
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_3
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: 'Team Member Page 4'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: team/style4
+      title: 'Team Member'
+      defaults:
+        title: false
+        header: false
+        css_class: false
+        style: false
+        row: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<span class=\"text-primary text-uppercase\">TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry's standard dummy text.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      css_class: container
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_4
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_5:
+    display_plugin: page
+    id: page_5
+    display_title: 'Team Member Page 5'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: team/style5
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_5
     cache_metadata:
       max-age: -1
       contexts:

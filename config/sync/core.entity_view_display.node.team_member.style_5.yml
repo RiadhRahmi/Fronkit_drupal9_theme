@@ -1,0 +1,92 @@
+uuid: 0064d6ab-bb2c-4c70-bef9-a2e57871da66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.style_5
+    - field.field.node.team_member.body
+    - field.field.node.team_member.field_facebook_link
+    - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_job
+    - field.field.node.team_member.field_linkedin_link
+    - field.field.node.team_member.field_twitter_link
+    - node.type.team_member
+  module:
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.team_member.style_5
+targetEntityType: node
+bundle: team_member
+mode: style_5
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_facebook_link:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_job:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_linkedin_link:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_twitter_link:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

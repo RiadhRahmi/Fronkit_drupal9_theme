@@ -1,0 +1,10 @@
+uuid: ed8eb687-dab5-43c5-9cd4-4cdb62d92b09
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.style_3
+label: 'Style 3'
+targetEntityType: node
+cache: true

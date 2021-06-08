@@ -10610,6 +10610,9 @@ iframe {
   vertical-align: middle;
   font-weight: 500; }
 
+.btn-primary-soft.btn-icon-arrow:after {
+  color: #003CC5 !important; }
+
 .btn-icon-play:after {
   content: "\F00A";
   margin-left: .5rem;
@@ -11366,6 +11369,184 @@ Block About us
         background: #003CC5;
         border: 1px solid #003CC5;
         color: #fff; }
+
+.view-team.view-display-id-page_2 img {
+  height: 300px; }
+
+.view-team.view-display-id-page_2 .team-item {
+  margin-bottom: 3.75rem;
+  position: relative; }
+  .view-team.view-display-id-page_2 .team-item .social-links {
+    display: none;
+    transition: .5s; }
+  .view-team.view-display-id-page_2 .team-item .field--name-field-job {
+    transition: .5s; }
+
+.view-team.view-display-id-page_2 .team-item:hover .field--name-field-job {
+  display: none; }
+
+.view-team.view-display-id-page_2 .team-item:hover .social-links {
+  display: block; }
+
+.view-team.view-display-id-page_2 .team-overlay-content {
+  position: absolute;
+  background: #003CC5;
+  width: 80%;
+  bottom: -30px;
+  margin: 0 10%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  transition: .3s; }
+  .view-team.view-display-id-page_2 .team-overlay-content .field--name-field-job,
+  .view-team.view-display-id-page_2 .team-overlay-content .item-title {
+    color: #fff; }
+
+.view-team.view-display-id-page_2 .field--type-link {
+  display: inline-block; }
+  .view-team.view-display-id-page_2 .field--type-link i {
+    color: #F1F4F8;
+    padding: .5rem;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .view-team.view-display-id-page_2 .field--type-link i:hover {
+      color: #fff; }
+
+.view-team.view-display-id-page_3 img {
+  width: 270px;
+  height: 300px; }
+
+.view-team.view-display-id-page_3 .team-item {
+  margin-bottom: 1.87500rem;
+  position: relative; }
+
+.view-team.view-display-id-page_3 .team-item:hover .team-overlay {
+  opacity: 1; }
+
+.view-team.view-display-id-page_3 .team-overlay {
+  background-color: rgba(0, 60, 197, 0.8);
+  position: absolute;
+  width: 270px;
+  height: 300px;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .view-team.view-display-id-page_3 .team-overlay .team-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .field--name-field-job,
+    .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .item-title {
+      color: #fff; }
+
+.view-team.view-display-id-page_3 .field--type-link {
+  display: inline-block; }
+  .view-team.view-display-id-page_3 .field--type-link i {
+    color: #F1F4F8;
+    padding: .5rem;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .view-team.view-display-id-page_3 .field--type-link i:hover {
+      color: #fff; }
+
+.view-team.view-display-id-page_3 .join-us-row {
+  background: #003CC5;
+  width: 270px;
+  height: 300px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.view-team.view-display-id-page_4 img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50rem; }
+
+.view-team.view-display-id-page_4 .team-item {
+  margin-bottom: 1.87500rem;
+  position: relative; }
+
+.view-team.view-display-id-page_4 .team-item:hover .team-overlay {
+  opacity: 1; }
+
+.view-team.view-display-id-page_4 .team-overlay {
+  background-color: rgba(0, 60, 197, 0.8);
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 50rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .view-team.view-display-id-page_4 .team-overlay .team-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .field--name-field-job,
+    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .item-title {
+      color: #fff; }
+
+.view-team.view-display-id-page_4 .field--type-link {
+  display: inline-block; }
+  .view-team.view-display-id-page_4 .field--type-link i {
+    color: #F1F4F8;
+    padding: .5rem;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .view-team.view-display-id-page_4 .field--type-link i:hover {
+      color: #fff; }
+
+.view-team.view-display-id-page_4 .join-us-row {
+  background: #003CC5;
+  border-radius: 50rem;
+  width: 270px;
+  height: 270px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.expertise-block .display-1 {
+  font-weight: 500 !important;
+  color: #003CC5 !important;
+  display: inline;
+  float: left;
+  margin-right: 15px; }
+
+.expertise-block .expertise-years {
+  display: flex;
+  align-items: center; }
+
+.expertise-block h3, .expertise-block .h3 {
+  font-size: 2rem; }
 
 /**
  contact pages styles

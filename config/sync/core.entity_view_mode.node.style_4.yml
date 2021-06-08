@@ -1,0 +1,10 @@
+uuid: a547fe0c-afac-4fca-b381-8bb82c7d70e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.style_4
+label: 'Style 4'
+targetEntityType: node
+cache: true

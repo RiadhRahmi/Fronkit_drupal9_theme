@@ -15,7 +15,7 @@
       background: $gray-100;
 
       &:hover {
-        box-shadow: 0 0.5rem 1rem rgba(22,28,45, .15) !important;
+        box-shadow: 0 0.5rem 1rem rgba(22, 28, 45, .15) !important;
       }
 
       .field--type-link {
@@ -42,7 +42,252 @@
 
       }
     }
+  }
+
+  &.view-display-id-page_2 {
+    img {
+      height: 300px;
+    }
+
+    .team-item {
+      margin-bottom: 3.75rem;
+      position: relative;
+
+      .social-links {
+        display: none;
+        transition: .5s;
+      }
+
+      .field--name-field-job {
+        transition: .5s;
+      }
+    }
+
+    .team-item {
+      &:hover {
+        .field--name-field-job {
+          display: none;
+        }
+        .social-links {
+          display: block;
+        }
+      }
+    }
 
 
+    .team-overlay-content {
+      position: absolute;
+      background: $primary;
+      width: 80%;
+      bottom: -30px;
+      margin: 0 10%;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      transition: .3s;
+
+      .field--name-field-job,
+      .item-title {
+        color: $white;
+      }
+
+    }
+
+    .field--type-link {
+      display: inline-block;
+
+      i {
+        color: $gray-200;
+        padding: .5rem;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+    }
+  }
+
+  &.view-display-id-page_3 {
+    img {
+      width: 270px;
+      height: 300px;
+    }
+
+    .team-item {
+      margin-bottom: 1.87500rem;
+      position: relative;
+    }
+
+    .team-item:hover .team-overlay {
+      opacity: 1;
+    }
+
+    .team-overlay {
+      background-color: rgba($primary, .8);
+      position: absolute;
+      width: 270px;
+      height: 300px;
+      opacity: 0;
+      text-align: center;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .team-overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .field--name-field-job,
+        .item-title {
+          color: $white;
+        }
+
+      }
+
+    }
+
+    .field--type-link {
+      display: inline-block;
+
+      i {
+        color: $gray-200;
+        padding: .5rem;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+    }
+
+    .join-us-row {
+      background: $primary;
+      width: 270px;
+      height: 300px;
+      color: $white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.view-display-id-page_4 {
+    img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50rem;
+    }
+
+    .team-item {
+      margin-bottom: 1.87500rem;
+      position: relative;
+    }
+
+    .team-item:hover .team-overlay {
+      opacity: 1;
+    }
+
+    .team-overlay {
+      background-color: rgba($primary, .8);
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      opacity: 0;
+      text-align: center;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      border-radius: 50rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .team-overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .field--name-field-job,
+        .item-title {
+          color: $white;
+        }
+
+      }
+
+    }
+
+    .field--type-link {
+      display: inline-block;
+
+      i {
+        color: $gray-200;
+        padding: .5rem;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+    }
+
+    .join-us-row {
+      background: $primary;
+      border-radius: 50rem;
+      width: 270px;
+      height: 270px;
+      color: $white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}
+
+
+.expertise-block {
+  .display-1 {
+    font-weight: 500 !important;
+    color: $primary !important;
+    display: inline;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .expertise-years {
+    display: flex;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 }
