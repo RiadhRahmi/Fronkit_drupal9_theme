@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.team_member.body
     - field.field.node.team_member.field_facebook_link
     - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_is_manager
     - field.field.node.team_member.field_job
     - field.field.node.team_member.field_linkedin_link
+    - field.field.node.team_member.field_skills
     - field.field.node.team_member.field_twitter_link
     - node.type.team_member
   module:
@@ -108,4 +110,6 @@ content:
     region: content
 hidden:
   body: true
+  field_is_manager: true
+  field_skills: true
   links: true

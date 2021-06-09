@@ -1,0 +1,10 @@
+uuid: d30820c6-f4e4-4eaa-a162-2d3b255b76e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.manager
+label: Manager
+targetEntityType: node
+cache: true

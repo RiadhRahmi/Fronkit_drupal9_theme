@@ -19,7 +19,7 @@ function fronkit_preprocess_page(&$variables)
   if ($banner_background_setting == "style-3") {
     $node = \Drupal::routeMatch()->getParameter('node_preview');
     // default background image
-    $variables['url_banner_image'] = base_path() . '/themes/custom/fronkit/images/banner.jpg';
+    $variables['url_banner_image'] = base_path() . '/themes/custom/fronkit/images/default-banner.jpg';
     if (isset($variables['node']) || !empty($node)) {
       if (empty($node)) {
         $node = $variables['node'];

@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.team_member.body
     - field.field.node.team_member.field_facebook_link
     - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_is_manager
     - field.field.node.team_member.field_job
     - field.field.node.team_member.field_linkedin_link
+    - field.field.node.team_member.field_skills
     - field.field.node.team_member.field_twitter_link
     - node.type.team_member
   module:
@@ -49,7 +51,7 @@ content:
     type: text_summary_or_trimmed
     weight: 2
     settings:
-      trim_length: 600
+      trim_length: 20
     third_party_settings:
       field_formatter_class:
         class: mb-5
@@ -118,4 +120,6 @@ content:
       field_formatter_class:
         class: ''
 hidden:
+  field_is_manager: true
+  field_skills: true
   links: true

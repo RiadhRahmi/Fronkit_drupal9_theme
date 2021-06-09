@@ -7,86 +7,109 @@ dependencies:
     - field.field.node.team_member.body
     - field.field.node.team_member.field_facebook_link
     - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_is_manager
     - field.field.node.team_member.field_job
     - field.field.node.team_member.field_linkedin_link
+    - field.field.node.team_member.field_skills
     - field.field.node.team_member.field_twitter_link
     - node.type.team_member
   module:
+    - field_formatter_class
+    - field_group
     - layout_builder
     - link
-    - text
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
+  field_group:
+    group_social_links:
+      children:
+        - field_facebook_link
+        - field_twitter_link
+        - field_linkedin_link
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'social-links mt-4'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Social Links'
 id: node.team_member.style_5
 targetEntityType: node
 bundle: team_member
 mode: style_5
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_facebook_link:
-    weight: 104
-    label: above
+    weight: 3
+    label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: link
     region: content
   field_image:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_job:
-    weight: 103
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_linkedin_link:
-    weight: 106
-    label: above
+    weight: 5
+    label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: link
     region: content
   field_twitter_link:
-    weight: 105
-    label: above
+    weight: 4
+    label: hidden
     settings:
-      trim_length: 80
+      trim_length: null
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: link
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  field_is_manager: true
+  field_skills: true
+  links: true

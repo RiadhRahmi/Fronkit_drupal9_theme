@@ -6,13 +6,16 @@ dependencies:
     - field.field.node.team_member.body
     - field.field.node.team_member.field_facebook_link
     - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_is_manager
     - field.field.node.team_member.field_job
     - field.field.node.team_member.field_linkedin_link
+    - field.field.node.team_member.field_skills
     - field.field.node.team_member.field_twitter_link
     - node.type.team_member
   module:
     - link
     - media_library
+    - paragraphs
     - path
     - text
 id: node.team_member.default
@@ -51,6 +54,13 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  field_is_manager:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_job:
     weight: 8
     settings:
@@ -66,6 +76,18 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_skills:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_twitter_link:
     weight: 11

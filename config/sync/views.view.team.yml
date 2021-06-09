@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.manager
     - core.entity_view_mode.node.style_1
     - core.entity_view_mode.node.style_2
     - core.entity_view_mode.node.style_3
@@ -139,6 +140,148 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  attachment_1:
+    display_plugin: attachment
+    id: attachment_1
+    display_title: Attachment
+    position: 7
+    display_options:
+      display_extenders: {  }
+      displays:
+        page_5: page_5
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<span class=\"text-primary text-uppercase\">Manager</span>\r\n<h2>Our Team Manager</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
+        filters: false
+        filter_groups: false
+        style: false
+        row: false
+        fields: false
+        sorts: false
+        css_class: false
+        title: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            team_member: team_member
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_is_manager_value:
+          id: field_is_manager_value
+          table: node__field_is_manager
+          field: field_is_manager_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: default
+        options:
+          row_class: team-item
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: manager
+      fields: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      css_class: ''
+      title: 'Team Member'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -161,6 +304,70 @@ display:
         options:
           relationship: none
           view_mode: teaser
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Block Team Member'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<span class=\"text-primary text-uppercase\">other TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry's standard dummy text.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
+        css_class: false
+        title: false
+        style: false
+        row: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        pager: false
+      css_class: ''
+      title: 'Team Member'
+      style:
+        type: default
+        options:
+          row_class: 'col-md-3 team-item'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: style_3
+      use_more: true
+      use_more_always: true
+      use_more_text: 'See All Team'
+      link_display: page_3
+      link_url: ''
+      pager:
+        type: some
+        options:
+          items_per_page: 8
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -195,7 +402,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>Team Member Description</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n"
+            value: "<span class=\"text-primary text-uppercase\">TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n"
             format: full_html
           plugin_id: text
       title: 'Team Member'
@@ -376,17 +583,106 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-md-3 team-item'
+          row_class: 'col-md-3 team-item m-0 p-0'
           default_row_class: false
           uses_fields: false
       defaults:
         style: false
         row: false
+        header: false
+        filters: false
+        filter_groups: false
+        css_class: false
+        title: false
       row:
         type: 'entity:node'
         options:
           relationship: none
           view_mode: style_5
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<span class=\"text-primary text-uppercase\">TEAM MEMBER</span>\r\n<h2>Our Awesome Creative Team Member</h2>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>\r\n"
+            format: full_html
+          plugin_id: text
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            team_member: team_member
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_is_manager_value:
+          id: field_is_manager_value
+          table: node__field_is_manager
+          field: field_is_manager_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      css_class: container
+      title: 'Team Member'
     cache_metadata:
       max-age: -1
       contexts:

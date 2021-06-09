@@ -1,0 +1,49 @@
+uuid: adfa2958-b8ba-4d6c-b222-f95c9c605fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skills
+    - node.type.team_member
+    - paragraphs.paragraphs_type.skill
+  module:
+    - entity_reference_revisions
+id: node.team_member.field_skills
+field_name: field_skills
+entity_type: node
+bundle: team_member
+label: Skills
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      skill: skill
+    target_bundles_drag_drop:
+      carrousel_item:
+        weight: 8
+        enabled: false
+      contact_item:
+        weight: 9
+        enabled: false
+      feature_item:
+        weight: 10
+        enabled: false
+      pricing_plan:
+        weight: 11
+        enabled: false
+      process:
+        weight: 12
+        enabled: false
+      service_item:
+        weight: 13
+        enabled: false
+      skill:
+        enabled: true
+        weight: 14
+field_type: entity_reference_revisions

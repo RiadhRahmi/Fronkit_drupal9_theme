@@ -10,7 +10,7 @@ logo:
   use_default: true
 favicon:
   use_default: true
-banner_background: style-1
+banner_background: style-3
 submit_button_style: style-5
 submit_button_options:
   btn-animation: 0

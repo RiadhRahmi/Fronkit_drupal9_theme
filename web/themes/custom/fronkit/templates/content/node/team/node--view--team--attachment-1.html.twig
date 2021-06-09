@@ -70,26 +70,24 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  ]
-%}
+{% set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+] %}
 
 <article{{ attributes.addClass(classes) }}>
 
-{#  {{ title_prefix }}#}
-{#  {% if label and not page %}#}
-{#    <h2{{ title_attributes }}>#}
-{#      <a href="{{ url }}" rel="bookmark">{{ label }}</a>#}
-{#    </h2>#}
-{#  {% endif %}#}
-{#  {{ title_suffix }}#}
+  {#  {{ title_prefix }}#}
+  {#  {% if label and not page %}#}
+  {#    <h2{{ title_attributes }}>#}
+  {#      <a href="{{ url }}" rel="bookmark">{{ label }}</a>#}
+  {#    </h2>#}
+  {#  {% endif %}#}
+  {#  {{ title_suffix }}#}
 
   {% if display_submitted %}
     <footer class="node__meta">
@@ -101,8 +99,29 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+  <div{{ content_attributes.addClass('node__content row align-items-center') }}>
+    {% if row_index % 2 == 0 %}
+      <div class="col-md-6">
+        {{ content.field_image }}
+      </div>
+      <div class="col-md-6">
+        <span class="field--name-title">
+          <h2>{{ label }}</h2>
+        </span>
+        {{ content|without('field_image') }}
+      </div>
+    {% else %}
+      <div class="col-md-6">
+        <span class="field--name-title">
+          <h2>{{ label }}</h2>
+        </span>
+        {{ content|without('field_image') }}
+      </div>
+      <div class="col-md-6">
+        {{ content.field_image }}
+      </div>
+    {% endif %}
+
   </div>
 
 </article>

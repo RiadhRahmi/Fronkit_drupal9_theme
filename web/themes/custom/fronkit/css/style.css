@@ -10890,6 +10890,9 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
   .page-maintenance img {
     width: 132px; }
 
+h4 a, .h4 a {
+  color: #161C2D; }
+
 .badge {
   margin-bottom: 0.75rem;
   line-height: 1.3; }
@@ -11348,6 +11351,9 @@ Block About us
 .view-team.view-display-id-page_1 .team-item {
   margin-bottom: 1.87500rem; }
 
+.view-team.view-display-id-page_1 img {
+  height: 270px; }
+
 .view-team.view-display-id-page_1 .card {
   background: #F9FBFD; }
   .view-team.view-display-id-page_1 .card:hover {
@@ -11413,21 +11419,23 @@ Block About us
     .view-team.view-display-id-page_2 .field--type-link i:hover {
       color: #fff; }
 
-.view-team.view-display-id-page_3 img {
-  width: 270px;
+.view-team.view-display-id-block_2 .more-link, .view-team.view-display-id-page_3 .more-link {
+  text-align: center;
+  margin-top: 1.5rem; }
+
+.view-team.view-display-id-block_2 img, .view-team.view-display-id-page_3 img {
   height: 300px; }
 
-.view-team.view-display-id-page_3 .team-item {
+.view-team.view-display-id-block_2 .team-item, .view-team.view-display-id-page_3 .team-item {
   margin-bottom: 1.87500rem;
   position: relative; }
 
-.view-team.view-display-id-page_3 .team-item:hover .team-overlay {
+.view-team.view-display-id-block_2 .team-item:hover .team-overlay, .view-team.view-display-id-page_3 .team-item:hover .team-overlay {
   opacity: 1; }
 
-.view-team.view-display-id-page_3 .team-overlay {
+.view-team.view-display-id-block_2 .team-overlay, .view-team.view-display-id-page_3 .team-overlay {
   background-color: rgba(0, 60, 197, 0.8);
   position: absolute;
-  width: 270px;
   height: 300px;
   opacity: 0;
   text-align: center;
@@ -11437,7 +11445,7 @@ Block About us
   left: 0;
   right: 0;
   bottom: 0; }
-  .view-team.view-display-id-page_3 .team-overlay .team-overlay-content {
+  .view-team.view-display-id-block_2 .team-overlay .team-overlay-content, .view-team.view-display-id-page_3 .team-overlay .team-overlay-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11445,23 +11453,24 @@ Block About us
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .field--name-field-job,
+    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .field--name-field-job,
+    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .item-title, .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .field--name-field-job,
     .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .item-title {
       color: #fff; }
 
-.view-team.view-display-id-page_3 .field--type-link {
+.view-team.view-display-id-block_2 .field--type-link, .view-team.view-display-id-page_3 .field--type-link {
   display: inline-block; }
-  .view-team.view-display-id-page_3 .field--type-link i {
+  .view-team.view-display-id-block_2 .field--type-link i, .view-team.view-display-id-page_3 .field--type-link i {
     color: #F1F4F8;
     padding: .5rem;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    .view-team.view-display-id-page_3 .field--type-link i:hover {
+    .view-team.view-display-id-block_2 .field--type-link i:hover, .view-team.view-display-id-page_3 .field--type-link i:hover {
       color: #fff; }
 
-.view-team.view-display-id-page_3 .join-us-row {
+.view-team.view-display-id-block_2 .join-us-row, .view-team.view-display-id-page_3 .join-us-row {
   background: #003CC5;
   width: 270px;
   height: 300px;
@@ -11473,7 +11482,6 @@ Block About us
   justify-content: center; }
 
 .view-team.view-display-id-page_4 img {
-  width: 270px;
   height: 270px;
   border-radius: 50rem; }
 
@@ -11534,6 +11542,83 @@ Block About us
   align-items: center;
   justify-content: center; }
 
+.view-team.view-display-id-page_5 img {
+  height: 300px; }
+
+.view-team.view-display-id-page_5 .team-item {
+  margin-bottom: 1.87500rem;
+  position: relative; }
+
+.view-team.view-display-id-page_5 .team-item:hover .team-overlay {
+  opacity: 1; }
+
+.view-team.view-display-id-page_5 .team-overlay {
+  background-color: rgba(0, 60, 197, 0.8);
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 1.5rem; }
+  .view-team.view-display-id-page_5 .team-overlay .team-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .field--name-field-job,
+    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .item-title {
+      color: #fff; }
+
+.view-team.view-display-id-page_5 .field--type-link {
+  display: inline-block; }
+  .view-team.view-display-id-page_5 .field--type-link i {
+    color: #F1F4F8;
+    padding: .5rem;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .view-team.view-display-id-page_5 .field--type-link i:hover {
+      color: #fff; }
+
+.view-team.view-display-id-page_5 .join-us-row {
+  background: #003CC5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.view-team.view-display-id-attachment_1 img {
+  width: 100%;
+  height: 100%; }
+
+.view-team.view-display-id-attachment_1 .field--type-link {
+  display: inline-block;
+  margin-right: .75rem; }
+  .view-team.view-display-id-attachment_1 .field--type-link i {
+    color: #506690;
+    padding: .5rem;
+    border: 1px solid #506690;
+    border-radius: 50%;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .view-team.view-display-id-attachment_1 .field--type-link i:hover {
+      background: #003CC5;
+      border: 1px solid #003CC5;
+      color: #fff; }
+
 .expertise-block .display-1 {
   font-weight: 500 !important;
   color: #003CC5 !important;
@@ -11547,6 +11632,23 @@ Block About us
 
 .expertise-block h3, .expertise-block .h3 {
   font-size: 2rem; }
+
+.node--type-team-member .field--name-field-job {
+  font-weight: 500;
+  margin-bottom: .75rem; }
+
+.node--type-team-member .field--type-link {
+  display: inline-block; }
+
+.node--type-team-member .field--name-field-title {
+  display: inline-block;
+  margin-bottom: .5rem; }
+
+.node--type-team-member .percentage-value {
+  float: right; }
+
+.node--type-team-member .progress {
+  background: #D9E2EF; }
 
 /**
  contact pages styles

@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:afcdead2-9a75-43cc-8fc5-154153726d27'
   module:
     - block_content
+    - system
   theme:
     - fronkit
 id: expertiseofteam
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/team/style1\r\n/team/style2\r\n/team/style3\r\n/team/style4"
+    negate: false

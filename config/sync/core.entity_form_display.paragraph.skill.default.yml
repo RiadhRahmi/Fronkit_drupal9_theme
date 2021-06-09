@@ -1,0 +1,31 @@
+uuid: 72126610-a2f2-4cb7-a0bd-78d5f4898fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.skill.field_percentage_value
+    - field.field.paragraph.skill.field_title
+    - paragraphs.paragraphs_type.skill
+id: paragraph.skill.default
+targetEntityType: paragraph
+bundle: skill
+mode: default
+content:
+  field_percentage_value:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
