@@ -71,6 +71,7 @@
 
       // home team slider
       new Swiper('.team-swiper-container', {
+        spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,
         pagination: {
@@ -83,8 +84,8 @@
             slidesPerGroup: 2,
           },
           992: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 4,
+            slidesPerGroup: 4,
           },
         },
       });

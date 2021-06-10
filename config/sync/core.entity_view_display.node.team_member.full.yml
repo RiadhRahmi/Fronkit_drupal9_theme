@@ -29,7 +29,7 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_2'
         layout_settings:
           label: ''
-          container_wrapper_classes: 'mt-7 mt-md-13'
+          container_wrapper_classes: 'member-details mt-7 mt-md-13'
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -117,7 +117,7 @@ third_party_settings:
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container
-          section_classes: ''
+          section_classes: align-items-center
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
@@ -177,21 +177,32 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: wrapper_class
+                type: string
                 settings:
-                  link: false
-                  link_class: ''
-                  tag: h2
-                  summary: false
-                  trim: 200
-                  class: ''
+                  link_to_entity: false
                 third_party_settings:
                   field_formatter_class:
                     class: ''
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: h2
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
             weight: 0
           63300529-eb12-42c4-90f7-b594c466db09:
             uuid: 63300529-eb12-42c4-90f7-b594c466db09
@@ -378,7 +389,7 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_1'
         layout_settings:
           label: ''
-          container_wrapper_classes: 'mt-7 mb-md-13'
+          container_wrapper_classes: 'member-skills mt-7 mb-md-13'
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:

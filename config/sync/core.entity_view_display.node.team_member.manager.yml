@@ -89,7 +89,7 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: 'text-primary text-uppercase'
+        class: 'text-primary text-uppercase  mb-2'
     type: string
     region: content
   field_linkedin_link:

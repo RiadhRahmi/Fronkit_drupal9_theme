@@ -36,7 +36,8 @@
   'view-id-' ~ id,
   'view-display-id-' ~ display_id,
   dom_id ? 'js-view-dom-id-' ~ dom_id,
-  'mb-7 mb-md-13',
+  'mb-7',
+  'mb-md-13',
 ] %}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
@@ -72,8 +73,8 @@
     {{ rows }}
     <div class="col-md-3 team-item m-0 p-0 join-us-row">
       <div class="join-us-content">
-        <p> Join our creative team</p>
-        <a href="#" class="btn btn-light btn-pill">Apply Now</a>
+        <h5 class="text-white"> {{ "Join our creative team"|t }}</h5>
+        <a href="#" class="btn btn-light btn-pill mt-3">{{ "Apply Now"|t }}</a>
       </div>
     </div>
   </div>

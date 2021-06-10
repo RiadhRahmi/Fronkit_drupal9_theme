@@ -1,6 +1,6 @@
 uuid: 63adf1d9-4a17-424a-8c64-feeabc94410c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -17,7 +17,6 @@ dependencies:
     - field_formatter_class
     - field_group
     - link
-    - text
     - user
 third_party_settings:
   field_group:
@@ -27,7 +26,7 @@ third_party_settings:
         - field_twitter_link
         - field_linkedin_link
       parent_name: ''
-      weight: 3
+      weight: 2
       format_type: html_element
       region: content
       format_settings:
@@ -46,16 +45,6 @@ targetEntityType: node
 bundle: team_member
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
-    settings:
-      trim_length: 20
-    third_party_settings:
-      field_formatter_class:
-        class: mb-5
-    region: content
   field_facebook_link:
     type: link
     weight: 4
@@ -120,6 +109,7 @@ content:
       field_formatter_class:
         class: ''
 hidden:
+  body: true
   field_is_manager: true
   field_skills: true
   links: true

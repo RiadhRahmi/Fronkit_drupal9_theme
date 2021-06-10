@@ -26,7 +26,7 @@ banner styles
     padding-bottom: 4rem !important;
 
     h1{
-      color: $white;
+      color: $white!important;
     }
     .breadcrumb-item {
       &::before,
@@ -42,7 +42,7 @@ banner styles
     padding-top: 7rem !important;
     padding-bottom: 7rem !important;
     h1{
-      color: $white;
+      color: $white!important;
     }
     .breadcrumb-item {
       &::before,

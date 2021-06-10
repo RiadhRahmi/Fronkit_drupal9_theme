@@ -10890,7 +10890,17 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
   .page-maintenance img {
     width: 132px; }
 
-h4 a, .h4 a {
+h1 a, .h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a {
   color: #161C2D; }
 
 .badge {
@@ -10903,6 +10913,8 @@ h4 a, .h4 a {
 
 .btn-light {
   color: #384C74; }
+  .btn-light:hover {
+    color: #003CC5 !important; }
 
 .btn-white {
   color: #161C2D;
@@ -10967,7 +10979,7 @@ banner styles
   padding-top: 4rem !important;
   padding-bottom: 4rem !important; }
   .layout-banner.style-2 h1, .layout-banner.style-2 .h1 {
-    color: #fff; }
+    color: #fff !important; }
   .layout-banner.style-2 .breadcrumb-item::before, .layout-banner.style-2 .breadcrumb-item.active,
   .layout-banner.style-2 .breadcrumb-item a {
     color: #F1F4F8 !important; }
@@ -10976,7 +10988,7 @@ banner styles
   padding-top: 7rem !important;
   padding-bottom: 7rem !important; }
   .layout-banner.style-3 h1, .layout-banner.style-3 .h1 {
-    color: #fff; }
+    color: #fff !important; }
   .layout-banner.style-3 .breadcrumb-item::before, .layout-banner.style-3 .breadcrumb-item.active,
   .layout-banner.style-3 .breadcrumb-item a {
     color: #F1F4F8 !important; }
@@ -11202,85 +11214,6 @@ Block About us
       .block-our-process-team .field--name-field-process-items .process-item {
         padding-bottom: 0; } }
 
-.block-views-blockteam-block-1 {
-  /**
-     Small devices
-   */
-  /**
-     Medium devices
-   */
-  /**
-     Large devices
-   */
-  /**
-     Extra Large devices
-   */ }
-  .block-views-blockteam-block-1 img {
-    min-height: 295px; }
-  .block-views-blockteam-block-1 .field--type-link {
-    display: inline-block;
-    margin-right: .75rem; }
-    .block-views-blockteam-block-1 .field--type-link i {
-      color: #506690;
-      padding: .5rem;
-      border: 1px solid #506690;
-      border-radius: 50%;
-      -moz-transition: all .2s ease-in-out;
-      -ms-transition: all .2s ease-in-out;
-      -o-transition: all .2s ease-in-out;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
-      .block-views-blockteam-block-1 .field--type-link i:hover {
-        background: #003CC5;
-        border: 1px solid #003CC5;
-        color: #fff; }
-  .block-views-blockteam-block-1 .card-odd:before {
-    content: '';
-    position: absolute;
-    left: 46%;
-    top: -1.3rem;
-    width: 0;
-    height: 0;
-    border-left: .75rem solid transparent;
-    border-right: .75rem solid transparent;
-    border-top: .75rem solid transparent;
-    border-bottom: 0.75rem solid #fff; }
-  .block-views-blockteam-block-1 .card-even:after {
-    content: '';
-    position: absolute;
-    top: 99%;
-    width: 0;
-    height: 0;
-    clear: both;
-    z-index: 99;
-    left: 46%;
-    border-left: .75rem solid transparent;
-    border-right: .75rem solid transparent;
-    border-top: 0.75rem solid #fff;
-    border-bottom: .75rem solid transparent; }
-  .block-views-blockteam-block-1 .swiper-pagination {
-    position: initial; }
-    .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-      margin-right: .5rem;
-      width: .75rem;
-      height: .75rem;
-      background: #C6D3E6;
-      opacity: 1; }
-      .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: #003CC5; }
-  @media (min-width: 576px) {
-    .block-views-blockteam-block-1 img {
-      min-height: 350px; } }
-  @media (min-width: 768px) {
-    .block-views-blockteam-block-1 img {
-      min-height: 295px; } }
-  @media (min-width: 992px) {
-    .block-views-blockteam-block-1 img {
-      min-height: 324px; } }
-  @media (min-width: 1200px) {
-    .block-views-blockteam-block-1 img {
-      min-height: 300px; } }
-
 .block-type-job-offers-cta,
 .block-webform-block {
   min-height: 16.0625rem; }
@@ -11380,44 +11313,51 @@ Block About us
   height: 300px; }
 
 .view-team.view-display-id-page_2 .team-item {
-  margin-bottom: 3.75rem;
-  position: relative; }
+  margin-bottom: 5.1875rem; }
+  .view-team.view-display-id-page_2 .team-item .node__content {
+    position: relative; }
   .view-team.view-display-id-page_2 .team-item .social-links {
+    opacity: 0;
     display: none;
     transition: .5s; }
   .view-team.view-display-id-page_2 .team-item .field--name-field-job {
     transition: .5s; }
 
 .view-team.view-display-id-page_2 .team-item:hover .field--name-field-job {
+  opacity: 0;
   display: none; }
 
 .view-team.view-display-id-page_2 .team-item:hover .social-links {
+  opacity: 1;
   display: block; }
 
 .view-team.view-display-id-page_2 .team-overlay-content {
   position: absolute;
-  background: #003CC5;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(22, 28, 45, 0.15) !important;
   width: 80%;
-  bottom: -30px;
+  min-height: 107px;
+  bottom: -53px;
   margin: 0 10%;
   padding: 1rem 1.5rem;
   text-align: center;
   transition: .3s; }
-  .view-team.view-display-id-page_2 .team-overlay-content .field--name-field-job,
-  .view-team.view-display-id-page_2 .team-overlay-content .item-title {
-    color: #fff; }
+  .view-team.view-display-id-page_2 .team-overlay-content .field--name-field-job {
+    color: #384C74; }
+  .view-team.view-display-id-page_2 .team-overlay-content .item-title a {
+    color: #161C2D; }
 
 .view-team.view-display-id-page_2 .field--type-link {
   display: inline-block; }
   .view-team.view-display-id-page_2 .field--type-link i {
-    color: #F1F4F8;
+    color: #384C74;
     padding: .5rem;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
     .view-team.view-display-id-page_2 .field--type-link i:hover {
-      color: #fff; }
+      color: #869AB8; }
 
 .view-team.view-display-id-block_2 .more-link, .view-team.view-display-id-page_3 .more-link {
   text-align: center;
@@ -11427,7 +11367,9 @@ Block About us
   height: 300px; }
 
 .view-team.view-display-id-block_2 .team-item, .view-team.view-display-id-page_3 .team-item {
-  margin-bottom: 1.87500rem;
+  margin-bottom: 1.87500rem; }
+
+.view-team.view-display-id-block_2 .node__content, .view-team.view-display-id-page_3 .node__content {
   position: relative; }
 
 .view-team.view-display-id-block_2 .team-item:hover .team-overlay, .view-team.view-display-id-page_3 .team-item:hover .team-overlay {
@@ -11453,10 +11395,10 @@ Block About us
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .field--name-field-job,
-    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .item-title, .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .field--name-field-job,
-    .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .item-title {
+    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .field--name-field-job, .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .field--name-field-job {
       color: #fff; }
+    .view-team.view-display-id-block_2 .team-overlay .team-overlay-content .item-title a, .view-team.view-display-id-page_3 .team-overlay .team-overlay-content .item-title a {
+      color: #fff !important; }
 
 .view-team.view-display-id-block_2 .field--type-link, .view-team.view-display-id-page_3 .field--type-link {
   display: inline-block; }
@@ -11472,7 +11414,6 @@ Block About us
 
 .view-team.view-display-id-block_2 .join-us-row, .view-team.view-display-id-page_3 .join-us-row {
   background: #003CC5;
-  width: 270px;
   height: 300px;
   color: #fff;
   padding: 20px;
@@ -11483,11 +11424,13 @@ Block About us
 
 .view-team.view-display-id-page_4 img {
   height: 270px;
+  width: 270px;
   border-radius: 50rem; }
 
 .view-team.view-display-id-page_4 .team-item {
-  margin-bottom: 1.87500rem;
-  position: relative; }
+  margin-bottom: 1.87500rem; }
+  .view-team.view-display-id-page_4 .team-item .node__content {
+    position: relative; }
 
 .view-team.view-display-id-page_4 .team-item:hover .team-overlay {
   opacity: 1; }
@@ -11514,9 +11457,10 @@ Block About us
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .field--name-field-job,
-    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .item-title {
+    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .field--name-field-job {
       color: #fff; }
+    .view-team.view-display-id-page_4 .team-overlay .team-overlay-content .item-title a {
+      color: #fff !important; }
 
 .view-team.view-display-id-page_4 .field--type-link {
   display: inline-block; }
@@ -11572,8 +11516,9 @@ Block About us
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .field--name-field-job,
-    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .item-title {
+    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .field--name-field-job {
+      color: #fff; }
+    .view-team.view-display-id-page_5 .team-overlay .team-overlay-content .item-title a {
       color: #fff; }
 
 .view-team.view-display-id-page_5 .field--type-link {
@@ -11633,22 +11578,78 @@ Block About us
 .expertise-block h3, .expertise-block .h3 {
   font-size: 2rem; }
 
-.node--type-team-member .field--name-field-job {
+.node--type-team-member .member-details .field--name-field-job {
   font-weight: 500;
   margin-bottom: .75rem; }
 
-.node--type-team-member .field--type-link {
+.node--type-team-member .member-details .field--type-link {
   display: inline-block; }
+  .node--type-team-member .member-details .field--type-link i {
+    color: #506690;
+    padding: .5rem;
+    border: 1px solid #506690;
+    border-radius: 50%;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .node--type-team-member .member-details .field--type-link i:hover {
+      background: #003CC5;
+      border: 1px solid #003CC5;
+      color: #fff; }
 
-.node--type-team-member .field--name-field-title {
+.node--type-team-member .member-skills .field--name-field-title {
   display: inline-block;
   margin-bottom: .5rem; }
 
-.node--type-team-member .percentage-value {
+.node--type-team-member .member-skills .percentage-value {
   float: right; }
 
-.node--type-team-member .progress {
+.node--type-team-member .member-skills .progress {
   background: #D9E2EF; }
+
+.block-views-blockteam-block-1 {
+  /**
+     Small devices
+   */
+  /**
+     Medium devices
+   */
+  /**
+     Large devices
+   */
+  /**
+     Extra Large devices
+   */ }
+  .block-views-blockteam-block-1 img {
+    height: 270px; }
+  .block-views-blockteam-block-1 .field--type-link {
+    display: inline-block;
+    margin-right: .75rem; }
+    .block-views-blockteam-block-1 .field--type-link i {
+      color: #506690;
+      padding: .5rem;
+      border: 1px solid #506690;
+      border-radius: 50%;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .block-views-blockteam-block-1 .field--type-link i:hover {
+        background: #003CC5;
+        border: 1px solid #003CC5;
+        color: #fff; }
+  .block-views-blockteam-block-1 .swiper-pagination {
+    position: initial; }
+    .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin-right: .5rem;
+      width: .75rem;
+      height: .75rem;
+      background: #C6D3E6;
+      opacity: 1; }
+      .block-views-blockteam-block-1 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #003CC5; }
 
 /**
  contact pages styles

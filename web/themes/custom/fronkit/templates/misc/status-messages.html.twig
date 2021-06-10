@@ -44,9 +44,10 @@
         'messages--' ~ type,
         'alert',
         'alert-' ~ status_classes[type],
-        'alert-dismissible'
+        'alert-dismissible',
+        'mt-4'
       ] %}
-      <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes.addClass(classes)|without('role', 'aria-label') }}>
+      <div role="contentinfo" aria-label="{{ status_headings[type] }}" {{ attributes.addClass(classes)|without('role', 'aria-label') }}>
         {% if type == 'error' %}
         <div role="alert">
           {% endif %}

@@ -8,7 +8,7 @@
 /**
  * Implements hook_preprocess_node().
  */
-function fronkit_preprocess_node__view__team(&$vars)
+function fronkit_preprocess_node__team_member__manager(&$vars)
 {
   $view = $vars['view'];
   $node = $vars['node'];
@@ -18,4 +18,3 @@ function fronkit_preprocess_node__view__team(&$vars)
     }
   }
 }
-

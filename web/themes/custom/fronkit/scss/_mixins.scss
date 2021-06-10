@@ -12,6 +12,9 @@
 // mixins buttons
 .btn-light {
   color: $gray-800;
+  &:hover{
+    color: $primary!important;
+  }
 }
 
 .btn-white {

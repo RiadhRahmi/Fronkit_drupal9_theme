@@ -101,13 +101,10 @@
 
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content.field_image }}
-
-    <div class="team-overlay">
-      <div class="team-overlay-content">
-        <h4 class="item-title">{{ label }}</h4>
-        {{ content|without('field_image') }}
-      </div>
+    <a href="{{ url }}" rel="bookmark"> {{ content.field_image }}</a>
+    <div class="team-overlay-content">
+      <h5 class="item-title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h5>
+      {{ content|without('field_image') }}
     </div>
   </div>
 </article>

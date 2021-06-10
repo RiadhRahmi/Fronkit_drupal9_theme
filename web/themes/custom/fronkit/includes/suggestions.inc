@@ -5,22 +5,6 @@
  * Theme suggestions.
  */
 
-use Drupal\node\Entity\Node;
-
-/**
- * Implements hook_theme_suggestions_hook_alter().
- */
-function fronkit_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-  // Add a template suggestions for node type.
-  /** @var \Drupal\node\NodeInterface $node */
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    if (is_numeric($node)) {
-      $node = Node::load($node);
-    }
-
-    $suggestions[] = 'page__node__' . $node->bundle();
-  }
-}
 
 /**
  * Implements hook_theme_suggestions_hook_alter().
