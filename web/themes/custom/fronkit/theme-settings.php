@@ -85,41 +85,27 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
     '#default_value' => theme_get_setting('submit_button_options'),
   ];
 
-}
+  $form['#attached']['library'][] = 'gavias_amon/gavias-amon-admin';
+  // Get the build info for the form
+  $build_info = $form_state->getBuildInfo();
+  // Get the theme name we are editing
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  // Create Omega Settings Object
 
+  $form['core'] = array(
+    '#type' => 'vertical_tabs',
+    '#attributes' => array('class' => array('entity-meta')),
+    '#weight' => -899
+  );
 
-// amon/buildpro/megaland theme
-///**
-// * Implementation of hook_form_system_theme_settings_alter()
-// *
-// * @param $form
-// *   Nested array of form elements that comprise the form.
-// *
-// * @param $form_state
-// *   A keyed array containing the current state of the form.
-// */
-//function gavias_amon_form_system_theme_settings_alter(&$form, &$form_state) {
-//  $form['#attached']['library'][] = 'gavias_amon/gavias-amon-admin';
-//  // Get the build info for the form
-//  $build_info = $form_state->getBuildInfo();
-//  // Get the theme name we are editing
-//  $theme = \Drupal::theme()->getActiveTheme()->getName();
-//  // Create Omega Settings Object
-//
-//  $form['core'] = array(
-//    '#type' => 'vertical_tabs',
-//    '#attributes' => array('class' => array('entity-meta')),
-//    '#weight' => -899
-//  );
-//
-//  $form['theme_settings']['#group'] = 'core';
-//  $form['logo']['#group'] = 'core';
-//  $form['favicon']['#group'] = 'core';
-//
-//  $form['theme_settings']['#open'] = FALSE;
-//  $form['logo']['#open'] = FALSE;
-//  $form['favicon']['#open'] = FALSE;
-//
+  $form['theme_settings']['#group'] = 'core';
+  $form['logo']['#group'] = 'core';
+  $form['favicon']['#group'] = 'core';
+
+  $form['theme_settings']['#open'] = FALSE;
+  $form['logo']['#open'] = FALSE;
+  $form['favicon']['#open'] = FALSE;
+
 //  // Custom settings in Vertical Tabs container
 //  $form['options'] = array(
 //    '#type' => 'vertical_tabs',
@@ -132,17 +118,17 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //      ),
 //    ),
 //  );
-//
-//  /* --------- Setting general ----------------*/
-//  $form['general'] = array(
-//    '#type' => 'details',
-//    '#attributes' => array(),
-//    '#title' => t('Gerenal options'),
-//    '#weight' => -999,
-//    '#group' => 'options',
-//    '#open' => FALSE,
-//  );
-//
+
+  /* --------- Setting general ----------------*/
+  $form['general'] = array(
+    '#type' => 'details',
+    '#attributes' => array(),
+    '#title' => t('Gerenal options'),
+    '#weight' => -999,
+    '#group' => 'options',
+    '#open' => FALSE,
+  );
+
 //  $form['general']['sticky_menu'] =array(
 //    '#type' => 'select',
 //    '#title' => t('Enable Sticky Menu'),
@@ -153,7 +139,7 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //      '1'        => t('Enable')
 //    )
 //  );
-//
+
 //  $form['general']['site_layout'] = array(
 //    '#type' => 'select',
 //    '#title' => t('Body Layout'),
@@ -163,7 +149,7 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //      'boxed' => t('Boxed'),
 //    ),
 //  );
-//
+
 //  $form['general']['preloader'] = array(
 //    '#type' => 'select',
 //    '#title' => t('Preloader Bar'),
@@ -173,25 +159,25 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //      '1' => t('Enable')
 //    ),
 //  );
-//
-//// User CSS
-//  $form['options']['css_customize'] = array(
-//    '#type' => 'details',
-//    '#attributes' => array(),
-//    '#title' => t('Customize css'),
-//    '#weight' => -996,
-//    '#group' => 'options',
-//    '#open' => TRUE,
-//  );
-//  $form['customize']['customize_css'] = array(
-//    '#type' => 'textarea',
-//    '#title' => t('Add your own CSS'),
-//    '#group' => 'css_customize',
-//    '#default_value' => theme_get_setting('customize_css'),
-//  );
-//
-//  //Customize color ----------------------------------
-//
+
+// User CSS
+  $form['options']['css_customize'] = array(
+    '#type' => 'details',
+    '#attributes' => array(),
+    '#title' => t('Customize css'),
+    '#weight' => -996,
+    '#group' => 'options',
+    '#open' => TRUE,
+  );
+  $form['customize']['customize_css'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Add your own CSS'),
+    '#group' => 'css_customize',
+    '#default_value' => theme_get_setting('customize_css'),
+  );
+
+  //Customize color ----------------------------------
+
 //  $form['options']['settings_customize'] = array(
 //    '#type' => 'details',
 //    '#attributes' => array(),
@@ -207,7 +193,7 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#title' => t('Cutomize Setting'),
 //    '#weight' => -999,
 //  );
-//
+
 //  $form['options']['settings_customize']['settings']['theme_skin'] = array(
 //    '#type' => 'select',
 //    '#title' => t('Theme Skin'),
@@ -279,7 +265,7 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#group'  => 'general_color',
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
+
 //  //Customize Header Color
 //  $form['options']['settings_customize']['header_color'] = array(
 //    '#type' => 'details',
@@ -316,8 +302,8 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#default_value' => theme_get_setting('header_color_link_hover'),
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
-////Customize MAIN MENU Color
+
+//Customize MAIN MENU Color
 //  $form['options']['settings_customize']['menu_color'] = array(
 //    '#type' => 'details',
 //    '#open' => TRUE,
@@ -389,8 +375,8 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#default_value' => theme_get_setting('submenu_color_link_hover'),
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
-//  //Customize Footer Color
+
+  //Customize Footer Color
 //  $form['options']['settings_customize']['footer_customize_color'] = array(
 //    '#type' => 'details',
 //    '#open' => TRUE,
@@ -408,7 +394,7 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#default_value' => theme_get_setting('footer_bg'),
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
+
 //  $form['footer_color'] =array(
 //    '#type' => 'textfield',
 //    '#class'  => 'input',
@@ -435,8 +421,8 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#default_value' => theme_get_setting('footer_color_link_hover'),
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
-//  //Customize Copyright Color
+
+  //Customize Copyright Color
 //  $form['options']['settings_customize']['copyright_customize_color'] = array(
 //    '#type' => 'details',
 //    '#open' => TRUE,
@@ -481,11 +467,10 @@ function fronkit_form_system_theme_settings_alter(&$form, &$form_state)
 //    '#default_value' => theme_get_setting('copyright_color_link_hover'),
 //    '#attributes' => array('class' => array('color-picker') )
 //  );
-//
-//  $form['actions']['submit']['#value'] = t('Save');
-//}
-//
-//
-//
-//
+
+
+}
+
+
+
 

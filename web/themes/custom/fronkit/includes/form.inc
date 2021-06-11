@@ -57,12 +57,23 @@ function fronkit_preprocess_input(&$variables)
   }
 }
 
-///**
-// * Implements theme_preprocess_textarea().
-// */
-//function bootstrap5_preprocess_textarea(&$variables) {
-//  $variables['attributes']['class'][] = 'form-control';
-//}
+/**
+ * Implements theme_preprocess_textarea().
+ */
+function fronkit_preprocess_textarea(&$variables) {
+  $input_rounded_style = theme_get_setting('input_rounded_style');
+
+  switch ($input_rounded_style) {
+    case 'style-2':
+      $variables['attributes']['class'][] = 'form-control-pill';
+      break;
+    case 'style-3':
+      $variables['attributes']['class'][] = 'form-control-flat';
+      break;
+    default:
+      break;
+  }
+}
 
 
 /**
