@@ -1074,11 +1074,11 @@ $nav-tabs-link-active-bg:           $body-bg;
 //
 //$accordion-button-padding-y:              $accordion-padding-y !default;
 //$accordion-button-padding-x:              $accordion-padding-x !default;
-//$accordion-button-color:                  $accordion-color !default;
-//$accordion-button-bg:                     $accordion-bg !default;
+$accordion-button-color:                  $black !default;
+$accordion-button-bg:                     $gray-200 !default;
 //$accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-//$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-//$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-bg:              $primary !default;
+$accordion-button-active-color:           $white !default;
 //
 //$accordion-button-focus-border-color:     $input-focus-border-color !default;
 //$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;

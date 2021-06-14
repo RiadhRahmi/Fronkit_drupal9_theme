@@ -1,0 +1,21 @@
+uuid: d3cd8438-7068-4a17-88d7-263fdfb5751a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.content_with_video
+  module:
+    - text
+id: paragraph.content_with_video.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: content_with_video
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

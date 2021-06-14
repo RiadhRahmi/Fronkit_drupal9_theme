@@ -1,0 +1,104 @@
+uuid: b4c5e0e1-df75-4c0e-8feb-4fbcbdb03cfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_with_video.field_accordion
+    - field.field.paragraph.content_with_video.field_description
+    - field.field.paragraph.content_with_video.field_image
+    - field.field.paragraph.content_with_video.field_video_link
+    - paragraphs.paragraphs_type.content_with_video
+  module:
+    - element_class_formatter
+    - entity_reference_revisions
+    - field_formatter_class
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_text_group:
+      children:
+        - field_description
+        - field_accordion
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Text group'
+    group_media_group:
+      children:
+        - field_image
+        - field_video_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-md-6 media-video'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Media group'
+id: paragraph.content_with_video.default
+targetEntityType: paragraph
+bundle: content_with_video
+mode: default
+content:
+  field_accordion:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_video_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      class: 'btn btn-lg btn-white rounded-circle  fancybox lift'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: link_class
+    region: content
+hidden: {  }

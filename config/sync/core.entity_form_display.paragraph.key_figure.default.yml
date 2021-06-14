@@ -1,0 +1,42 @@
+uuid: 438f60bf-50dc-44ed-9c71-63eba7b6d1cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.key_figure.field_image
+    - field.field.paragraph.key_figure.field_key_figure
+    - field.field.paragraph.key_figure.field_title
+    - paragraphs.paragraphs_type.key_figure
+  module:
+    - media_library
+id: paragraph.key_figure.default
+targetEntityType: paragraph
+bundle: key_figure
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_key_figure:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

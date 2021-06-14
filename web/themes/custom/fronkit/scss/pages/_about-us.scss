@@ -1,0 +1,53 @@
+.field--name-field-contents {
+  .paragraph--type--content-with-image {
+    .field--name-field-image {
+      order: 0;
+    }
+
+    .field--name-field-description {
+      order: 1;
+    }
+  }
+
+  .paragraph--type--content-with-video {
+    .media-video {
+      position: relative;
+
+      .field--name-field-video-link{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+      }
+    }
+  }
+
+  .accordion-button{
+    border: 0;
+  }
+
+  .accordion-item:last-of-type .accordion-collapse{
+    border: 0;
+  }
+}
+
+
+/**
+ key figures style
+ */
+.block-type-key-figures {
+  &.view-mode-style-1 {
+    background: $primary;
+    color: $white;
+
+    .field--name-field-key-figures {
+      > .field__item {
+        text-align: center;
+      }
+
+      .field--name-field-key-figure {
+        color: $white;
+      }
+    }
+
+  }
+}

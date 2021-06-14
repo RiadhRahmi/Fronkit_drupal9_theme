@@ -1,0 +1,10 @@
+uuid: 30d325c5-3e97-4657-8fc2-f6f7b5327fcd
+langcode: en
+status: true
+dependencies: {  }
+id: key_figure
+label: 'key figure'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

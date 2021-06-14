@@ -23,7 +23,7 @@ function fronkit_preprocess_field(&$variables) {
   $variables['field_name_clean'] = str_replace($safe_field_name_prefix, '', $field_name);
 
   // add index to paragraphs
-  if ($variables['field_name'] == 'field_process_items' || $variables['field_name'] == 'field_features') {
+  if ($variables['field_name'] == 'field_process_items' || $variables['field_name'] == 'field_features' || $variables['field_name'] == 'field_accordion') {
     foreach ($variables['items'] as $idx => $item) {
       $variables['items'][$idx]['content']['#paragraph']->index = $idx + 1;
     }

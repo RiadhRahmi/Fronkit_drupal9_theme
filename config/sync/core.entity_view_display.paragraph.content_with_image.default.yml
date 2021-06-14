@@ -1,0 +1,37 @@
+uuid: 00fbdeb5-e13e-4c76-88e1-b2a975f3810c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_with_image.field_description
+    - field.field.paragraph.content_with_image.field_image
+    - paragraphs.paragraphs_type.content_with_image
+  module:
+    - field_formatter_class
+    - text
+id: paragraph.content_with_image.default
+targetEntityType: paragraph
+bundle: content_with_image
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: col-md-6
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: col-md-6
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

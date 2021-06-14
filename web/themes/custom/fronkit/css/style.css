@@ -3966,9 +3966,9 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #384C74;
+  color: #161C2D;
   text-align: left;
-  background-color: transparent;
+  background-color: #F1F4F8;
   border: 1px solid rgba(22, 28, 45, 0.125);
   border-radius: 0;
   overflow-anchor: none;
@@ -3979,10 +3979,10 @@ textarea.form-control-lg {
   .accordion-button.collapsed {
     border-bottom-width: 0; }
   .accordion-button:not(.collapsed) {
-    color: #0036b1;
-    background-color: #e6ecf9; }
+    color: #fff;
+    background-color: #003CC5; }
     .accordion-button:not(.collapsed)::after {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230036b1'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
       transform: rotate(180deg); }
   .accordion-button::after {
     flex-shrink: 0;
@@ -11752,6 +11752,36 @@ block our locations
   @media (min-width: 992px) {
     .block-our-locations .item {
       margin-bottom: 0; } }
+
+.field--name-field-contents .paragraph--type--content-with-image .field--name-field-image {
+  order: 0; }
+
+.field--name-field-contents .paragraph--type--content-with-image .field--name-field-description {
+  order: 1; }
+
+.field--name-field-contents .paragraph--type--content-with-video .media-video {
+  position: relative; }
+  .field--name-field-contents .paragraph--type--content-with-video .media-video .field--name-field-video-link {
+    position: absolute;
+    top: 40%;
+    left: 40%; }
+
+.field--name-field-contents .accordion-button {
+  border: 0; }
+
+.field--name-field-contents .accordion-item:last-of-type .accordion-collapse {
+  border: 0; }
+
+/**
+ key figures style
+ */
+.block-type-key-figures.view-mode-style-1 {
+  background: #003CC5;
+  color: #fff; }
+  .block-type-key-figures.view-mode-style-1 .field--name-field-key-figures > .field__item {
+    text-align: center; }
+  .block-type-key-figures.view-mode-style-1 .field--name-field-key-figures .field--name-field-key-figure {
+    color: #fff; }
 
 .footer .block-title {
   color: #fff;

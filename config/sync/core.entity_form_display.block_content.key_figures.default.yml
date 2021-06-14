@@ -1,0 +1,47 @@
+uuid: 6da40768-0870-4d46-82f7-89eb56b69b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.key_figures
+    - field.field.block_content.key_figures.body
+    - field.field.block_content.key_figures.field_key_figures
+  module:
+    - paragraphs
+    - text
+id: block_content.key_figures.default
+targetEntityType: block_content
+bundle: key_figures
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_key_figures:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

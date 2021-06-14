@@ -1,0 +1,33 @@
+uuid: 0c427db9-27e5-4e17-9d7f-c02951b46f3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.key_figures
+    - field.field.block_content.key_figures.body
+    - field.field.block_content.key_figures.field_key_figures
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.key_figures.default
+targetEntityType: block_content
+bundle: key_figures
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_key_figures:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

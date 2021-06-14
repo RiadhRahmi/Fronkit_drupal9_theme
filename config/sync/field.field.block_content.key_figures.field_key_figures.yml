@@ -1,0 +1,52 @@
+uuid: 3af96d50-78a2-407e-93d4-dd7fb12a8125
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.key_figures
+    - field.storage.block_content.field_key_figures
+    - paragraphs.paragraphs_type.key_figure
+  module:
+    - entity_reference_revisions
+id: block_content.key_figures.field_key_figures
+field_name: field_key_figures
+entity_type: block_content
+bundle: key_figures
+label: 'key figures'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      key_figure: key_figure
+    target_bundles_drag_drop:
+      carrousel_item:
+        weight: 9
+        enabled: false
+      contact_item:
+        weight: 10
+        enabled: false
+      feature_item:
+        weight: 11
+        enabled: false
+      key_figure:
+        enabled: true
+        weight: 12
+      pricing_plan:
+        weight: 13
+        enabled: false
+      process:
+        weight: 14
+        enabled: false
+      service_item:
+        weight: 15
+        enabled: false
+      skill:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

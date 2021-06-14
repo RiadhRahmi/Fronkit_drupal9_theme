@@ -1,0 +1,60 @@
+uuid: 1c0644cc-b28a-4a68-8164-dfe2e4d51825
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contents
+    - node.type.page
+    - paragraphs.paragraphs_type.content_with_image
+    - paragraphs.paragraphs_type.content_with_video
+  module:
+    - entity_reference_revisions
+id: node.page.field_contents
+field_name: field_contents
+entity_type: node
+bundle: page
+label: Contents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_with_image: content_with_image
+      content_with_video: content_with_video
+    target_bundles_drag_drop:
+      carrousel_item:
+        weight: 8
+        enabled: false
+      contact_item:
+        weight: 9
+        enabled: false
+      content_with_image:
+        enabled: true
+        weight: 12
+      content_with_video:
+        enabled: true
+        weight: 14
+      feature_item:
+        weight: 10
+        enabled: false
+      key_figure:
+        weight: 14
+        enabled: false
+      pricing_plan:
+        weight: 11
+        enabled: false
+      process:
+        weight: 12
+        enabled: false
+      service_item:
+        weight: 13
+        enabled: false
+      skill:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

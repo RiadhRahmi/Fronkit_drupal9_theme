@@ -1,0 +1,58 @@
+uuid: 0c6201c6-dc7e-4d6a-b14e-dcd5311cb95c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_with_video.field_accordion
+    - field.field.paragraph.content_with_video.field_description
+    - field.field.paragraph.content_with_video.field_image
+    - field.field.paragraph.content_with_video.field_video_link
+    - paragraphs.paragraphs_type.content_with_video
+  module:
+    - link
+    - media_library
+    - paragraphs
+    - text
+id: paragraph.content_with_video.default
+targetEntityType: paragraph
+bundle: content_with_video
+mode: default
+content:
+  field_accordion:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_video_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

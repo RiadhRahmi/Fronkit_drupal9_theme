@@ -1,0 +1,41 @@
+uuid: f0a513ff-844e-42ae-a196-91b1717257ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.style_1
+    - field.field.paragraph.key_figure.field_image
+    - field.field.paragraph.key_figure.field_key_figure
+    - field.field.paragraph.key_figure.field_title
+    - paragraphs.paragraphs_type.key_figure
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.key_figure.style_1
+targetEntityType: paragraph
+bundle: key_figure
+mode: style_1
+content:
+  field_key_figure:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: h2
+    type: string
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_image: true
