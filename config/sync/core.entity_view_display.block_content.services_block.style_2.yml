@@ -1,0 +1,96 @@
+uuid: a875f08d-f936-47cf-82fe-5230eab314db
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - core.entity_view_mode.block_content.style_2
+    - field.field.block_content.services_block.field_description
+    - field.field.block_content.services_block.field_link
+    - field.field.block_content.services_block.field_services_items
+    - field.field.block_content.services_block.field_subtitle
+    - field.field.block_content.services_block.field_title
+  module:
+    - element_class_formatter
+    - entity_reference_revisions
+    - field_formatter_class
+    - field_group
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_content:
+      children:
+        - field_subtitle
+        - field_title
+        - field_description
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: text-center
+      label: Content
+id: block_content.services_block.style_2
+targetEntityType: block_content
+bundle: services_block
+mode: style_2
+content:
+  field_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+  field_services_items:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: style_2
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'text-primary text-uppercase'
+    type: string
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h2
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: wrapper_class
+    region: content
+hidden:
+  field_link: true

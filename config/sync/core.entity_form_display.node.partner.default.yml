@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.partner.field_image
+    - field.field.node.partner.field_link
     - node.type.partner
   module:
+    - link
     - media_library
     - path
 id: node.partner.default
@@ -25,6 +27,14 @@ content:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_link:
+    weight: 122
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

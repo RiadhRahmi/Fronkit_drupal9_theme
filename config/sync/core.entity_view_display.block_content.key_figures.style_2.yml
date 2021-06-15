@@ -1,0 +1,42 @@
+uuid: b81dfd0d-7a77-43d8-827f-e6d3b1deb2a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.key_figures
+    - core.entity_view_mode.block_content.style_2
+    - field.field.block_content.key_figures.body
+    - field.field.block_content.key_figures.field_key_figures
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.key_figures.style_2
+targetEntityType: block_content
+bundle: key_figures
+mode: style_2
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_key_figures:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: style_2
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden: {  }

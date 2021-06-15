@@ -12,48 +12,7 @@ dependencies:
     - element_class_formatter
     - entity_reference_revisions
     - field_formatter_class
-    - field_group
     - text
-third_party_settings:
-  field_group:
-    group_text_group:
-      children:
-        - field_description
-        - field_accordion
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      region: content
-      format_settings:
-        id: ''
-        classes: col-md-6
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'Text group'
-    group_media_group:
-      children:
-        - field_image
-        - field_video_link
-      parent_name: ''
-      weight: 1
-      format_type: html_element
-      region: content
-      format_settings:
-        id: ''
-        classes: 'col-md-6 media-video'
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'Media group'
 id: paragraph.content_with_video.default
 targetEntityType: paragraph
 bundle: content_with_video
@@ -78,7 +37,7 @@ content:
     type: text_default
     region: content
   field_image:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link: true
@@ -87,7 +46,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_video_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: null

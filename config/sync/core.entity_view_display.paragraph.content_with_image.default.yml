@@ -20,7 +20,7 @@ content:
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: col-md-6
+        class: ''
     type: text_default
     region: content
   field_image:
@@ -31,7 +31,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: col-md-6
+        class: ''
     type: entity_reference_entity_view
     region: content
 hidden: {  }

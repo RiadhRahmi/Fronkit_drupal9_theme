@@ -1,43 +1,40 @@
-uuid: f469f759-cf36-40da-a09e-8e42bef6c0eb
+uuid: 2b646c50-c189-436d-a781-4c0db3b2603b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.style_1
     - field.field.node.partner.field_image
     - field.field.node.partner.field_link
     - node.type.partner
   module:
-    - link
+    - field_formatter_class
+    - layout_builder
     - user
-id: node.partner.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.partner.style_1
 targetEntityType: node
 bundle: partner
-mode: default
+mode: style_1
 content:
   field_image:
     weight: 101
-    label: above
+    label: hidden
     settings:
-      view_mode: media_library
+      view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: entity_reference_entity_view
-    region: content
-  field_link:
-    weight: 102
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_link: true

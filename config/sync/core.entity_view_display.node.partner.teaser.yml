@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.partner.field_image
+    - field.field.node.partner.field_link
     - node.type.partner
   module:
     - field_formatter_class
@@ -26,4 +27,5 @@ content:
       field_formatter_class:
         class: ''
 hidden:
+  field_link: true
   links: true

@@ -13,7 +13,7 @@
     .media-video {
       position: relative;
 
-      .field--name-field-video-link{
+      .field--name-field-video-link {
         position: absolute;
         top: 40%;
         left: 40%;
@@ -21,11 +21,11 @@
     }
   }
 
-  .accordion-button{
+  .accordion-button {
     border: 0;
   }
 
-  .accordion-item:last-of-type .accordion-collapse{
+  .accordion-item:last-of-type .accordion-collapse {
     border: 0;
   }
 }
@@ -49,5 +49,58 @@
       }
     }
 
+  }
+
+  &.view-mode-style-2 {
+    background: rgba($primary, .1);
+    text-align: center;
+
+    img {
+      width: 48px;
+      margin-bottom: 32px
+    }
+
+    .field--name-field-key-figures {
+      > .field__item {
+        text-align: center;
+      }
+
+      .field--name-field-key-figure {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.block-views-blockpartners-block-2 {
+  img {
+    width: 150px;
+  }
+}
+
+.btn-1 {
+  a {
+    @extend .btn-primary;
+  }
+}
+
+.btn-2 {
+  a {
+    @extend .btn-primary-soft;
+  }
+}
+
+.field--name-field-link {
+  text-align: right;
+
+  .field__item {
+    display: inline-block;
+  }
+}
+
+.block-type-call-to-action{
+  &.view-mode-style-3{
+    align-items: center;
   }
 }

@@ -1,0 +1,60 @@
+uuid: ea311114-24a7-4251-b222-638383dfb786
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.style_2
+    - field.field.paragraph.service_item.field_description
+    - field.field.paragraph.service_item.field_image
+    - field.field.paragraph.service_item.field_title
+    - paragraphs.paragraphs_type.service_item
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.service_item.style_2
+targetEntityType: paragraph
+bundle: service_item
+mode: style_2
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: thumbnail_112_132
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: pb-4
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h5
+      class: ''
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: wrapper_class
+    region: content
+hidden: {  }

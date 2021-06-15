@@ -1,10 +1,10 @@
-uuid: 117e7a11-aab7-4978-a0f8-eae1bc6faab2
+uuid: eec2aa89-ac23-43d3-a2ec-441593f9a26b
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.call_to_action
-    - core.entity_view_mode.block_content.style_1
+    - core.entity_view_mode.block_content.style_3
     - field.field.block_content.call_to_action.field_description
     - field.field.block_content.call_to_action.field_image
     - field.field.block_content.call_to_action.field_link
@@ -18,33 +18,33 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: block_content.call_to_action.style_1
+id: block_content.call_to_action.style_3
 targetEntityType: block_content
 bundle: call_to_action
-mode: style_1
+mode: style_3
 content:
   field_description:
-    weight: 1
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: col-md-9
+        class: col-md-7
     type: text_default
     region: content
   field_link:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       trim_length: null
-      class: 'btn btn-light float-md-end lift'
+      class: btn
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'col-md-3 mt-6 my-md-auto'
+        class: col-md-5
     type: link_class
     region: content
 hidden:
