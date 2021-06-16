@@ -1,0 +1,43 @@
+uuid: 1fdcd834-db55-4e3d-9381-3b438ea8f67e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+    - core.entity_view_mode.block_content.style_1
+    - field.field.block_content.webform.field_description
+    - field.field.block_content.webform.field_webform
+  module:
+    - field_formatter_class
+    - layout_builder
+    - text
+    - webform
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.webform.style_1
+targetEntityType: block_content
+bundle: webform
+mode: style_1
+content:
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: col-md-6
+    type: text_default
+    region: content
+  field_webform:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings:
+      field_formatter_class:
+        class: col-md-6
+    type: webform_entity_reference_entity_view
+    region: content
+hidden: {  }
